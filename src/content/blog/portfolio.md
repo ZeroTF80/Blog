@@ -33,9 +33,9 @@ Una vez que sentí que tenía una comprensión sólida de lo que constituye un b
 
 En **tldraw**, creé un boceto inicial de mi portfolio. Este ejercicio fue crucial, ya que me permitió visualizar la estructura y el flujo de mi sitio antes de comenzar a programar. Aquí les muestro el resultado:
 
-![Boceto de portfolio](../../../public/portfolio/boceto01.png)
-![Boceto de portfolio](../../../public/portfolio/boceto02.png)
-![Boceto de portfolio](../../../public/portfolio/boceto03.png)
+![Boceto de portfolio](/portfolio/boceto01.png)
+![Boceto de portfolio](/portfolio/boceto02.png)
+![Boceto de portfolio](/portfolio/boceto03.png)
 
 Este boceto se convirtió en mi guía, proporcionándome una dirección clara para cuando finalmente me sentara a codificar. Representaba no solo la estructura de mi futuro portfolio, sino también la culminación de toda la investigación y aprendizaje que había realizado hasta ese momento.
 
