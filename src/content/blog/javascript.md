@@ -2,7 +2,7 @@
 title: 'JavaScript'
 description: 'Mi aprendizaje en JavaScript'
 pubDate: 'Jul 18 2024'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 
 ## Explorando el Potencial del DOM: Manipulación Efectiva de Elementos
