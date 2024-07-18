@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Icon from '../components/Icon.astro';
 ---
 
 <!doctype html>
@@ -13,38 +14,50 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hola</h1>
+			<section class="header">
+				<Icon width="95px" height="95px" class="icon" />
+				<h1>Bienvenido/a!</h1>
+			  </section>
 			<p>
-				Bienvenido a mi blog <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				Este blog está creado utilizando <a href="https://astro.build/">Astro</a>, 
+				una herramienta moderna para la construcción de sitios web que combina las 
+				ventajas del rendimiento de la compilación estática con la flexibilidad de 
+				las aplicaciones web tradicionales. Además, se ha desarrollado con 
+				<a href="https://www.typescriptlang.org/">TypeScript</a>, lo cual garantiza 
+				un código más robusto y mantenible.
 			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
+			<h2>¿Qué Encontrarás Aquí?</h2>
 			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
+				<li><strong>Artículos Técnicos</strong>: Artículos Técnicos: Examino a fondo proyectos innovadores y avances significativos en el ámbito tecnológico. Ofrezco análisis detallados de las últimas tendencias, realizo comparativas exhaustivas de soluciones actuales y proporciono cobertura de eventos clave del sector. Mi objetivo es brindar una perspectiva crítica y actualizada que ayude a los lectores a navegar el cambiante panorama tecnológico.</li>
+				<li>En el ámbito del <strong>Desarrollo de Software</strong>, presento tutoriales paso a paso diseñados para <strong>programadores</strong> de todos los niveles. Exploro diversos lenguajes de programación, frameworks y bibliotecas populares, ofreciendo guías prácticas sobre estructuras de datos, algoritmos y patrones de diseño. Complemento estos contenidos con valiosos recursos para fomentar el aprendizaje continuo y el crecimiento profesional.</li>
+				<li>Además, ocasionalmente comparto Reviews sobre <strong>Hardware</strong>, donde analizo las últimas novedades en dispositivos y componentes tecnológicos. Estas reseñas proporcionan información crucial para aquellos interesados en mantenerse al día con los avances en equipamiento técnico.</li>
+				<li>Por último, dedico especial atención al campo de la <strong>Inteligencia Artificial</strong>, ofreciendo reflexiones profundas sobre los últimos avances en este ámbito. Exploro desde aplicaciones prácticas hasta teorías emergentes, conectando los desarrollos en IA con sus implicaciones en el mundo tecnológico más amplio.</li>
 			</ul>
+			<h3>Explora y Aprende</h3>
 			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
+				<strong>Descubre Contenidos</strong>: Sumérgete en los temas que me apasionan 
+				y descubre nuevas perspectivas sobre tecnología y desarrollo, todo respaldado 
+				por un enfoque técnico y actualizado.
 			</p>
 			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+				<strong>Crece conmigo</strong>: Acompáñame en mi viaje de aprendizaje y mejora 
+				continua en el mundo de la tecnología, donde cada publicación está diseñada 
+				para enriquecer tu comprensión y habilidades.
 			</p>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.header {
+		display: flex;
+		align-items: end;
+	}
+	.icon {
+		margin-right: 10px;
+	}
+	li {
+		margin-bottom: 15px;
+	}
+</style>
