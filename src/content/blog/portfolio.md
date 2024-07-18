@@ -1,7 +1,7 @@
 ---
 title: 'Portfolio'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 13 2024'
+pubDate: 'Jul 18 2024'
 heroImage: '/portfolio.png'
 ---
 
@@ -608,4 +608,3 @@ Todo este mecanismo funcionaba gracias a un simple pero crucial elemento en mi H
 ```
 
 Con este código JavaScript, logré dar vida a mi sistema de cambio de tema, creando una experiencia de usuario dinámica y personalizable. Cada clic en el botón "Cambiar modo" activaba una serie de cambios que transformaban la apariencia de mi sitio web, adaptándose a las preferencias del usuario y recordándolas para futuras visitas.
-
