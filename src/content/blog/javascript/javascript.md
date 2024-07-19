@@ -6,7 +6,7 @@ heroImage: '/JavaScript.jpg'
 ---
 Siguiente: [DOM](./dom)
 
-## Just in Time
+## Just in Time (JIT)
 ¿Alguna vez te has preguntado por qué las páginas web son tan rápidas hoy en día? Gran parte de eso se debe a algo llamado compilación JIT en JavaScript. Suena complicado, pero te lo voy a explicar de manera sencilla.
 
 Imagina que JavaScript es como un idioma extranjero para tu computadora. Cada vez que abres una página web, tu navegador tiene que "traducir" todo ese código para que tu computadora lo entienda. Eso es básicamente lo que hace el intérprete de JavaScript.
@@ -22,3 +22,45 @@ El resultado es que esas partes del código que se usan mucho se vuelven súper 
 Y todo esto pasa sin que tú te des cuenta. Por eso, cuando estás usando tu app web favorita y todo parece ir como la seda, ya sabes que hay un montón de cosas geniales pasando detrás de escena.
 
 En resumen, la compilación JIT es como un atajo inteligente que hace que JavaScript sea mucho más rápido. Y eso, amigo mío, es lo que hace que navegar por internet hoy en día sea tan fluido.
+
+Aquí un diagrama más visual:
+```bash
+   Archivo.js
+       │
+       ↓
+┌───────────────────┐
+│ Carga del Código  │
+└───────────────────┘
+       │
+       ↓
+┌───────────────────┐
+│ Interpretación    │
+│ Inicial           │
+└───────────────────┘
+       │
+       ↓
+┌───────────────────┐         ┌───────────────┐
+│ Identificación de │         │ Código        │
+│ Partes Frecuentes │─────────│ Interpretado  │
+└───────────────────┘         └───────────────┘
+       │                           │
+       ↓                           │
+┌───────────────────┐              │
+│                   │              │
+│  Compilación JIT  │              │
+│                   │              │
+└───────────────────┘              │
+       │                           │
+       ↓                           ↓
+┌───────────────────┐         ┌───────────────────┐
+│ Ejecución         │         │ Ejecución         │
+│ (Código Compilado)│         │ (Código           │
+│                   │         │ Interpretado)     │
+└───────────────────┘         └───────────────────┘
+```
+Internamente, el motor está manejando tanto código interpretado como compilado, y externamente, desde la perspectiva del programa en ejecución, todo funciona de manera seamless o sin interrupciones.
+1. Inicialmente, todo el código se ejecuta en su forma interpretada.
+2. Durante esta ejecución, el motor de JavaScript está constantemente analizando el rendimiento del código.
+3. Cuando identifica partes del código que se ejecutan frecuentemente o son críticas para el rendimiento, las compila "al vuelo" (Just-In-Time).
+4. A partir de ese momento, cuando el flujo de ejecución llega a esas partes optimizadas, se utiliza la versión compilada en lugar de la interpretada.
+5. El resto del código que no ha sido optimizado sigue ejecutándose en su forma interpretada.
