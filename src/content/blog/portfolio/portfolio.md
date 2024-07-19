@@ -5,8 +5,6 @@ pubDate: 'Jul 18 2024'
 heroImage: '/portfolio.png'
 ---
 
-[Enlace a otra página](./portfolio-madremia)
-
 Hola, soy un joven desarrollador de 18 años de Argentina. Empecé a estudiar programación de software oficialmente el 01/05/2024 con la ambición de convertirme en un profesional competente en el campo de la tecnología. Como muchos desarrolladores juniors, me enfrento al desafío de cómo presentar de manera efectiva mis proyectos y destacar en el mercado laboral. En este blog, quiero compartir mi experiencia y aprendizajes al crear mi portfolio, una herramienta crucial para cualquier aspirante a programador.
 
 Antes que nada, quiero decir que a principios de este año estuve investigando varias cosas antes de sumergirme en el mundo del software. Siempre me llamó la atención, pero no disponía de una computadora para escribir código, así que no me hacía ilusiones en aprender lenguajes o herramientas. De hecho, ni siquiera sabía dónde empezar a escribir un código.
