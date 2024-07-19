@@ -10,6 +10,18 @@ import Icon from '../components/Icon.astro';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.header {
+				display: flex;
+				align-items: end;
+			}
+			.icon {
+				margin-right: 10px;
+			}
+			li {
+				margin-bottom: 15px;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
@@ -48,16 +60,3 @@ import Icon from '../components/Icon.astro';
 		<Footer />
 	</body>
 </html>
-
-<style>
-	.header {
-		display: flex;
-		align-items: end;
-	}
-	.icon {
-		margin-right: 10px;
-	}
-	li {
-		margin-bottom: 15px;
-	}
-</style>

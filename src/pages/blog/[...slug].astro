@@ -3,17 +3,26 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+    const posts = await getCollection('blog');
+    return posts.map((post) => {
+        const slug = post.slug.split('/');
+        // Si el último segmento del slug es igual al penúltimo, lo eliminamos
+        if (slug.length > 1 && slug[slug.length - 1] === slug[slug.length - 2]) {
+            slug.pop();
+        }
+        return {
+            params: { slug: slug.join('/') },
+            props: post,
+        };
+    });
 }
+
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
+
 <BlogPost {...post.data}>
-	<Content />
+    <Content />
 </BlogPost>
