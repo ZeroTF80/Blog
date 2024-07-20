@@ -5,8 +5,8 @@ pubDate: 'Jul 18 2024'
 heroImage: '/JavaScript.jpg'
 ---
 Siguiente: [DOM](../dom)
-## Introducción
-JavaScript es una parte esencial del desarrollo web moderno, y su rendimiento afecta significativamente la experiencia del usuario. Un aspecto crítico de este rendimiento es el compilador Just-In-Time (JIT), que mejora la ejecución compilando el código en tiempo real. A diferencia de los compiladores tradicionales, JIT compila JavaScript durante la ejecución, transformando el código escrito por los desarrolladores en instrucciones de máquina optimizadas. Esto resulta en aplicaciones web que se cargan rápidamente y responden de inmediato a las interacciones, mientras que los desarrolladores pueden escribir código JavaScript estándar confiando en que el compilador JIT lo optimizará para diferentes dispositivos y escenarios de uso.
+## Comprendiendo el Compilador Just-In-Time en JavaScript
+JavaScript es una parte esencial del desarrollo web moderno, afectando significativamente la experiencia del usuario a través de su rendimiento. Un aspecto crítico de este rendimiento es el compilador Just-In-Time (JIT), también conocido como traducción dinámica. Esta técnica mejora la ejecución compilando el código en tiempo real, optimizando las rutas de código más frecuentemente utilizadas para un mejor rendimiento.
 
 En esta explicación, exploraremos cómo funciona la compilación JIT en JavaScript, por qué es crucial para el rendimiento web moderno, y cómo está cambiando la forma en que se desarrollan y se experimentan las aplicaciones web.
 
@@ -28,7 +28,7 @@ Y todo esto pasa sin que tú te des cuenta. Por eso, cuando estás usando tu app
 En resumen, la compilación JIT es como un atajo inteligente que hace que JavaScript sea mucho más rápido. Y eso, amigo mío, es lo que hace que navegar por internet hoy en día sea tan fluido.
 
 ### ¿Cómo funciona JIT?
-La compilación Just-In-Time (JIT) en JavaScript es un proceso sofisticado que optimiza el rendimiento del código durante su ejecución. El proceso comienza cuando el motor de JavaScript, como V8 en Chrome, realiza una traducción inicial del código JavaScript a bytecode, un formato intermedio más cercano al lenguaje de máquina. Este bytecode se ejecuta inicialmente por un intérprete.
+La compilación Just-In-Time (JIT) en JavaScript es un proceso sofisticado que optimiza el rendimiento del código durante su ejecución. Comienza cuando el motor de JavaScript, como V8 en Chrome, realiza una traducción inicial del código fuente a bytecode, un formato intermedio más cercano al lenguaje de máquina pero aún independiente de la plataforma. Este bytecode se ejecuta inicialmente por un intérprete, permitiendo que el código comience a ejecutarse rápidamente. Mientras tanto, el motor JIT monitorea constantemente el comportamiento del código, recopilando datos sobre patrones de ejecución y tipos de datos utilizados. Basándose en esta información, el JIT identifica las secciones de código que se ejecutan con frecuencia (puntos calientes) y las compila a código máquina nativo, optimizado para la arquitectura específica del dispositivo. Este proceso es dinámico y continuo, permitiendo reoptimizaciones si se detectan cambios en los patrones de uso o en los tipos de datos.
 
 Mientras el código se ejecuta, el motor JIT analiza constantemente su comportamiento. Su objetivo es identificar "hot spots" o partes críticas del código que se ejecutan con frecuencia. Para lograr esto, mantiene contadores para cada función y bucle en el código, monitoreando cuántas veces se ejecuta cada sección.
 
@@ -38,9 +38,7 @@ Sin embargo, el trabajo de JIT no termina después de esta primera compilación.
 
 Durante este proceso, JIT puede realizar diversas optimizaciones específicas. Por ejemplo, puede desenrollar bucles para reducir las comprobaciones de condición, optimizar operaciones matemáticas, o eliminar comprobaciones de tipos redundantes. Todas estas optimizaciones contribuyen a mejorar significativamente el rendimiento del código.
 
-Para visualizar mejor este proceso, podemos pensar en JIT como un ciclo continuo:
-
-El código JavaScript se traduce a bytecode, que luego se ejecuta e interpreta. Durante esta ejecución, se identifican los hot spots. Estos hot spots se compilan a código máquina mediante JIT, lo que permite una ejecución optimizada. Todo este proceso está bajo constante monitoreo, permitiendo reoptimizaciones cuando sea necesario.
+Para visualizar mejor este proceso, podemos pensar en JIT como un ciclo continuo: El código JavaScript se traduce a bytecode, que luego se ejecuta e interpreta. Durante esta ejecución, se identifican los hot spots. Estos hot spots se compilan a código máquina mediante JIT, lo que permite una ejecución optimizada. Todo este proceso está bajo constante monitoreo, permitiendo reoptimizaciones cuando sea necesario.
 
 Esta capacidad de JIT permite que JavaScript se ejecute de manera eficiente en una amplia variedad de dispositivos, adaptándose dinámicamente a las necesidades específicas de cada aplicación. Para los desarrolladores, esto significa que pueden escribir código una vez y confiar en que JIT lo optimizará para diferentes escenarios de uso, mejorando significativamente el rendimiento sin sacrificar la flexibilidad del lenguaje.
 
@@ -88,10 +86,11 @@ Internamente, el motor de JavaScript maneja una combinación dinámica de códig
 5. Ejecución mixta: El código que no ha sido identificado como punto caliente continúa ejecutándose en modo interpretado, manteniendo la flexibilidad del lenguaje.
 6. Optimización continua: El JIT no se detiene después de la compilación inicial. Continúa monitoreando el rendimiento y puede realizar más optimizaciones o incluso desoptimizar y recompilar si cambian las condiciones de ejecución.
 
-Esta estrategia adaptativa permite que JavaScript combine la flexibilidad de un lenguaje interpretado con el rendimiento de código compilado. Para los desarrolladores, esto significa:
-- Portabilidad: El mismo código puede ejecutarse eficientemente en diversos dispositivos, desde teléfonos móviles hasta servidores de alto rendimiento.
-- Optimización automática: No es necesario escribir código específico para diferentes plataformas; el JIT se encarga de las optimizaciones.
-- Rendimiento mejorado: Las aplicaciones web pueden alcanzar velocidades cercanas a las de aplicaciones nativas, especialmente en ejecuciones prolongadas.
+Esta estrategia adaptativa permite que JavaScript combine la flexibilidad de un lenguaje interpretado con el rendimiento de código compilado. El proceso de JIT es continuo y dinámico, ajustándose constantemente a las necesidades de rendimiento del programa en ejecución.
+
+El motor de JavaScript equilibra cuidadosamente el uso de recursos entre la interpretación, la compilación y la ejecución optimizada. Este enfoque híbrido permite que el motor tome decisiones inteligentes sobre qué partes del código optimizar y cuándo hacerlo, basándose en el comportamiento real del programa durante su ejecución.
+
+Es importante destacar que todo este proceso ocurre de manera transparente para el desarrollador y el usuario final. El código JavaScript se escribe y se ejecuta de la misma manera, independientemente de si está siendo interpretado o ha sido compilado por el JIT. Esta abstracción permite a los desarrolladores centrarse en la lógica y funcionalidad de sus aplicaciones, mientras el motor se encarga de los detalles de optimización del rendimiento.
 
 ### Ventajas de JIT
 La compilación Just-In-Time (JIT) ofrece varias ventajas cruciales que han revolucionado el rendimiento de JavaScript en la web moderna.
@@ -102,7 +101,10 @@ Una de las ventajas más significativas de JIT es su capacidad de adaptación y 
 1. Primero, el código JavaScript se convierte en un bytecode intermedio que es independiente de la plataforma.
 2. Luego, durante la ejecución, este bytecode se compila en código máquina optimizado para el hardware específico en el que se está ejecutando.
 
-Esta estrategia permite que las aplicaciones JavaScript se adapten automáticamente a diferentes entornos. Los desarrolladores pueden escribir su código una vez y confiar en que JIT lo optimizará para cada escenario de uso específico, mejorando significativamente el rendimiento sin sacrificar la flexibilidad del lenguaje.
+Esta estrategia adaptativa permite que JavaScript combine la flexibilidad de un lenguaje interpretado con el rendimiento de código compilado. Para los desarrolladores, esto significa:
+- Portabilidad: El mismo código puede ejecutarse eficientemente en diversos dispositivos, desde teléfonos móviles hasta servidores de alto rendimiento.
+- Optimización automática: No es necesario escribir código específico para diferentes plataformas; el JIT se encarga de las optimizaciones.
+- Rendimiento mejorado: Las aplicaciones web pueden alcanzar velocidades cercanas a las de aplicaciones nativas, especialmente en ejecuciones prolongadas.
 
 Quizás lo más impresionante es la capacidad de optimización continua durante la ejecución. JIT no se limita a una única pasada de optimización. Constantemente monitorea el comportamiento del código y se adapta a medida que la aplicación se ejecuta. Si detecta nuevos patrones de uso o cambios en los tipos de datos, puede reoptimizar el código sobre la marcha. Esto significa que cuanto más tiempo se ejecuta una aplicación, más oportunidades tiene JIT para mejorar su rendimiento.
 
@@ -199,4 +201,4 @@ La compilación Just-In-Time (JIT) ha sido un catalizador fundamental en la evol
 
 Estas innovaciones en la compilación JIT asegurarán que JavaScript continúe evolucionando y adaptándose a las demandas cambiantes del desarrollo web. Con mejoras en rendimiento, eficiencia energética, seguridad y capacidad de adaptación a nuevos paradigmas, JavaScript se mantendrá como una herramienta versátil y poderosa. Su habilidad para enfrentar los desafíos emergentes en el desarrollo web y más allá seguirá expandiéndose, consolidando su posición como un pilar fundamental en el ecosistema tecnológico moderno y permitiendo la creación de aplicaciones web cada vez más sofisticadas y eficientes.
 
-Fuentes: [Blog.Bitsrc.io](https://blog.bitsrc.io/the-jit-in-javascript-just-in-time-compiler-798b66e44143) [Hacks.Mozilla](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/) [Wikipedia](https://es.wikipedia.org/wiki/Compilaci%C3%B3n_en_tiempo_de_ejecuci%C3%B3n)
+**Fuentes:** [Blog.Bitsrc.io](https://blog.bitsrc.io/the-jit-in-javascript-just-in-time-compiler-798b66e44143) | [Hacks.Mozilla](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/) | [Wikipedia](https://es.wikipedia.org/wiki/Compilaci%C3%B3n_en_tiempo_de_ejecuci%C3%B3n)
