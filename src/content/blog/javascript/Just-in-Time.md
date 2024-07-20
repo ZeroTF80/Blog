@@ -225,6 +225,4 @@ La capacidad de JIT para adaptarse dinámicamente al comportamiento del programa
 
 En última instancia, JIT ha sido fundamental para transformar JavaScript de un lenguaje de scripting simple a una plataforma robusta capaz de soportar aplicaciones web complejas y de alto rendimiento. A medida que la web continúa evolucionando, es probable que las técnicas de JIT sigan siendo cruciales para impulsar el rendimiento y la capacidad de JavaScript en el futuro previsible.
 
-
-
 Fuentes: [Wikipedia](https://es.wikipedia.org/wiki/Compilaci%C3%B3n_en_tiempo_de_ejecuci%C3%B3n)
