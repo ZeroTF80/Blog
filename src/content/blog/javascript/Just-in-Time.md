@@ -78,7 +78,6 @@ Aquí un diagrama más visual:
 └───────────────────┘         └───────────────────┘
 ```
 Internamente, el motor de JavaScript maneja una combinación dinámica de código interpretado y compilado, ofreciendo una ejecución fluida y sin interrupciones desde la perspectiva del programa. El proceso se puede desglosar de la siguiente manera:
-
 1. Interpretación inicial: El motor comienza ejecutando todo el código JavaScript en modo interpretado, traduciendo y ejecutando el código línea por línea.
 2. Análisis de rendimiento: Durante la ejecución, el motor monitorea constantemente el rendimiento del código, identificando "puntos calientes" (hot spots) - secciones que se ejecutan frecuentemente o son críticas para el rendimiento.
 3. Compilación JIT: Cuando se identifica un punto caliente, el motor compila esa sección de código "al vuelo" (Just-In-Time) a código máquina nativo, optimizado para el hardware específico.
