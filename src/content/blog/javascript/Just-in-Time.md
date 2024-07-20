@@ -6,9 +6,7 @@ heroImage: '/JavaScript.jpg'
 ---
 Siguiente: [DOM](../dom)
 ## Introducción
-JavaScript es el lenguaje que impulsa la web moderna. Está detrás de casi todas las interacciones dinámicas que experimentas en los sitios web, desde actualizaciones en tiempo real hasta complejas aplicaciones de una sola página (SPA). Pero JavaScript, por sí solo, no es particularmente rápido.
-
-Aquí es donde entra la compilación Just-In-Time (JIT). Esta tecnología es la razón por la que las aplicaciones web de hoy pueden ser tan rápidas y receptivas como las aplicaciones nativas.
+JavaScript es una parte esencial del desarrollo web moderno, afectando significativamente la experiencia del usuario a través de su rendimiento. Un aspecto crítico de este rendimiento es el compilador Just-In-Time (JIT), que mejora la ejecución compilando el código en tiempo real. A diferencia de los compiladores tradicionales, JIT compila JavaScript durante la ejecución, optimizando las rutas de código más frecuentemente utilizadas para un mejor rendimiento
 
 La compilación JIT transforma el código JavaScript en instrucciones de máquina optimizadas mientras la aplicación se está ejecutando. Esto significa que el JavaScript que escriben los desarrolladores se convierte en un código mucho más eficiente justo en el momento en que se necesita.
 
@@ -201,21 +199,21 @@ Esto es particularmente valioso en el ecosistema web en rápida evolución. A me
 
 En resumen, la compilación Just-In-Time (JIT) representa un equilibrio único entre la compilación Ahead-of-Time (AOT) y la interpretación pura, combinando lo mejor de ambos enfoques para JavaScript:
 
-Rendimiento: JIT ofrece un rendimiento cercano al de AOT, especialmente en ejecuciones largas, superando significativamente a la interpretación pura.
+1. Rendimiento: JIT ofrece un rendimiento cercano al de AOT, especialmente en ejecuciones largas, superando significativamente a la interpretación pura.
 
-Flexibilidad: Mantiene la flexibilidad de la interpretación, permitiendo la adaptación a diferentes entornos y patrones de uso.
+2. Flexibilidad: Mantiene la flexibilidad de la interpretación, permitiendo la adaptación a diferentes entornos y patrones de uso.
 
-Optimización dinámica: A diferencia de AOT, JIT puede optimizar basándose en el comportamiento real del programa durante la ejecución.
+3. Optimización dinámica: A diferencia de AOT, JIT puede optimizar basándose en el comportamiento real del programa durante la ejecución.
 
-Gestión de memoria: Permite una gestión de memoria y recolección de basura más eficientes y adaptativas.
+4. Gestión de memoria: Permite una gestión de memoria y recolección de basura más eficientes y adaptativas.
 
-Portabilidad: Ofrece mejor portabilidad que AOT, pudiendo ejecutar el mismo código en diversas plataformas con un rendimiento optimizado.
+5. Portabilidad: Ofrece mejor portabilidad que AOT, pudiendo ejecutar el mismo código en diversas plataformas con un rendimiento optimizado.
 
-Seguridad: Proporciona un nivel intermedio de protección del código fuente.
+6. Seguridad: Proporciona un nivel intermedio de protección del código fuente.
 
-Depuración: Ofrece capacidades de depuración más avanzadas que AOT, aunque potencialmente más complejas que la interpretación pura.
+7. Depuración: Ofrece capacidades de depuración más avanzadas que AOT, aunque potencialmente más complejas que la interpretación pura.
 
-Evolución continua: Permite mejoras continuas en el rendimiento a través de actualizaciones del motor JavaScript, sin
+8. Evolución continua: Permite mejoras continuas en el rendimiento a través de actualizaciones del motor JavaScript, sin
 
 ### Conclusión final
 
