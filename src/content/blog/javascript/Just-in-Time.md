@@ -216,11 +216,12 @@ En resumen, la compilación Just-In-Time (JIT) representa un equilibrio único e
 8. Evolución continua: Permite mejoras continuas en el rendimiento a través de actualizaciones del motor JavaScript, sin
 
 ### Conclusión final
+En conclusión, la compilación Just-In-Time (JIT) representa un avance significativo en la ejecución de JavaScript. Al combinar la flexibilidad de la interpretación con la eficiencia de la compilación, JIT ha permitido que JavaScript evolucione más allá de sus orígenes como un simple lenguaje de scripting.
 
-La compilación Just-In-Time (JIT) se ha convertido en la piedra angular del rendimiento de JavaScript en los navegadores modernos, ofreciendo un equilibrio óptimo entre velocidad, flexibilidad y portabilidad. Al combinar las ventajas de la compilación Ahead-of-Time y la interpretación pura, JIT permite que JavaScript funcione de manera eficiente en una amplia gama de dispositivos y escenarios de uso.
+A pesar de algunas desventajas, como un mayor uso de recursos y tiempos de inicio potencialmente más largos, las ventajas de JIT son sustanciales. La optimización dinámica, la adaptabilidad a diferentes entornos de ejecución y la mejora significativa del rendimiento han hecho de JIT una tecnología fundamental en los motores de JavaScript modernos.
 
-La capacidad de JIT para adaptarse dinámicamente al comportamiento del programa en tiempo de ejecución, junto con su continua evolución a través de actualizaciones del motor, asegura que JavaScript pueda mantenerse al día con las demandas cada vez mayores de las aplicaciones web modernas. Aunque presenta desafíos únicos en términos de complejidad de implementación y depuración, los beneficios de rendimiento y flexibilidad que ofrece JIT superan con creces estas limitaciones.
+Gracias a JIT, JavaScript ahora puede soportar aplicaciones web complejas y de alto rendimiento, compitiendo con lenguajes tradicionalmente compilados en términos de velocidad y capacidades. Esta tecnología ha sido crucial para el crecimiento de JavaScript como una plataforma robusta y versátil, capaz de manejar desde simples scripts hasta aplicaciones empresariales complejas.
 
-En última instancia, JIT ha sido fundamental para transformar JavaScript de un lenguaje de scripting simple a una plataforma robusta capaz de soportar aplicaciones web complejas y de alto rendimiento. A medida que la web continúa evolucionando, es probable que las técnicas de JIT sigan siendo cruciales para impulsar el rendimiento y la capacidad de JavaScript en el futuro previsible.
+A medida que la tecnología continúa evolucionando, es probable que veamos mejoras adicionales en la compilación JIT, lo que seguirá impulsando el rendimiento y las capacidades de JavaScript en el futuro.
 
 Fuentes: [Wikipedia](https://es.wikipedia.org/wiki/Compilaci%C3%B3n_en_tiempo_de_ejecuci%C3%B3n)
