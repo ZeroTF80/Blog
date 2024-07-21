@@ -1,10 +1,10 @@
 ---
 title: 'Just in Time'
 description: 'Introducción a la técnica de compilación dinámica Just in Time.'
-pubDate: 'Jul 18 2024'
+pubDate: 'Jul 19 2024'
 heroImage: '/JavaScript.jpg'
 ---
-Siguiente: [DOM](../dom)
+Siguiente: [DOM](./dom)
 ## Comprendiendo el Compilador Just-In-Time en JavaScript
 JavaScript es una parte esencial del desarrollo web moderno, afectando significativamente la experiencia del usuario a través de su rendimiento. Un aspecto crítico de este rendimiento es el compilador Just-In-Time (JIT), también conocido como traducción dinámica. Esta técnica mejora la ejecución compilando el código en tiempo real, optimizando las rutas de código más frecuentemente utilizadas para un mejor rendimiento.
 
