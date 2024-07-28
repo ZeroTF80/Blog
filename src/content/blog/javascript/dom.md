@@ -1,10 +1,10 @@
 ---
 title: 'DOM'
+technology: 'JavaScript'
 description: '¿Qué es el DOM y como manipularlo?'
-pubDate: 'Jul 19 2024'
+pubDate: 'Jul 22 2024'
 heroImage: '/JavaScript.jpg'
 ---
-
 ## Explorando el Potencial del DOM: Manipulación Efectiva de Elementos
 Bienvenidos a una exploración fascinante del Modelo de Objeto de Documento de JavaScript, conocido comúnmente como DOM (Document Object Model). Este modelo es esencial para cualquier desarrollador web, ya que actúa como el puente entre el código JavaScript y el contenido visible en tu navegador.
 
@@ -13,7 +13,6 @@ El DOM es una representación estructurada del documento HTML de una página web
 
 ### Importancia del DOM en el Desarrollo Web
 El DOM es crucial por varias razones:
-
 1. Interactividad: Permite crear páginas web dinámicas e interactivas.
 2. Manipulación en tiempo real: Facilita la actualización del contenido sin recargar la página.
 3. Accesibilidad: Proporciona una forma estandarizada de acceder a los elementos de la página.

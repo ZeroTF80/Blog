@@ -1,7 +1,8 @@
 ---
-title: 'Cursea: Curso de Python #1'
+title: 'Cursea: Introducción a la programación en Python I: Aprendiendo a programar con Python #1'
+technology: 'Python'
 description: 'Una introducción completa a Python, sus características y por qué es tan popular en el mundo de la programación.'
-pubDate: 'Jul 20 2024'
+pubDate: 'Jul 23 2024'
 heroImage: '/Python.jpg'
 ---
 ## Introducción a la programación en Python I: Aprendiendo a programar con Python

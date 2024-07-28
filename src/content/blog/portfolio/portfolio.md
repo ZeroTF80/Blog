@@ -1,10 +1,10 @@
 ---
 title: 'Portfolio'
+technology: 'HTML | CSS | JavaScript'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 21 2024'
+pubDate: 'Jul 31 2024'
 heroImage: '/portfolio.png'
 ---
-
 Hola, soy un joven desarrollador de 18 años de Argentina. Empecé a estudiar programación de software oficialmente el 01/05/2024 con la ambición de convertirme en un profesional competente en el campo de la tecnología. Como muchos desarrolladores juniors, me enfrento al desafío de cómo presentar de manera efectiva mis proyectos y destacar en el mercado laboral. En este blog, quiero compartir mi experiencia y aprendizajes al crear mi portfolio, una herramienta crucial para cualquier aspirante a programador.
 
 Antes que nada, quiero decir que a principios de este año estuve investigando varias cosas antes de sumergirme en el mundo del software. Siempre me llamó la atención, pero no disponía de una computadora para escribir código, así que no me hacía ilusiones en aprender lenguajes o herramientas. De hecho, ni siquiera sabía dónde empezar a escribir un código.
@@ -16,7 +16,6 @@ Decidí crear un portfolio porque me encontraba con dos grandes desafíos: no sa
 Ahora, permítanme contarles cómo creé mi primer portfolio...
 
 ## El Inicio de Mi Viaje: Investigación y Aprendizaje
-
 Mi viaje para crear un portfolio comenzó mucho antes de escribir una sola línea de código. Consciente de la importancia de este proyecto, decidí sumergirme en una investigación exhaustiva. Mi primera parada fue YouTube, donde me dediqué a ver una amplia variedad de videos sobre portfolios, incluyendo tutoriales, consejos de diseño, y numerosas críticas de portfolios de diversos creadores de contenido.
 
 Durante esta fase de investigación, los videos de MiduDev se convirtieron en un recurso particularmente valioso. Sus críticas detalladas de portfolios, junto con los consejos de profesionales de diseño que a menudo invitaba, me proporcionaron una perspectiva profunda y práctica. A través de su contenido, no solo pude observar las tendencias actuales en diseño de portfolios, sino también identificar errores comunes a evitar. La contribución de midudev a la comunidad de programación es verdaderamente notable, especialmente para quienes, como yo, estamos dando nuestros primeros pasos en este campo.

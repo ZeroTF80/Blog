@@ -1,7 +1,8 @@
 ---
 title: 'Python: El Lenguaje Preferido para Inteligencia Artificial'
+technology: 'Python'
 description: 'Una introducción completa a Python, sus características y por qué es tan popular en el mundo de la programación.'
-pubDate: 'Jul 18 2024'
+pubDate: 'Jul 19 2024'
 heroImage: '/Python.jpg'
 ---
 
