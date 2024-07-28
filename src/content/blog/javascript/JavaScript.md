@@ -2,7 +2,7 @@
 title: 'JavaScript: El Lenguaje que Impulsa la Web Moderna'
 technology: 'JavaScript'
 description: 'Descubre qué es JavaScript y por qué es fundamental en el desarrollo web actual.'
-pubDate: 'Jul 19 2024'
+pubDate: 'Jul 18 2024'
 heroImage: '/JavaScript.jpg'
 ---
 ## ¿Qué es JavaScript?
@@ -26,6 +26,6 @@ La demanda de desarrolladores de JavaScript en la industria es enorme. Práctica
 
 En las siguientes secciones, exploraremos más a fondo los usos de JavaScript, su sintaxis básica, y cómo puedes comenzar a programar con este lenguaje esencial para el desarrollo web moderno.
 
-# index
+## index
 - [Just in Time](./just-in-time)
 - [DOM](./dom)

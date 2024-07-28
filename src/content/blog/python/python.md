@@ -2,7 +2,7 @@
 title: 'Python: El Lenguaje Preferido para Inteligencia Artificial'
 technology: 'Python'
 description: 'Una introducción completa a Python, sus características y por qué es tan popular en el mundo de la programación.'
-pubDate: 'Jul 19 2024'
+pubDate: 'Jul 18 2024'
 heroImage: '/Python.jpg'
 ---
 
@@ -27,6 +27,6 @@ Por último, Python es considerado ideal para principiantes debido a su curva de
 
 En las siguientes secciones, profundizaremos en los usos de Python, su sintaxis básica, y cómo puedes comenzar a programar con este poderoso lenguaje.
 
-# index
+## index
 - [Just in Time](./just-in-time)
 - [DOM](./dom)
