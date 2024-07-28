@@ -28,6 +28,7 @@ En las siguientes secciones, exploraremos más a fondo los usos de JavaScript, s
 
 ## index
 - [Ventajas de JavaScript](/blog/javascript/ventajas-de-javascript/)
+- [Console](/blog/javascript/console)
 - [DOM](./dom)
 
 ### tecnologías
