@@ -5,7 +5,7 @@ description: 'Introducción a la técnica de compilación dinámica Just in Time
 pubDate: 'Jul 20 2024'
 heroImage: '/JavaScript.jpg'
 ---
-[JavaScript](../../javascript)
+<< [JavaScript](../../javascript)
 
 Cuando empezamos a desarrollar aplicaciones web, es común enfocarnos en la estructura y el diseño visual. Sin embargo, a medida que nuestros proyectos se vuelven más complejos, necesitamos una herramienta que nos permita añadir interactividad y dinamismo. Aquí es donde entra en juego JavaScript. A pesar de que inicialmente puede parecer más complicado, JavaScript nos ofrece una mayor flexibilidad y un abanico de posibilidades más amplio, lo que nos permite ahorrar tiempo y esfuerzo.
 
@@ -52,3 +52,6 @@ Para concluir, JavaScript ha evolucionado desde un simple lenguaje de scripting 
 Sin embargo, JavaScript también presenta algunos desafíos. La flexibilidad excesiva del lenguaje puede llevar a código difícil de mantener si no se siguen buenas prácticas.
 
 A pesar de este reto, las ventajas de JavaScript superan sus inconvenientes. Su capacidad para crear experiencias web interactivas y dinámicas, combinada con su versatilidad, lo convierten en una herramienta indispensable en el desarrollo moderno. Dominar JavaScript no solo permite crear aplicaciones web más ricas, sino que también abre un amplio abanico de oportunidades en el mundo del desarrollo de software.
+
+**Fuentes:**
+<a href="https://lenguajejs.com/javascript/introduccion/que-es-javascript/" target="_blank">Lenguaje JavaScript</a>

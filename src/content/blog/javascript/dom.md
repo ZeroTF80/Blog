@@ -2,7 +2,7 @@
 title: 'DOM'
 technology: 'JavaScript'
 description: '¿Qué es el DOM y como manipularlo?'
-pubDate: 'Jul 22 2024'
+pubDate: 'Jul 23 2024'
 heroImage: '/JavaScript.jpg'
 ---
 ## Explorando el Potencial del DOM: Manipulación Efectiva de Elementos
