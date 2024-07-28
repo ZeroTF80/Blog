@@ -105,3 +105,5 @@ Dominar los tipos de datos te permitirá:
 - Optimizar el rendimiento de tu código
 - Escribir funciones más predecibles y fáciles de depurar
 - Aprovechar al máximo las características del lenguaje
+
+**Fuentes**: <a href="https://lenguajejs.com/javascript/tipos/que-son/" target="_blank">Lenguaje JavaScript</a>
