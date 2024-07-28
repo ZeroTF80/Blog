@@ -29,5 +29,3 @@ La demanda de habilidades en HTML en la industria del desarrollo web es constant
 En las siguientes secciones, exploraremos la sintaxis básica de HTML, sus elementos más comunes, y cómo puedes comenzar a crear tus propias páginas web utilizando este lenguaje fundamental.
 
 ## index
-- [Just in Time](./just-in-time)
-- [DOM](./dom)

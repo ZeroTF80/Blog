@@ -28,5 +28,3 @@ Por último, Python es considerado ideal para principiantes debido a su curva de
 En las siguientes secciones, profundizaremos en los usos de Python, su sintaxis básica, y cómo puedes comenzar a programar con este poderoso lenguaje.
 
 ## index
-- [Just in Time](./just-in-time)
-- [DOM](./dom)

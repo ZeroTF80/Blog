@@ -31,5 +31,3 @@ En el mercado laboral, las habilidades en CSS son altamente valoradas. Los desar
 En las siguientes secciones, exploraremos más a fondo los conceptos básicos de CSS, sus propiedades más importantes, y cómo puedes comenzar a utilizar este lenguaje esencial para dar vida y estilo a tus páginas web.
 
 ## Index
-- [Just in Time](./just-in-time)
-- [DOM](./dom)
