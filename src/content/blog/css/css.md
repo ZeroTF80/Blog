@@ -2,7 +2,7 @@
 title: 'CSS: El Lenguaje que da Vida y Estilo a las Páginas Web'
 technology: 'CSS'
 description: 'Descubre qué es CSS y por qué es fundamental en el diseño web moderno.'
-pubDate: 'Jul 18 2024'
+pubDate: 'Jul 19 2024'
 heroImage: '/css-html.jpg'
 ---
 ## ¿Qué es CSS?

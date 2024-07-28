@@ -2,7 +2,7 @@
 title: 'HTML: La Estructura que Sostiene la Web Moderna'
 technology: 'HTML'
 description: 'Una introducción completa a HTML, sus características y su importancia fundamental en el desarrollo web.'
-pubDate: 'Jul 18 2024'
+pubDate: 'Jul 19 2024'
 heroImage: '/css-html.jpg'
 ---
 ## ¿Qué es HTML?

@@ -2,7 +2,7 @@
 title: 'JavaScript: El Lenguaje que Impulsa la Web Moderna'
 technology: 'JavaScript'
 description: 'Descubre qué es JavaScript y por qué es fundamental en el desarrollo web actual.'
-pubDate: 'Jul 18 2024'
+pubDate: 'Jul 19 2024'
 heroImage: '/JavaScript.jpg'
 ---
 ## ¿Qué es JavaScript?
