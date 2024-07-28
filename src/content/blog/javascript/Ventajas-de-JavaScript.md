@@ -5,7 +5,7 @@ description: 'Introducción a la técnica de compilación dinámica Just in Time
 pubDate: 'Jul 20 2024'
 heroImage: '/JavaScript.jpg'
 ---
-<< [JavaScript](../../javascript) | [Console](/blog/javascript/console)
+<< [JavaScript](../../javascript) | [Console](/blog/javascript/console) >>
 
 Cuando empezamos a desarrollar aplicaciones web, es común enfocarnos en la estructura y el diseño visual. Sin embargo, a medida que nuestros proyectos se vuelven más complejos, necesitamos una herramienta que nos permita añadir interactividad y dinamismo. Aquí es donde entra en juego JavaScript. A pesar de que inicialmente puede parecer más complicado, JavaScript nos ofrece una mayor flexibilidad y un abanico de posibilidades más amplio, lo que nos permite ahorrar tiempo y esfuerzo.
 

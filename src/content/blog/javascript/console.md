@@ -11,3 +11,9 @@ La consola de JavaScript es una herramienta invaluable para los desarrolladores,
 
 ### ¿Qué es console.log()?
 `console.log()` es un método que permite mostrar mensajes en la consola del navegador. Puede aceptar uno o más argumentos de cualquier tipo de dato, incluyendo strings, números, booleanos, arrays y objetos.
+
+### Uso básico
+El uso más simple de `console.log()` es imprimir un mensaje de texto:
+```javascript
+console.log("Hola, mundo!");
+```
