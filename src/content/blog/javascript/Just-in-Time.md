@@ -5,7 +5,7 @@ description: 'Introducción a la técnica de compilación dinámica Just in Time
 pubDate: 'Jul 20 2024'
 heroImage: '/JavaScript.jpg'
 ---
-Siguiente: [DOM](./dom)
+Siguiente: [DOM](../dom)
 ## Comprendiendo el Compilador Just-In-Time en JavaScript
 JavaScript es una parte esencial del desarrollo web moderno, afectando significativamente la experiencia del usuario a través de su rendimiento. Un aspecto crítico de este rendimiento es el compilador Just-In-Time (JIT), también conocido como traducción dinámica. Esta técnica mejora la ejecución compilando el código en tiempo real, optimizando las rutas de código más frecuentemente utilizadas para un mejor rendimiento.
 
@@ -199,4 +199,7 @@ La compilación Just-In-Time (JIT) ha sido un catalizador fundamental en la evol
 
 Estas innovaciones en la compilación JIT asegurarán que JavaScript continúe evolucionando y adaptándose a las demandas cambiantes del desarrollo web. Con mejoras en rendimiento, eficiencia energética, seguridad y capacidad de adaptación a nuevos paradigmas, JavaScript se mantendrá como una herramienta versátil y poderosa. Su habilidad para enfrentar los desafíos emergentes en el desarrollo web y más allá seguirá expandiéndose, consolidando su posición como un pilar fundamental en el ecosistema tecnológico moderno y permitiendo la creación de aplicaciones web cada vez más sofisticadas y eficientes.
 
-**Fuentes:** [Blog.Bitsrc.io](https://blog.bitsrc.io/the-jit-in-javascript-just-in-time-compiler-798b66e44143) | [Hacks.Mozilla](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/) | [Wikipedia](https://es.wikipedia.org/wiki/Compilaci%C3%B3n_en_tiempo_de_ejecuci%C3%B3n)
+**Fuentes:**
+<a href="https://blog.bitsrc.io/the-jit-in-javascript-just-in-time-compiler-798b66e44143" target="_blank">Blog.Bitsrc.io</a> |
+<a href="https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/" target="_blank">Hacks.Mozilla</a> |
+<a href="https://es.wikipedia.org/wiki/Compilaci%C3%B3n_en_tiempo_de_ejecuci%C3%B3n" target="_blank">Wikipedia</a>
