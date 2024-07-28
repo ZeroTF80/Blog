@@ -1,7 +1,7 @@
 ---
-title: 'Arrays'
+title: 'Arrays en JavaScript'
 technology: 'JavaScript'
-description: 'Introducción a la técnica de compilación dinámica Just in Time.'
+description: 'Una guía completa sobre arrays en JavaScript: creación, manipulación y métodos importantes.'
 pubDate: 'Jul 22 2024'
 heroImage: '/JavaScript.jpg'
 ---

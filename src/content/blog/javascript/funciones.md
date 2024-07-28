@@ -69,7 +69,6 @@ console.log(resultado); // 20
 
 ## Scope (Ámbito) de las Funciones
 Las variables declaradas dentro de una función solo son accesibles dentro de esa función. Esto se conoce como ámbito local.
-
 ```javascript
 function ejemploScope() {
     let variableLocal = "Solo accesible dentro de la función";
