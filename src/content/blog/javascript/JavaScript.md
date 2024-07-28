@@ -27,5 +27,6 @@ La demanda de desarrolladores de JavaScript en la industria es enorme. Práctica
 En las siguientes secciones, exploraremos más a fondo los usos de JavaScript, su sintaxis básica, y cómo puedes comenzar a programar con este lenguaje esencial para el desarrollo web moderno.
 
 ## index
+- [Ventajas de JavaScript](./ventajas-de-javascript)
 - [Just in Time](./just-in-time)
 - [DOM](./dom)
