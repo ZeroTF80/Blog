@@ -1,5 +1,5 @@
 ---
-title: 'Strings'
+title: 'Strings en JavaScript: Más que simples cadenas de texto'
 technology: 'JavaScript'
 description: 'Una introducción a las cadenas de texto en JavaScript y sus poderosas funcionalidades'
 pubDate: 'Jul 21 2024'
