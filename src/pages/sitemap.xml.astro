@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 
-const posts = await getCollection('blog'); // Ajusta esto según la colección de tu contenido
+const posts = await getCollection('blog');
 const pages = [
   {
     url: '/',
@@ -27,16 +27,13 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
     )
     .join('')}
 </urlset>`;
----
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Sitemap</title>
-    <meta http-equiv="Content-Type" content="text/xml; charset=UTF-8">
-  </head>
-  <body>
-    <pre><code>{xml}</code></pre>
-  </body>
-</html>
+export async function get() {
+  return {
+    body: xml,
+    headers: {
+      'Content-Type': 'application/xml',
+    },
+  };
+}
+---
