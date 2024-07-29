@@ -3,7 +3,7 @@ title: 'Lógica de Programación'
 technology: 'Programación'
 description: 'Introducción a la técnica de compilación dinámica Just in Time.'
 pubDate: 'Jul 18 2024'
-heroImage: '/AI.jpg'
+heroImage: '/programacion.png'
 ---
 
 ## Lógica de Programación: El Corazón del Código

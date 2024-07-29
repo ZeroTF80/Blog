@@ -3,7 +3,7 @@ title: '¿Qué es Programar?'
 technology: 'Programación'
 description: 'Descubre cómo la programación está presente en tu vida diaria y por qué es más accesible de lo que piensas.'
 pubDate: 'Jul 18 2024'
-heroImage: '/AI.jpg'
+heroImage: '/programacion.png'
 ---
 
 ## ¿Qué es Programar? Más Cerca de lo que Crees

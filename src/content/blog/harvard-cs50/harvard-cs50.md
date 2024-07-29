@@ -3,7 +3,7 @@ title: 'Harvard CS50: Fundamentos Esenciales de la Ciencia de la Computación #1
 technology: 'AI'
 description: 'Explora Harvard CS50 y su enfoque en los fundamentos de la programación y la ciencia de la computación.'
 pubDate: 'Jul 28 2024'
-heroImage: '/AI.jpg'
+heroImage: '/programacion.png'
 ---
 Harvard CS50, o "Introduction to Computer Science," es un curso emblemático que ofrece una inmersión profunda en los principios fundamentales de la informática. Diseñado tanto para principiantes como para aquellos con experiencia previa, CS50 proporciona una base sólida en programación y resolución de problemas computacionales.
 
