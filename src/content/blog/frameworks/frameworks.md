@@ -3,7 +3,7 @@ title: 'Frameworks JavaScript: Introducción'
 technology: 'Programación'
 description: 'Descubre los frameworks de JavaScript más populares y cómo pueden acelerar tu desarrollo web.'
 pubDate: 'Jul 25 2024'
-heroImage: '/JavaScript.jpg'
+heroImage: '/frameworks.png'
 ---
 Los frameworks de JavaScript se han convertido en herramientas esenciales para el desarrollo web moderno. Estos frameworks proporcionan estructuras y bibliotecas predefinidas que simplifican la creación de aplicaciones web complejas y dinámicas.
 

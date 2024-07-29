@@ -3,7 +3,7 @@ title: 'Astro vs NEXT.js'
 technology: 'Astro | NEXT.js'
 description: 'Una introducción completa a Python, sus características y por qué es tan popular en el mundo de la programación.'
 pubDate: 'Jul 25 2024'
-heroImage: '/astro.png'
+heroImage: '/frameworks.png'
 ---
 Next.js y Astro son dos frameworks de desarrollo web modernos que brillan en diferentes escenarios, cada uno con sus propias fortalezas y casos de uso ideales.
 
