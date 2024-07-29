@@ -1,6 +1,6 @@
 ---
 title: 'Frameworks JavaScript: Introducción'
-technology: 'Programación'
+technology: 'Frameworks'
 description: 'Descubre los frameworks de JavaScript más populares y cómo pueden acelerar tu desarrollo web.'
 pubDate: 'Jul 25 2024'
 heroImage: '/frameworks.png'
