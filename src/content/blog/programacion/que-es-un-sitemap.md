@@ -2,7 +2,7 @@
 title: '¿Qué es un sitemap?'
 technology: 'Programación'
 description: 'Descubre cómo la programación está presente en tu vida diaria y por qué es más accesible de lo que piensas.'
-pubDate: 'Jul 18 2024'
+pubDate: 'Jul 29 2024'
 heroImage: '/AI.jpg'
 ---
 
