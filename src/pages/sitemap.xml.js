@@ -20,7 +20,7 @@ export async function get() {
   ${pages
     .map(
       (page) => `<url>
-    <loc>${`https://angeldev-blog.vercel.app/${page.url}`}</loc>
+    <loc>${`https://angeldev-blog.vercel.app${page.url}`}</loc>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`
