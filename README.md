@@ -21,9 +21,8 @@ Además, nuestro contenido es cuidadosamente investigado y escrito por expertos 
 
 ## Contacto
 Nos encantaría escuchar tus comentarios, sugerencias y preguntas. Puedes ponerte en contacto con nosotros a través de los siguientes medios:
-
-Correo Electrónico: angelbeneman801@gmail.com
-LinkedIn: Leo Beneman
+- Correo Electrónico: angelbeneman801@gmail.com
+- LinkedIn: Leo Beneman
 
 ## Credito
 
