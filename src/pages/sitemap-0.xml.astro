@@ -1,0 +1,104 @@
+---
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://angeldev-blog.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/about/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/ai/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/ai/llama/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/cloud/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/cloud/desplegando-juego/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/css/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/frameworks/astro-vs-nextjs/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/harvard-cs50/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/html/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/arrays/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/console/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/dom/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/funciones/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/just-in-time/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/number/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/objetos/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/operadores/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/set-map/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/strings/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/tipos-de-datos/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/javascript/ventajas-de-javascript/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/logica-de-programaci%C3%B3n/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/portfolio/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/python/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/python/python-coursea-02/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/python/python-coursea/</loc>
+  </url>
+  <url>
+    <loc>https://angeldev-blog.vercel.app/blog/que-es-programar/</loc>
+  </url>
+</urlset>`;
+
+export async function get() {
+  return {
+    body: sitemap,
+    headers: {
+      'Content-Type': 'application/xml',
+    },
+  };
+}
+---
