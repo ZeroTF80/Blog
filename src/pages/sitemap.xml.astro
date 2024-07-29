@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 
-const posts = await getCollection('blog');
+const posts = await getCollection('blog'); // Ajusta esto según la colección de tu contenido
 const pages = [
   {
     url: '/',
@@ -20,7 +20,7 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
   ${pages
     .map(
       (page) => `<url>
-    <loc>${`https://angeldev-blog.vercel.app${page.url}`}</loc>
+    <loc>https://angeldev-blog.vercel.app${page.url}</loc>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`
@@ -29,12 +29,14 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>`;
 ---
 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Sitemap</title>
+    <meta http-equiv="Content-Type" content="text/xml; charset=UTF-8">
   </head>
   <body>
-    <pre>{xml}</pre>
+    <pre><code>{xml}</code></pre>
   </body>
 </html>
