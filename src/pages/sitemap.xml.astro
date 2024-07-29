@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const pages = [
+  {
+    url: '/',
+    changefreq: 'daily',
+    priority: 1.0,
+  },
+  ...posts.map((post) => ({
+    url: `/posts/${post.slug}`,
+    changefreq: 'weekly',
+    priority: 0.8,
+  })),
+];
+
+const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  ${pages
+    .map(
+      (page) => `<url>
+    <loc>${`https://angeldev-blog.vercel.app${page.url}`}</loc>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>`
+    )
+    .join('')}
+</urlset>`;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sitemap</title>
+  </head>
+  <body>
+    <pre>{xml}</pre>
+  </body>
+</html>
