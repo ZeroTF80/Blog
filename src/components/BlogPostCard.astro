@@ -15,8 +15,13 @@ export interface Props {
 }
 
 const { post, index } = Astro.props;
-const slug = post.slug.split('/').filter(segment => segment !== '').join('/');
 const isFirst = index === 0;
+
+// Modificar la generación del slug
+const slugParts = post.slug.split('/');
+const slug = slugParts.length > 1 && slugParts[0] === slugParts[1] 
+  ? slugParts[0] 
+  : post.slug;
 ---
 
 <li id={`post-${index}`} 
