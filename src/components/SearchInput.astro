@@ -1,0 +1,68 @@
+---
+---
+
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Buscar posts..." />
+</div>
+
+<style>
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+    }
+    #search-input {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        background-color: #2c2c2c;
+        color: white;
+        border: 1px solid #555;
+        border-radius: 20px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    #search-input:focus {
+        outline: none;
+        border-color: #888;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    #search-input::placeholder {
+        color: #aaa;
+    }
+</style>
+
+<script>
+    const searchInput = document.getElementById('search-input');
+
+    function filterPosts(searchTerm: string) {
+        const allPosts = document.querySelectorAll('.post-list li');
+        
+        allPosts.forEach((post: Element) => {
+            if (post instanceof HTMLElement) {
+                const title = post.getAttribute('data-title') || '';
+                const technology = post.getAttribute('data-technology') || '';
+                const isVisible = title.includes(searchTerm) || technology.includes(searchTerm);
+                post.style.display = isVisible ? '' : 'none';
+            }
+        });
+    }
+
+    function debounce<F extends (...args: any[]) => any>(func: F, delay: number) {
+        let timeoutId: ReturnType<typeof setTimeout>;
+        return function(this: ThisParameterType<F>, ...args: Parameters<F>) {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => func.apply(this, args), delay);
+        };
+    }
+
+    const debouncedFilterPosts = debounce(filterPosts, 300);
+
+    searchInput?.addEventListener('input', (e: Event) => {
+        if (e.target instanceof HTMLInputElement) {
+            const searchTerm = e.target.value.toLowerCase();
+            debouncedFilterPosts(searchTerm);
+        }
+    });
+</script>

@@ -1,6 +1,6 @@
 ---
 title: 'Portfolio'
-technology: 'HTML | CSS | JavaScript'
+technology: 'HTML, CSS, JavaScript'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 31 2024'
 heroImage: '/portfolio.png'
