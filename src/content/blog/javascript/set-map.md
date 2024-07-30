@@ -3,7 +3,7 @@ title: 'Set y Map en JavaScript'
 technology: 'JavaScript'
 description: 'Una guía completa sobre Set y Map en JavaScript: creación, uso y métodos importantes.'
 pubDate: 'Jul 23 2024'
-heroImage: '/JavaScript.jpg'
+heroImage: '/javascript.jpg'
 ---
 Set y Map son estructuras de datos introducidas en ECMAScript 2015 (ES6) que ofrecen nuevas formas de manejar colecciones de datos en JavaScript.
 

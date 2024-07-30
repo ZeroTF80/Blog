@@ -3,7 +3,7 @@ title: 'Numbers en JavaScript: Más allá de los enteros'
 technology: 'JavaScript'
 description: 'Una exploración detallada del tipo de dato Number en JavaScript'
 pubDate: 'Jul 21 2024'
-heroImage: '/JavaScript.jpg'
+heroImage: '/javascript.jpg'
 ---
 En JavaScript, el tipo de dato Number abarca tanto enteros como números de punto flotante. Vamos a sumergirnos en las características y peculiaridades de los números en JavaScript.
 
