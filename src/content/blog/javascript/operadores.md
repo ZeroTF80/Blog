@@ -3,7 +3,7 @@ title: 'Operadores en JavaScript'
 technology: 'JavaScript'
 description: 'Una guía completa sobre los diferentes tipos de operadores en JavaScript y cómo utilizarlos.'
 pubDate: 'Jul 22 2024'
-heroImage: '/javascript.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 
 Los operadores son símbolos especiales que se utilizan para realizar operaciones en variables y valores. JavaScript ofrece una amplia gama de operadores que permiten realizar cálculos, comparaciones y manipulaciones lógicas. En este artículo, exploraremos los principales tipos de operadores en JavaScript y cómo utilizarlos efectivamente.

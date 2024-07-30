@@ -3,7 +3,7 @@ title: 'Console'
 technology: 'JavaScript'
 description: 'Console in JavaScript'
 pubDate: 'Jul 20 2024'
-heroImage: '/javascript.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 << [JavaScript](/blog/javascript/) | [Console](/blog/javascript/console) >>
 

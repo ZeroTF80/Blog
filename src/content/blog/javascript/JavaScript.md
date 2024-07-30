@@ -3,7 +3,7 @@ title: 'JavaScript: El Lenguaje que Impulsa la Web Moderna'
 technology: 'JavaScript'
 description: 'Descubre qué es JavaScript y por qué es fundamental en el desarrollo web actual.'
 pubDate: 'Jul 19 2024'
-heroImage: '/javascript.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 ## ¿Qué es JavaScript?
 JavaScript es un lenguaje de programación de alto nivel, interpretado y de propósito general, creado por Brendan Eich en 1995. Originalmente diseñado para añadir interactividad a las páginas web, JavaScript se ha convertido en uno de los lenguajes de programación más populares y versátiles del mundo, especialmente en el ámbito del desarrollo web.

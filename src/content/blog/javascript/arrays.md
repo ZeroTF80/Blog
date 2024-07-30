@@ -3,7 +3,7 @@ title: 'Arrays en JavaScript'
 technology: 'JavaScript'
 description: 'Una guía completa sobre arrays en JavaScript: creación, manipulación y métodos importantes.'
 pubDate: 'Jul 22 2024'
-heroImage: '/javascript.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 Los arrays son estructuras de datos fundamentales en JavaScript que permiten almacenar múltiples valores en una sola variable. Son versátiles y ofrecen numerosos métodos para manipular y acceder a los datos.
 

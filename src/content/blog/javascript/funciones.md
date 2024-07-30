@@ -3,7 +3,7 @@ title: 'Funciones en JavaScript: Bloques de Código Reutilizables'
 technology: 'JavaScript'
 description: 'Una exploración profunda de las funciones en JavaScript y sus características únicas'
 pubDate: 'Jul 21 2024'
-heroImage: '/javascript.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 Las funciones en JavaScript son bloques de código reutilizables que realizan una tarea específica. Son una de las características más poderosas y flexibles del lenguaje, permitiendo a los desarrolladores escribir código más limpio, modular y mantenible.
 

@@ -3,7 +3,7 @@ title: 'Ventajas de JavaScript'
 technology: 'JavaScript'
 description: 'Introducción a la técnica de compilación dinámica Just in Time.'
 pubDate: 'Jul 20 2024'
-heroImage: '/javascript.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 << [JavaScript](/blog/javascript/) | [Console](/blog/javascript/console) >>
 

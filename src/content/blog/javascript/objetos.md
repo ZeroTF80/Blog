@@ -3,7 +3,7 @@ title: 'Objetos en JavaScript'
 technology: 'JavaScript'
 description: 'Una guía completa sobre los objetos en JavaScript: creación, propiedades, métodos y características avanzadas.'
 pubDate: 'Jul 22 2024'
-heroImage: '/javascript.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 Objetos en JavaScript: La Piedra Angular del Lenguaje
 Los objetos son una parte fundamental de JavaScript. Son estructuras de datos flexibles y poderosas que permiten almacenar colecciones de datos y funcionalidades relacionadas. En este artículo, exploraremos en profundidad los objetos en JavaScript, desde lo básico hasta características más avanzadas.

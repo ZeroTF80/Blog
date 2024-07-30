@@ -3,7 +3,7 @@ title: 'Tipos de datos'
 technology: 'JavaScript'
 description: 'Una guía completa sobre los tipos de datos fundamentales en JavaScript'
 pubDate: 'Jul 20 2024'
-heroImage: '/javascript.jpg'
+heroImage: '/JavaScript.jpg'
 ---
 JavaScript es un lenguaje de programación dinámico y flexible, conocido por su versatilidad en el desarrollo web. Una de las características fundamentales que todo desarrollador debe dominar son los tipos de datos. En este artículo, exploraremos en detalle los diferentes tipos de datos en JavaScript y cómo trabajar con ellos.
 
