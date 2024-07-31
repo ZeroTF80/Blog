@@ -29,14 +29,7 @@ const slug = slugParts.length > 1 && slugParts[0] === slugParts[1]
     data-technology={post.data.technology?.toLowerCase() ?? ''}
     aria-label={`Artículo: ${post.data.title}`}>
   <a href={`/blog/${slug}/`}>
-    <img 
-      width={720} 
-      height={360} 
-      src={post.data.heroImage} 
-      alt={post.data.title}
-      loading={index > 0 ? "lazy" : "eager"}
-      decoding="async"
-    />
+
     <h4 class="title">{post.data.title}</h4>
     <p class="date">
       <FormattedDate date={post.data.pubDate} />
@@ -47,30 +40,10 @@ const slug = slugParts.length > 1 && slugParts[0] === slugParts[1]
 <style>
     li {
         width: calc(50% - 1rem);
-
     }
     li * {
         text-decoration: none;
         transition: 0.2s ease;
-    }
-    li.first-post {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-    li.first-post img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-    }
-    li.first-post .title {
-        font-size: 2.369rem;
-    }
-    li img {
-        width: 100%;
-        height: 260px;
-        object-fit: cover;
-        margin-bottom: 0.4rem;
-        border-radius: 12px;
     }
     li a {
         display: block;
@@ -88,9 +61,6 @@ const slug = slugParts.length > 1 && slugParts[0] === slugParts[1]
     a:hover .date {
         color: rgb(var(--accent));
     }
-    a:hover img {
-        box-shadow: var(--box-shadow);
-    }
     @media (max-width: 720px) {
         li {
             width: 100%;
@@ -100,9 +70,6 @@ const slug = slugParts.length > 1 && slugParts[0] === slugParts[1]
         }
         li.first-post .title {
             font-size: 1.777rem;
-        }
-        li img {
-            height: 250px;
         }
     }
 </style>
