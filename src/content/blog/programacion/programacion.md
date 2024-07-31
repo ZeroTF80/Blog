@@ -5,7 +5,6 @@ description: 'Descubre cómo la programación está presente en tu vida diaria y
 pubDate: 'Jul 18 2024'
 heroImage: '/programacion.png'
 ---
-
 ## ¿Qué es Programar? Más Cerca de lo que Crees
 Cuando escuchamos la palabra "programación", muchos de nosotros pensamos inmediatamente en líneas de código complejas, ordenadores y personas con habilidades técnicas avanzadas. Sin embargo, la programación está mucho más cerca de nuestra vida cotidiana de lo que imaginamos. De hecho, ¡es probable que ya estés programando sin darte cuenta!
 
