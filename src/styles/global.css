@@ -164,3 +164,11 @@ hr {
         background-color: #3e3e3e;
     }
 }
+
+.custom-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}
