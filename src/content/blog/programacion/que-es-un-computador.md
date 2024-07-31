@@ -5,7 +5,6 @@ description: 'Explora la historia, funcionamiento e impacto de Internet, la red 
 pubDate: 'Jul 18 2024'
 heroImage: '/programacion.png'
 ---
-
 ## Glosario
 - [Los Orígenes del Computador](#los-orígenes-del-computador)
     - [Primeras máquinas de cálculo](#primeras-máquinas-de-cálculo)
