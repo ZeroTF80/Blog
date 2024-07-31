@@ -2,7 +2,8 @@
 ---
 
 <div class="search-container">
-    <input type="text" id="search-input" placeholder="Buscar posts..." />
+    <input type="text" id="search-input" placeholder="Buscar posts..." autocomplete="off" list="empty-datalist" />
+    <datalist id="empty-datalist"></datalist>
 </div>
 
 <style>
@@ -44,7 +45,7 @@
             if (post instanceof HTMLElement) {
                 const title = post.getAttribute('data-title') || '';
                 const technology = post.getAttribute('data-technology') || '';
-                const isVisible = title.includes(searchTerm) || technology.includes(searchTerm);
+                const isVisible = title.toLowerCase().includes(searchTerm) || technology.toLowerCase().includes(searchTerm);
                 post.style.display = isVisible ? '' : 'none';
             }
         });
