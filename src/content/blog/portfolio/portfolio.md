@@ -100,7 +100,6 @@ El proceso comenzó creando el contenedor de la barra de navegación y dandole v
 ```
 
 Agregando los elementos de la barra de navegación:
-
 ```html
 <header class="navbar">
     <nav>
