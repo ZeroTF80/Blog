@@ -125,6 +125,5 @@ En el modo interactivo, la última expresión impresa se asigna a la variable `_
 ##### Artículos relacionados
 - [El tutorial de Python #2: Más herramientas para control de flujo](/blog/python/tutorial-python-02/) >>
 
-
 ###### Podría interesarte también 
 ###### • [Python: El Lenguaje Preferido para Inteligencia Artificial](/blog/python/)
