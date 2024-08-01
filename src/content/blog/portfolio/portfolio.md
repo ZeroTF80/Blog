@@ -22,12 +22,14 @@ Durante esta fase de investigación, los videos de MiduDev se convirtieron en un
 
 ### A través de estos videos, fui absorbiendo información crucial:
 - Qué elementos están de moda en los portfolios actuales
+
 - Errores frecuentes que cometen los desarrolladores junior
+
 - Consejos de profesionales sobre diseño y estructura
+
 - Elementos que los reclutadores y empleadores buscan en un portfolio
 
 ## Del Concepto al Boceto
-
 Una vez que sentí que tenía una comprensión sólida de lo que constituye un buen portfolio, decidí pasar a la fase de diseño. Para esto, recurrí a tldraw, una herramienta de dibujo similar a Paint, pero con características que la hacen ideal para bosquejar ideas de diseño web.
 
 En **tldraw**, creé un boceto inicial de mi portfolio. Este ejercicio fue crucial, ya que me permitió visualizar la estructura y el flujo de mi sitio antes de comenzar a programar. Aquí les muestro el resultado:
@@ -41,9 +43,7 @@ Este boceto se convirtió en mi guía, proporcionándome una dirección clara pa
 Con este plan en mano, me sentía listo para enfrentar el siguiente desafío: transformar este boceto en un portfolio real y funcional.
 
 ## Manos a la Obra: Configurando el Proyecto
-
 Con mi plan de diseño listo, era hora de pasar a la acción. Decidí utilizar Vite como mi herramienta de construcción debido a su rapidez y facilidad de uso. Así que abrí mi terminal y comencé con los siguientes pasos:
-
 - Inicié el proyecto con Vite: Opté por una configuración sin frameworks, utilizando JavaScript vanilla para tener control total sobre mi código.
 ```bash
 npm create vite@latest
@@ -66,21 +66,23 @@ npm run dev
 ```
 Una vez dentro del editor, procedí a limpiar el proyecto de los archivos y código innecesarios que Vite genera por defecto:
 - Eliminé archivos como counter.js, javascript.svg, y vite.svg.
+
 - En main.js, conservé solo la importación del archivo de estilos.
+
 - Simplifiqué el archivo de estilos, eliminando la mayoría de las reglas predeterminadas y cambie el color de fondo.
+
 - Ajusté el index.html, cambiando el título, eliminando referencias a archivos que ya no existían y agregando la típica estructura de `header`, `main` y `footer`.
 - Coloqué carpetas llamadas `styles` e `imgs` dentro de la carpeta `public`.
 Esta limpieza me permitió partir de una base más limpia y personalizada, sin distracciones ni código innecesario.
+
 Este momento marcó el verdadero inicio de la fase de desarrollo. Con mi investigación, mi boceto, y ahora mi proyecto inicializado y limpio, estaba listo para comenzar a dar vida a mi visión, línea de código a línea de código.
 
 ## Construyendo la Estructura: La Barra de Navegación
-
 La implementación del portfolio comenzó con la barra de navegación. Inicialmente, se planeó una barra pequeña en la parte superior, pero el concepto evolucionó durante el desarrollo.
 
 Tras varias pruebas, se optó por una barra de navegación más grande. Esta decisión formó parte de un cambio más amplio en el enfoque: el diseño pasó de ser super minimalista a requerir más espacio para mostrar todo el contenido cómodamente.
 
 El proceso comenzó creando el contenedor de la barra de navegación y dandole vida con CSS:
-
 ```html
 <header class="navbar">
     <nav>
@@ -125,7 +127,6 @@ Agregando los elementos de la barra de navegación:
 ```
 
 ### Añadiendo Vida a la Barra de Navegación con Efectos Hover
-
 Después de tener la estructura básica de la barra de navegación, me enfoqué en mejorar su aspecto visual e interactividad. Empecé por ajustar el estilo de los enlaces, eligiendo un tamaño de fuente de 16px y un peso de 500 para que fueran legibles y modernos. El color blanco (#fff) me pareció adecuado para contrastar con el fondo oscuro.
 
 Luego, pensé en cómo hacer que la interacción fuera más interesante. Decidí añadir algunos efectos sutiles cuando el usuario pasara el cursor sobre los enlaces. No fue nada extravagante, solo un cambio suave de color y una pequeña línea que aparece debajo del texto.
@@ -135,7 +136,6 @@ Para el efecto de hover, programé una transición de color del blanco original 
 Ajustar los tiempos de las animaciones llevó algo de prueba y error. Quería que fueran notables pero no distractivas. Al final, opté por una duración de 0.2 segundos tanto para el cambio de color como para la aparición de la línea. (más tarde hablaremos de la duración)
 
 El resultado fue una barra de navegación más dinámica y atractiva. Estos pequeños cambios, aunque sutiles, mejoraron significativamente la experiencia de usuario sin complicar demasiado el diseño.
-
 ```html
 <header class="navbar">
     <nav>
@@ -187,13 +187,11 @@ El resultado fue una barra de navegación más dinámica y atractiva. Estos pequ
 ```
 
 ### Selector de Idiomas
-
 Después de haber refinado la estética y la interactividad básica de nuestra barra de navegación, era hora de abordar algunas funcionalidades clave que aún faltaban. Entre ellas, el cambio de idioma y el selector de modo oscuro/claro. Decidí comenzar con el selector de idioma, ya que la accesibilidad lingüística es crucial para un sitio web profesional. En el desarrollo web, cada detalle cuenta y contribuye a la experiencia general del usuario.
 
 Mi visión era crear un selector de idioma intuitivo y fácil de usar. Quería que fuera discreto cuando no se necesitara, pero fácilmente accesible cuando el usuario lo requiriera. Así que opté por un diseño que se revelaría al pasar el mouse por encima.
 
 Comencé con el HTML, creando una estructura básica pero funcional para el selector de idiomas. Mi objetivo era establecer una base sólida que pudiera manejar fácilmente los estilos y la interactividad que agregaría más adelante. Mientras codificaba, me concentré en la experiencia del usuario, asegurándome de que el cambio entre idiomas fuera intuitivo y accesible.
-
 ```html
 <div class="language-selector">
     <div class="language-item" data-lang="en">English</div>
@@ -202,7 +200,6 @@ Comencé con el HTML, creando una estructura básica pero funcional para el sele
     <div class="language-item" data-lang="de">Deutsch</div>
 </div>
 ```
-
 Cada elemento del HTML tenía un propósito específico. El atributo data-lang fue una decisión consciente para facilitar la futura implementación del cambio de idioma.
 
 Con la estructura HTML establecida, el siguiente paso fue aplicar estilos CSS al selector de idiomas. El objetivo era crear un componente funcional que se integrara adecuadamente con la barra de navegación existente.
@@ -214,7 +211,6 @@ Comencé definiendo el estilo para el contenedor principal del selector de idiom
     position: relative; /*Relativo a su contenedor*/
 }
 ```
-
 Esto estableció la base para el posicionamiento del menú desplegable. A continuación, me enfoqué en el estilo del menú desplegable:
 
 ```css
@@ -230,19 +226,15 @@ Esto estableció la base para el posicionamiento del menú desplegable. A contin
     min-width: 120px;
 }
 ```
-
 Configuré el menú para que estuviera oculto por defecto y se posicionara correctamente debajo del selector. Añadí un fondo oscuro, bordes redondeados y una sombra para mejorar la visibilidad.
 
 Para mostrar el menú al pasar el mouse sobre el selector, utilicé:
-
 ```css
 .language-selector:hover .language-dropdown {
     display: block;
 }
 ```
-
 Luego, apliqué estilos a los elementos individuales del menú:
-
 ```css
 .language-dropdown li a {
     display: block;
@@ -267,19 +259,16 @@ Luego, apliqué estilos a los elementos individuales del menú:
     background-color: #333;
 }
 ```
-
 Con estos estilos en su lugar, probé el selector de idiomas en el navegador. Al pasar el cursor sobre el elemento, el menú desplegable aparecía suavemente, mostrando las opciones de idioma de manera clara. Cada opción respondía al movimiento del cursor, cambiando sutilmente de color para indicar que podía ser seleccionada.
 
 Observé cómo el componente se integraba con el resto de la barra de navegación. El contraste entre el fondo oscuro del menú y el texto claro facilitaba la lectura, mientras que los bordes redondeados y la sombra sutil le daban un toque de profundidad, haciéndolo destacar sin desentonar con el diseño general.
 
 ### Traducción
-
 Con los estilos del selector de idiomas en su lugar, era hora de abordar la funcionalidad multilingüe de mi blog. Decidí utilizar archivos JSON para almacenar las traducciones, lo que me permitiría una gestión más eficiente y escalable de los diferentes idiomas.
 
 Creé una nueva carpeta llamada "translations" en la estructura de mi proyecto. Dentro de esta, añadí archivos JSON para cada idioma que quería soportar: fr.json para francés, de.json para alemán, es.json para español y en.json para inglés.
 
 Cada archivo JSON contenía pares clave-valor para los diferentes elementos de texto en mi sitio. Por ejemplo, el archivo de.json para alemán se veía así:
-
 ```json
 {
     "about": "About me",
@@ -288,25 +277,20 @@ Cada archivo JSON contenía pares clave-valor para los diferentes elementos de t
     "language_name": "English"
   }
 ```
-
 Con los archivos JSON de traducciones listos y la estructura del selector de idiomas en su lugar, el siguiente paso era preparar el HTML para la funcionalidad multilingüe. Esta etapa requería atención al detalle, ya que cada elemento traducible necesitaría una identificación específica.
 
 Revisé el código HTML de mi sitio, empezando por la barra de navegación. Añadí el atributo data-lang a los elementos que quería traducir. Este atributo serviría como enlace entre el HTML y los archivos JSON de traducciones, permitiendo que el script de JavaScript pudiera localizar y cambiar el contenido según el idioma seleccionado.
 
 Trabajé en cada elemento del encabezado, que contenía la barra de navegación principal. Cada enlace de la navegación recibió su atributo data-lang, correspondiente a las claves en mis archivos JSON. Por ejemplo, el enlace "Sobre mí" quedó así:
-
 ```html
 <li class="navbar-item"><a href="#" class="navbar-link" data-lang="about">Sobre mí</a></li>
 ```
-
 Hice lo mismo para "Blog" y "Contacto", asegurándome de que cada uno tuviera su atributo data-lang.
 
 Por último, incluí un elemento para el cambio de modo claro/oscuro, también preparado para la funcionalidad multilingüe:
-
 ```html
 <li class="navbar-item"><a href="#" class="navbar-link" id="mode-toggle"></a></li>
 ```
-
 Al terminar estas modificaciones en el HTML, había establecido la base para la internacionalización de mi blog. Cada elemento estaba listo para recibir su traducción correspondiente, pendiente de la implementación del JavaScript.
 
 Esta etapa de preparación era importante. La correcta estructura del HTML sería clave para el funcionamiento de la funcionalidad multilingüe. Cada atributo data-lang conectaría el contenido visible con las traducciones de los archivos JSON.
@@ -314,7 +298,6 @@ Esta etapa de preparación era importante. La correcta estructura del HTML serí
 Con el HTML listo, el siguiente paso era implementar el JavaScript para activar el selector de idiomas y hacer mi blog multilingüe.
 
 ### Funcionalidad
-
 El ocaso se ponia mientras comence el archivo JavaScript que daría vida a nuestro selector de idiomas. Este script sería el puente invisible entre culturas, permitiendo a los visitantes navegar por nuestro contenido en su lengua materna con solo un clic.
 
 language.js:
@@ -392,7 +375,6 @@ El código comienza con un event listener para 'DOMContentLoaded', asegurando qu
 Estas primeras líneas eran como los cimientos de una casa; sólidos y fundamentales. Establecían el escenario para todo lo que vendría después. El 'es' para español, definiendo el punto de partida por defecto al inicializar la pagina.
 
 Se declaran variables importantes:
-
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
     let currentLanguage = 'es'; // El español, nuestra lengua de partida
@@ -400,7 +382,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageDropdown = document.querySelector('.language-dropdown');
     const languageDisplay = languageSelector.querySelector('.navbar-link');
 ```
-
 currentLanguage: Inicializada con 'es' como idioma predeterminado.
 languageSelector: Selecciona el elemento del selector de idiomas.
 languageDropdown: Selecciona el menú desplegable de idiomas.
@@ -429,7 +410,6 @@ Llama a loadTranslations con el nuevo idioma.
 Actualiza currentLanguage.
 
 ## Modo oscuro/claro
-
 La implementación del modo oscuro/claro en mi sitio web resultó ser un desafío mucho más complejo de lo que inicialmente anticipé. Este viaje de desarrollo no solo mejoró la funcionalidad de mi sitio, sino que también amplió significativamente mi comprensión sobre la personalización de temas en el diseño web moderno.
 
 Al principio, mi enfoque era bastante simple. Pensaba utilizar la propiedad color-scheme de CSS, creyendo que sería suficiente para lograr un cambio efectivo entre los modos oscuro y claro. Sin embargo, rápidamente me di cuenta de que esta solución era demasiado limitada para lo que realmente quería lograr. No ofrecía el nivel de control y personalización que buscaba para mi sitio.
@@ -437,7 +417,6 @@ Al principio, mi enfoque era bastante simple. Pensaba utilizar la propiedad colo
 Fue entonces cuando tuve una epifanía: para crear un sistema de temas verdaderamente flexible y cambiable, necesitaba ir más allá de las soluciones predeterminadas. Necesitaba un enfoque que me permitiera personalizar cada aspecto del diseño, tanto para el modo oscuro como para el claro.
 
 Con esta nueva perspectiva, comencé a trabajar en una solución más robusta y personalizable. El corazón de este nuevo sistema se basó en la definición de variables CSS personalizadas en el elemento :root. Para el modo oscuro predeterminado, definí un conjunto de variables que controlaban diversos aspectos del diseño:
-
 ```css
 :root {
   --background-color: #111;
@@ -450,11 +429,9 @@ Con esta nueva perspectiva, comencé a trabajar en una solución más robusta y 
   --navbar-language-selector: #1a1a1a;
 }
 ```
-
 Cada variable representaba un aspecto específico del diseño: el color de fondo, el color del texto, los colores de los enlaces (tanto en estado normal como al pasar el mouse), y varios elementos de la barra de navegación.
 
 Para el modo claro, creé un conjunto similar de variables, pero esta vez las agrupé bajo una clase específica light-mode:
-
 ```css
 body.light-mode {
   --background-color: #f1f1f1;
@@ -467,13 +444,11 @@ body.light-mode {
   --navbar-language-selector: #d4d4d4;
 }
 ```
-
 Este enfoque me brindó una flexibilidad sin precedentes para controlar con precisión la apariencia de cada elemento en ambos modos, oscuro y claro. El sistema me permitió personalizar colores fácilmente, mantener coherencia visual, experimentar con esquemas de color rápidamente y implementar cambios de tema dinámicos con JavaScript, todo mediante el uso de variables CSS y la simple adición o eliminación de una clase en el elemento body.
 
 La implementación de este sistema no estuvo exenta de desafíos. Tuve que revisar cuidadosamente cada componente de mi sitio para asegurarme de que utilizara correctamente las nuevas variables CSS. También tuve que considerar cómo manejar diversos aspectos del diseño y la funcionalidad para garantizar una experiencia de usuario coherente y agradable en ambos modos. A pesar de estos retos, el resultado final fue un sistema de temas robusto y flexible que mejoró significativamente la usabilidad de mi sitio web.
 
 Después de mucho trabajo y experimentación, finalmente implementé todos los cambios necesarios en mi CSS para crear un sistema de temas flexible. Estos fueron todos los cambios que realicé:
-
 ```css
 body {
   color: var(--text-color);
@@ -519,7 +494,6 @@ a:hover {
   transition: background-color 0.2s ease;
 }
 ```
-
 Al ver todos estos cambios juntos, me di cuenta de lo mucho que había logrado. Cada línea de código representaba una decisión cuidadosamente considerada para mejorar la experiencia del usuario y la flexibilidad del diseño.
 
 La transición suave entre los modos claro y oscuro, controlada por las propiedades de transición en el body y los enlaces, aseguraba que el cambio de tema no fuera brusco o molesto para los usuarios. La navbar, con sus enlaces interactivos y el selector de idiomas, ahora se adaptaba perfectamente a ambos modos, manteniendo la coherencia visual y la usabilidad.
@@ -533,7 +507,6 @@ A pesar de estos desafíos, el resultado final fue extremadamente gratificante. 
 Mirando hacia el futuro, me entusiasmaba la idea de seguir refinando y expandiendo este sistema. Tal vez podría añadir más temas o incluso permitir a los usuarios personalizar sus propios esquemas de color. Las posibilidades parecían infinitas, y estaba ansioso por explorarlas todas.
 
 Sin embargo, aún faltaba explicar algo crucial para completar mi sistema de cambio de tema. la implementación de la lógica en JavaScript para hacer funcional todo el mecanismo. Para ello, creé un archivo llamado theme-switcher.js, que importé en mi main.js junto con otros estilos importantes:
-
 ```javascript
 import './style.css'
 import './public/styles/navbar/navbar.css';
@@ -541,24 +514,18 @@ import './public/styles/navbar/navbar-link.css';
 import './public/styles/navbar/language-selector.css';
 import './src/theme-switcher.js'
 ```
-
 El corazón de la funcionalidad residía en el código de theme-switcher.js. Comencé asegurándome de que el código se ejecutara solo cuando el DOM estuviera completamente cargado:
-
 ```javascript
 document.addEventListener('DOMContentLoaded', () => {
   // ... resto del código
 });
 ```
-
 Dentro de este evento, seleccioné los elementos clave: el botón de cambio de modo y el body del documento:
-
 ```javascript
 const modeToggle = document.getElementById('mode-toggle');
 const body = document.body;
 ```
-
 Luego, definí una función setMode que se encargaba de cambiar entre los modos claro y oscuro:
-
 ```javascript
 function setMode(mode) {
   if (mode === 'light') {
@@ -571,11 +538,9 @@ function setMode(mode) {
   localStorage.setItem('preferredMode', mode);
 }
 ```
-
 Esta función no solo cambiaba las clases y el texto del botón, sino que también guardaba la preferencia del usuario en el localStorage para futuras visitas.
 
 Para asegurarme de que la preferencia del usuario se mantuviera entre sesiones, añadí un código que comprobaba si existía una preferencia guardada:
-
 ```javascript
 const savedMode = localStorage.getItem('preferredMode');
 if (savedMode) {
@@ -584,11 +549,9 @@ if (savedMode) {
   setMode('dark');
 }
 ```
-
 Si no había preferencia guardada, establecía el modo oscuro como predeterminado.
 
 Finalmente, agregué un event listener al botón de cambio de modo:
-
 ```javascript
 modeToggle.addEventListener('click', (e) => {
   e.preventDefault();
@@ -596,13 +559,10 @@ modeToggle.addEventListener('click', (e) => {
   setMode(newMode);
 });
 ```
-
 Este código detectaba los clics en el botón y cambiaba al modo opuesto al actual.
 
 Todo este mecanismo funcionaba gracias a un simple pero crucial elemento en mi HTML:
-
 ```html
 <li class="navbar-item"><a href="#" class="navbar-link" id="mode-toggle">M.Claro</a>
 ```
-
 Con este código JavaScript, logré dar vida a mi sistema de cambio de tema, creando una experiencia de usuario dinámica y personalizable. Cada clic en el botón "Cambiar modo" activaba una serie de cambios que transformaban la apariencia de mi sitio web, adaptándose a las preferencias del usuario y recordándolas para futuras visitas.
