@@ -121,3 +121,10 @@ En el modo interactivo, la última expresión impresa se asigna a la variable `_
         - 3.1.2. Texto
         - 3.1.3. Listas
     - 3.2. Primeros pasos hacia la programación
+
+##### Artículos relacionados
+- [El tutorial de Python #2: Más herramientas para control de flujo](/blog/python/tutorial-python-02/) >>
+
+
+###### Podría interesarte también 
+###### • [Python: El Lenguaje Preferido para Inteligencia Artificial](/blog/python/)
