@@ -94,7 +94,13 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'n' is not defined
 ```
-
+En el modo interactivo, la última expresión impresa se asigna a la variable `_`. Esto facilita continuar con cálculos. Por ejemplo:
+```python
+>>> 10 + 5
+15
+>>> _ * 2
+30
+```
 
 
 
@@ -110,3 +116,8 @@ NameError: name 'n' is not defined
         - 2.1.1. Paso de argumentos
     - 2.2. El intérprete y su entorno
 - 3. Una introducción informal a Python
+    - 3.1. Usando Python como una calculadora
+        - 3.1.1. Números
+        - 3.1.2. Texto
+        - 3.1.3. Listas
+    - 3.2. Primeros pasos hacia la programación
