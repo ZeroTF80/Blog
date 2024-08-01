@@ -8,9 +8,11 @@ heroImage: '/Python.jpg'
 ## Glosario
 - [Introducción al Tutorial Oficial de Python](#introducción-al-tutorial-oficial-de-python)
     - [¿Por qué este tutorial?](#por-qué-este-tutorial)
-- [Abriendo el apetito](#abriendo-el-apetito)
+- [Explorando Python](#explorando-python)
 - [Usando el Intérprete de Python](#usando-el-intérprete-de-python)
-- [Aritmetica](#aritmetica)
+    - [Aritmetica](#aritmetica)
+    - [Manipulación de texto](#manipulación-de-texto)
+    - [Listas](#Listas)
 - [Secciones tratadas hoy](#secciones-tratadas-hoy)
 
 ## Introducción al Tutorial Oficial de Python
@@ -29,7 +31,7 @@ En este blog, te guiaremos a través de las secciones clave del tutorial oficial
 
 Prepárate para sumergirte en Python y descubrir por qué es uno de los lenguajes más populares y demandados en la industria tecnológica actual. ¡Comencemos!
 
-## Abriendo el apetito
+## Explorando Python
 Python es ideal para automatizar tareas repetitivas, crear bases de datos personalizadas, interfaces gráficas o juegos simples. Es útil tanto para desarrolladores profesionales como para aficionados debido a su facilidad de uso y amplia disponibilidad en Windows, macOS y Unix.
 
 Ofrece una estructura robusta para programas grandes y tiene tipos de datos avanzados como listas y diccionarios. Python permite escribir programas compactos y legibles, y su intérprete interactivo ahorra tiempo al no requerir compilación.
@@ -47,8 +49,7 @@ Los comentarios en Python comienzan con `#` y se extienden hasta el final de la 
 ```python
 # Soy un comentario.
 ```
-
-## Aritmetica
+### Aritmetica
 El intérprete de Python funciona como una calculadora: puedes introducir expresiones y obtener los valores. Usa operadores como `+`, `-`, `*`, y `/` para operaciones aritméticas, y paréntesis `()` para agrupar. Por ejemplo:
 ```python
 >>> 2 + 2
@@ -94,6 +95,11 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'n' is not defined
 ```
+Python tiene soporte completo para punto float; los operadores con operandos mixtos convertirán los enteros a punto flotante. Por ejemplo:
+```python
+>>> 5 * 2.0
+10.0
+```
 En el modo interactivo, la última expresión impresa se asigna a la variable `_`. Esto facilita continuar con cálculos. Por ejemplo:
 ```python
 >>> 10 + 5
@@ -101,12 +107,61 @@ En el modo interactivo, la última expresión impresa se asigna a la variable `_
 >>> _ * 2
 30
 ```
+La variable `_` debe ser tratada como de solo lectura. No le asignes explícitamente un valor, ya que esto creará una variable local independiente que enmascarará la variable mágica.
 
+Además de `int` y `float`, Python admite otros tipos de números, como `Decimal` y `Fraction`. También tiene soporte para números complejos, usando el sufijo `j` o `J` para indicar la parte imaginaria, por ejemplo, `3+5j`.
 
+### Manipulación de Texto
+En Python, el tipo str (cadenas de caracteres / string) se utiliza para manipular texto, desde caracteres individuales como `!`, hasta palabras como `conejo`, nombres como `París`, y oraciones completas como `¡Te tengo a la vista!`. Los textos pueden ir entre comillas simples ('...') o dobles ("..."), produciendo el mismo resultado.
+```python
+>>> 'Conejo!'
+'Conejo!'
+>>> 'París'
+'París'
+>>> '¡Te tengo a la vista!'
+'¡Te tengo a la vista!'
 
-
-
-
+# Para citar una cita, debemos \'escapar\' la cita precediéndola con \\
+# Alternativamente, podemos usar el otro tipo de comillas:
+>>> 'Para citar una cita, debemos "escapar" la cita precediéndola con'
+'Para citar una cita, debemos "escapar" la cita precediéndola con'
+```
+En el intérprete de Python, la definición de cadena y la cadena de salida pueden verse diferentes. La función print() produce una salida más legible, omitiendo las comillas de encuadre e imprimiendo caracteres escapados y especiales:
+```python
+>>> s = 'First line.\nSecond line.'  # \n significa nueva línea
+>>> s  # sin print(), los caracteres especiales se incluyen en la cadena
+'First line.\nSecond line.'
+>>> print(s)  # con print(), los caracteres especiales se interpretan, por lo que \n produce una nueva línea
+First line.
+Second line.
+```
+Para evitar que los caracteres precedidos por `\` se interpreten como especiales, se pueden usar cadenas sin formato con una `r` antes de las comillas:
+```python
+>>> print('C:\some\name')  # aquí \n significa nueva línea
+C:\some
+ame
+>>> print(r'C:\some\name')  # nota la r antes de la comilla
+C:\some\name
+```
+Las cadenas de texto literales pueden contener múltiples líneas usando triples comillas (`"""..."""` o `'''...'''`). Los fines de línea se incluyen automáticamente, pero se puede evitar con `\` al final de la línea:
+```python
+>>> print("""\
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+""")
+```
+Esto produce la siguiente salida:
+```Python
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+```
+Las cadenas se pueden concatenar con + y repetir con *:
+```python
+>>> 3 * 'un' + 'ium'
+'unununium'
+```
 
 
 ## Secciones tratadas hoy
