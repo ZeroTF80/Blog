@@ -11,26 +11,25 @@ heroImage: '/programacion.png'
     - [La Lavadora: Tu Primera Experiencia de Programación](#la-lavadora-tu-primera-experiencia-de-programación)
     - [El Microondas: Otro Ejemplo de Programación Cotidiana](#el-microondas-otro-ejemplo-de-programación-cotidiana)
     - [Termostato Inteligente: Programación Avanzada en Casa](#termostato-inteligente-programación-avanzada-en-casa)
-    - [¿Qué Nos Enseña Esto Sobre la Programación?](#qué-nos-enseña-esto-sobre-la-programación)
-- [De lo Cotidiano a lo Complejo: El Espectro de la Programación](#de-lo-cotidiano-a-lo-complejo-el-espectro-de-la-programación)
+- [Conceptos Básicos de Programación](#conceptos-basicos-de-programacion)
     - [Variables y Tipos de Datos](#variables-y-tipos-de-datos)
     - [Estructuras de Control](#estructuras-de-control)
     - [Interfaces y Entrada de Usuario](#interfaces-y-entrada-de-usuario)
     - [Depuración](#depuración)
-    - [De Electrodomésticos a Computadoras](#de-electrodomésticos-a-computadoras)
-        - [Programación de Software](#programación-de-software)
+- [De lo Cotidiano a lo Complejo: El Espectro de la Programación](#de-lo-cotidiano-a-lo-complejo-el-espectro-de-la-programación)
+    - [Programación de Software](#programación-de-software)
+    - [Lenguaje de Programación](#lenguaje-de-programacion)
     - [Aplicaciones del Mundo Real](#aplicaciones-del-mundo-real)
 - [El Futuro de la Programación](#el-futuro-de-la-programación)
 - [Conclusión](#conclusión)
 
 ## ¿Qué es Programar? Más Cerca de lo que Crees
-Cuando escuchamos la palabra "programación", muchos de nosotros pensamos inmediatamente en líneas de código complejas, ordenadores y personas con habilidades técnicas avanzadas. Sin embargo, la programación está mucho más cerca de nuestra vida cotidiana de lo que imaginamos. De hecho, ¡es probable que ya estés programando sin darte cuenta!
+Cuando escuchamos la palabra "programación", muchos de nosotros pensamos en líneas de código complejas, ordenadores y personas con habilidades técnicas avanzadas. Sin embargo, la programación está mucho más cerca de nuestra vida cotidiana de lo que imaginamos. ¡Es probable que ya estés programando sin darte cuenta!
 
 ## Programación en la Vida Diaria
-cotidianamente...
 
-### La Lavadora: Tu Primera Experiencia de Programación:
-Piensa en la última vez que usaste tu lavadora. ¿Qué hiciste exactamente? Probablemente seleccionaste un programa de lavado, ajustaste la temperatura del agua y quizás programaste un inicio diferido. ¡Felicidades! Acabas de realizar un acto de programación.
+### La Lavadora: Tu Primera Experiencia de Programación
+Piensa en la última vez que usaste tu lavadora. Probablemente seleccionaste un programa de lavado, ajustaste la temperatura del agua y quizás programaste un inicio diferido. ¡Felicidades! Acabas de realizar un acto de programación.
 
 Cuando eliges un ciclo de lavado, estás dando instrucciones específicas a la máquina sobre cómo debe funcionar. Esto es esencialmente lo que hace un programador: dar instrucciones precisas a una máquina para que realice una tarea específica. En este caso, estás programando:
 1. Cuánta agua usar
@@ -45,8 +44,6 @@ Cuando eliges un ciclo de lavado, estás dando instrucciones específicas a la m
 
 6. Si debe incluir un prelavado o un aclarado extra
 
-Cada una de estas decisiones es como una línea de código en tu "programa de lavado".
-
 ### El Microondas: Otro Ejemplo de Programación Cotidiana
 El microondas es otro electrodoméstico que programamos regularmente. Cuando introduces el tiempo de cocción y el nivel de potencia, estás creando un pequeño "programa" que el microondas ejecutará. Le estás diciendo:
 1. Cuánto tiempo debe funcionar
@@ -60,6 +57,7 @@ El microondas es otro electrodoméstico que programamos regularmente. Cuando int
 5. En algunos modelos avanzados, incluso puedes programar secuencias de cocción con diferentes tiempos y potencias
 
 ### Termostato Inteligente: Programación Avanzada en Casa
+
 Un ejemplo más sofisticado de programación cotidiana es el termostato inteligente. Al configurar uno de estos dispositivos, estás creando un programa bastante complejo que incluye:
 1. Establecer diferentes temperaturas para distintos momentos del día
 
@@ -108,10 +106,10 @@ La pantalla y los botones de tu lavadora o microondas son una interfaz de usuari
 ### Depuración
 Cuando tu lavadora muestra un código de error, está realizando una forma básica de depuración. En programación, la depuración es el proceso de identificar y corregir errores en el código.
 
-### De Electrodomésticos a Computadoras
+## De Electrodomésticos a Computadoras
 Los ejemplos de programación cotidiana en electrodomésticos nos ayudan a entender los conceptos básicos, pero la programación en computadoras es mucho más amplia y poderosa. Aquí es donde entramos en el ámbito de la programación de software, aplicaciones y sistemas complejos.
 
-#### Programación de Software
+### Programación de Software
 En el mundo del software, los principios son los mismos, pero las aplicaciones son mucho más diversas y complejas. Desde aplicaciones móviles hasta sistemas operativos y videojuegos, la programación de software implica:
 1. Lenguajes de Programación: Existen muchos lenguajes de programación, como Python, Java, C++, y JavaScript, cada uno con sus propias sintaxis y usos específicos.
 
