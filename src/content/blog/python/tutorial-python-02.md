@@ -217,20 +217,34 @@ print(suma(*numeros))  # Imprime: 6
 ```
 
 ### Expresiones lambda
-Las expresiones lambda en Python son una forma concisa de crear pequeñas funciones anónimas. Se definen usando la palabra clave `lambda`, seguida de los argumentos, dos puntos, y una única expresión. Las lambda son útiles para crear funciones simples en línea, especialmente como argumentos para funciones de orden superior como `map()`, `filter()`, o `sort()`.
+Las expresiones lambda en Python son una forma concisa de crear pequeñas funciones anónimas. Se definen usando la palabra clave `lambda`, seguida de los argumentos, dos puntos, y una única expresión. La sintaxis básica es `lambda argumentos: expresión`. Estas funciones son de una sola expresión y pueden tener cualquier número de argumentos, pero están limitadas a una única expresión. Son particularmente útiles para crear funciones simples y de corta duración, especialmente como argumentos para funciones de orden superior como `map()`, `filter()`, o `sort()`.
 
-**Características clave**:
-- Son funciones de una sola expresión.
-
-- Pueden tener cualquier número de argumentos, pero solo una expresión.
-
-- Son útiles para funciones simples y de corta duración.
-
-- No pueden contener declaraciones o anotaciones.
+Las lambda se caracterizan por su brevedad y por el hecho de que se evalúan y devuelven su resultado inmediatamente. No pueden contener declaraciones o anotaciones, lo que las hace ideales para operaciones simples pero las limita en términos de complejidad. Por ejemplo, una función lambda simple que calcula el cuadrado de un número se vería así:
 ```python
 cuadrado = lambda x: x**2
 print(cuadrado(5))  # Imprime: 25
 ```
+Las expresiones lambda brillan en situaciones donde se necesita una función simple como argumento. Por ejemplo, al usar `map()` para aplicar una función a cada elemento de una lista:
+```python
+numeros = [1, 2, 3, 4, 5]
+cuadrados = list(map(lambda x: x**2, numeros))
+print(cuadrados)  # Imprime: [1, 4, 9, 16, 25]
+```
+O al usar `filter()` para seleccionar elementos de una lista basados en una condición:
+```python
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)  # Imprime: [2, 4, 6, 8, 10]
+```
+Las lambda también son útiles para ordenar listas basadas en criterios específicos:
+```python
+personas = [('Alice', 25), ('Bob', 30), ('Charlie', 22)]
+personas_ordenadas = sorted(personas, key=lambda x: x[1])
+print(personas_ordenadas)  # Imprime: [('Charlie', 22), ('Alice', 25), ('Bob', 30)]
+```
+A pesar de su utilidad, es importante usar las expresiones lambda con moderación. Son excelentes para funciones simples que se usan una sola vez, pero pueden reducir la legibilidad si se abusa de ellas o se usan para lógica compleja. Además, al no tener un nombre, pueden dificultar la depuración. Para funciones más complejas, que requieren múltiples líneas de lógica, documentación o pruebas unitarias, es preferible definir una función normal.
+
+En resumen, las expresiones lambda son una herramienta poderosa en Python cuando se usan apropiadamente. Proporcionan una manera elegante de escribir pequeñas funciones en línea, lo que puede hacer que el código sea más conciso y expresivo en ciertos contextos. Sin embargo, es importante equilibrar la brevedad con la claridad y usar lambda sólo cuando realmente mejoran la legibilidad y la estructura del código.
 
 ### Documentación de funciones
 La documentación de funciones es una práctica esencial en Python para mejorar la legibilidad y mantenibilidad del código. Python proporciona varias herramientas y convenciones para documentar funciones de manera efectiva. Las dos principales son las cadenas de documentación (docstrings) y las anotaciones de funciones.
