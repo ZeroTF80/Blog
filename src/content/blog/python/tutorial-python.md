@@ -12,7 +12,11 @@ heroImage: '/Python.jpg'
 - [Usando el Intérprete de Python](#usando-el-intérprete-de-python)
     - [Aritmetica](#aritmetica)
     - [Manipulación de texto](#manipulación-de-texto)
-    - [Listas](#Listas)
+    - [Listas](#listas)
+- [Consignas](#consignas)
+    - [Aritmetica(7)](#aritmetica7)
+    - [Manipulación de texto(7)](#manipulación-de-texto7)
+    - [Listas(7)](#listas7)
 - [Secciones tratadas hoy](#secciones-tratadas-hoy)
 
 ## Introducción al Tutorial Oficial de Python
@@ -157,12 +161,287 @@ Usage: thingy [OPTIONS]
      -h                        Display this usage message
      -H hostname               Hostname to connect to
 ```
-Las cadenas se pueden concatenar con + y repetir con *:
+Las cadenas se pueden concatenar con `+` y repetir con `*`:
 ```python
 >>> 3 * 'un' + 'ium'
 'unununium'
 ```
+Esto es útil para dividir cadenas largas:
+```python
+>>> text = ('Put several strings within parentheses '
+            'to have them joined together.')
+>>> text
+'Put several strings within parentheses to have them joined together.'
+```
+Esto solo funciona con literales, no con variables o expresiones:
+```python
+>>> prefix = 'Py'
+>>> prefix 'thon'  # no se puede concatenar una variable y una cadena literal
+  File "<stdin>", line 1
+    prefix 'thon'
+           ^^^^^^
+SyntaxError: invalid syntax
 
+>>> ('un' * 3) 'ium'
+  File "<stdin>", line 1
+    ('un' * 3) 'ium'
+               ^^^^^
+SyntaxError: invalid syntax
+```
+Para concatenar variables o una variable y un literal, usa `+`:
+```python
+>>> prefix + 'thon'
+'Python'
+```
+Las cadenas de texto se pueden indexar, comenzando desde el índice 0. En Python, no hay un tipo de dato diferente para los caracteres; un carácter es simplemente una cadena de longitud uno:
+```python
+>>> word = 'Python'
+>>> word[0]  # carácter en la posición 0
+'P'
+>>> word[5]  # carácter en la posición 5
+'n'
+```
+Los índices también pueden ser negativos, comenzando desde la derecha:
+```python
+>>> word[-1]  # último carácter
+'n'
+>>> word[-2]  # penúltimo carácter
+'o'
+>>> word[-6]  # primer carácter
+'P'
+```
+Los índices de slicing tienen valores por defecto útiles:
+```python
+>>> word[:2]   # caracteres desde el inicio hasta la posición 2 (excluida)
+'Py'
+>>> word[4:]   # caracteres desde la posición 4 (incluida) hasta el final
+'on'
+>>> word[-2:]  # caracteres desde el penúltimo (incluido) hasta el final
+'on'
+```
+El inicio siempre se incluye y el final siempre se excluye, lo que asegura que `s[:i] + s[i:]` siempre sea igual a `s`:
+```python
+>>> word[:2] + word[2:]
+'Python'
+>>> word[:4] + word[4:]
+'Python'
+```
+Los índices apuntan entre caracteres, con el borde izquierdo del primer carácter numerado 0. Los índices negativos comienzan desde -1:
+```python
+ +---+---+---+---+---+---+
+ | P | y | t | h | o | n |
+ +---+---+---+---+---+---+
+ 0   1   2   3   4   5   6
+-6  -5  -4  -3  -2  -1
+```
+La rebanada de `i` a `j` consta de todos los caracteres entre los bordes etiquetados `i` y `j`.
+
+La longitud de una rebanada es la diferencia de los índices, si ambos están dentro de los límites. Por ejemplo, la longitud de `word[1:3]` es 2.
+
+Si intentas usar un índice que excede la longitud de la cadena, obtendrás un error:
+```python
+>>> word[42]  # la palabra solo tiene 6 caracteres
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+
+```
+Sin embargo, los índices fuera de rango se manejan sin problemas al usar slicing:
+```python
+>>> word[4:42]
+'on'
+>>> word[42:]
+''
+```
+Las cadenas en Python son inmutables, lo que significa que no se pueden modificar. Intentar asignar un valor a una posición específica en la cadena causará un error:
+```python
+>>> word[0] = 'J'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+
+>>> word[2:] = 'py'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+```
+Para modificar una cadena, debes crear una nueva:
+```python
+>>> 'J' + word[1:]
+'Jython'
+>>> word[:2] + 'py'
+'Pypy'
+```
+La función incorporada len() retorna la longitud de una cadena:
+```python
+>>> s = 'supercalifragilisticexpialidocious'
+>>> len(s)
+34
+```
+
+### Listas
+Python tiene tipos de datos compuestos para agrupar valores, siendo el más versátil la lista. Las listas se escriben con valores separados por comas entre corchetes y pueden contener diferentes tipos de ítems, aunque usualmente son del mismo tipo.
+```python
+squares = [1, 4, 9, 16, 25]
+squares
+[1, 4, 9, 16, 25]
+```
+Al igual que las cadenas, las listas pueden ser indexadas y segmentadas:
+```python
+squares[0]  # primer ítem
+1
+squares[-1]  # último ítem
+25
+squares[-3:]  # sublista desde el tercer ítem desde el final
+[9, 16, 25]
+```
+Las listas admiten operaciones como concatenación:
+```python
+squares + [36, 49, 64, 81, 100]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+A diferencia de las cadenas, las listas son mutables y su contenido se puede modificar:
+```python
+cubes = [1, 8, 27, 65, 125]  # algo está mal aquí
+4 ** 3  # el cubo de 4 es 64, no 65!
+64
+cubes[3] = 64  # reemplaza el valor incorrecto
+cubes
+[1, 8, 27, 64, 125]
+```
+Puedes agregar nuevos ítems al final de la lista con el método `append`:
+```python
+cubes.append(216)  # agrega el cubo de 6
+cubes.append(7 ** 3)  # y el cubo de 7
+cubes
+[1, 8, 27, 64, 125, 216, 343]
+```
+En Python, la asignación de listas no copia los datos; todas las variables referencian la misma lista. Cualquier cambio hecho a la lista a través de una variable se reflejará en todas las variables que la referencian:
+```python
+rgb = ["Red", "Green", "Blue"]
+rgba = rgb
+id(rgb) == id(rgba)  # referencian el mismo objeto
+True
+rgba.append("Alpha")
+rgb
+["Red", "Green", "Blue", "Alpha"]
+```
+Las operaciones de rebanado devuelven una nueva lista con los elementos solicitados, como en el siguiente ejemplo de copia superficial de la lista:
+```python
+correct_rgba = rgba[:]
+correct_rgba[-1] = "Alpha"
+correct_rgba
+["Red", "Green", "Blue", "Alpha"]
+rgba
+["Red", "Green", "Blue", "Alpha"]
+```
+También puedes asignar a una rebanada, lo que puede cambiar la longitud de la lista o vaciarla:
+```python
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+letters[2:5] = ['C', 'D', 'E']  # reemplaza algunos valores
+letters
+['a', 'b', 'C', 'D', 'E', 'f', 'g']
+letters[2:5] = []  # ahora los elimina
+letters
+['a', 'b', 'f', 'g']
+letters[:] = []  # vacía la lista completamente
+letters
+[]
+```
+La función len() también funciona con listas:
+```python
+letters = ['a', 'b', 'c', 'd']
+len(letters)
+4
+```
+Es posible anidar listas (listas que contienen otras listas):
+```python
+a = ['a', 'b', 'c']
+n = [1, 2, 3]
+x = [a, n]
+x
+[['a', 'b', 'c'], [1, 2, 3]]
+x[0]
+['a', 'b', 'c']
+x[0][1]
+'b'
+```
+Puedes usar Python para tareas más complejas, como calcular la secuencia de Fibonacci:
+```python
+# Serie de Fibonacci:
+# la suma de dos elementos define el siguiente
+a, b = 0, 1
+while a < 10:
+    print(a)
+    a, b = b, a + b
+```
+Este ejemplo introduce varias características nuevas. La asignación múltiple permite que las variables `a` y `b` obtengan nuevos valores simultáneamente. El bucle `while` se ejecuta mientras la condición sea verdadera. En Python, cualquier valor distinto de cero es verdadero, y las secuencias vacías son falsas.
+
+El cuerpo del bucle está indentado, lo que agrupa las declaraciones. La función `print()` escribe el valor de los argumentos que se le dan, diferenciándose de escribir la expresión directamente, ya que maneja múltiples argumentos y formatea la salida de manera legible.
+
+El parámetro `end` en `print()` evita el salto de línea al final de la salida, permitiendo una terminación personalizada:
+```python
+a, b = 0, 1
+while a < 1000:
+    print(a, end=',')
+    a, b = b, a + b
+
+```
+Esta versión imprime la serie de Fibonacci hasta 1000, separada por comas.
+
+#### Notas de pie
+Precedencia de operadores: En Python, el operador de exponenciación (`**`) tiene mayor prioridad que el operador de negación (`-`). Por lo tanto, la expresión `-3**2` se interpreta como `-(3**2)`, lo que da como resultado `-9`. Para obtener `9`, debes usar paréntesis: `(-3)**2`.
+
+Uso de comillas: En Python, los caracteres especiales como `\n` (nueva línea) tienen el mismo significado tanto en comillas simples (`'...'`) como en comillas dobles (`"..."`). La diferencia es que dentro de las comillas simples no necesitas escapar las comillas dobles (`"`) y dentro de las comillas dobles no necesitas escapar las comillas simples (`'`).
+
+## Consignas
+Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuestra disposición. Ahora es el momento de aplicar lo aprendido y comenzar a crear.
+<a href="https://github.com/AngelB-Dev/El-tutorial-de-Python" target="_blank">Repositorio de GitHub</a>
+
+### Aritmetica(7)
+1. Calcula el área de un rectángulo con base 15 y altura 8.
+
+2. Divide 100 entre 6 y muestra el resultado como número decimal.
+
+3. Calcula cuántos grupos completos de 4 se pueden formar con 30 elementos y cuántos elementos sobran.
+
+4. Eleva 3 al cubo.
+
+5. Calcula el 15% de 80 utilizando operaciones aritméticas básicas.
+
+6. Suma los números del 1 al 5 y luego multiplica el resultado por 2.
+
+7. Determina si 64 es divisible por 8 utilizando el operador de módulo.
+
+### Manipulación de texto(7)
+1. Crea una cadena de texto que incluya una cita dentro de ella, utilizando comillas simples para la cadena principal y comillas dobles para la cita.
+
+2. Define una cadena de texto que contenga múltiples líneas, incluyendo caracteres especiales como '\n' para nueva línea.
+
+3. Crea una cadena sin formato (raw string) que represente una ruta de Windows, por ejemplo, 'C:\Users\nombre\Documentos'.
+
+4. Concatena tres cadenas diferentes para formar la palabra "Python".
+
+5. Crea una cadena que repita la palabra "eco" tres veces.
+
+6. Define una cadena larga dividiéndola en múltiples líneas de código, pero que se muestre como una sola línea al imprimirla.
+
+7. Demuestra la diferencia entre imprimir una cadena con caracteres especiales usando print() y mostrarla directamente en el intérprete.
+
+### Listas(7)
+1. Crea una lista llamada squares con los cuadrados de los primeros 5 números naturales y luego imprime el último elemento de la lista.
+
+2. Dada la lista cubes = [1, 8, 27, 65, 125], corrige el valor incorrecto (65) reemplazándolo por el cubo correcto de 4.
+
+3. Crea una lista llamada rgb con los colores "Red", "Green", "Blue", y luego añade "Alpha" al final de la lista utilizando el método append().
+
+4. Haz una copia superficial de una lista y demuestra que modificar la copia no afecta a la lista original.
+
+5. Crea una lista de letras de la 'a' a la 'g', luego reemplaza los elementos en las posiciones 2 a 4 (inclusive) por sus versiones en mayúsculas.
+
+6. Crea una lista anidada que contenga dos sublistas: una con los números del 1 al 3 y otra con las letras 'a', 'b' y 'c'. Luego, accede e imprime el segundo elemento de la segunda sublista.
+
+7. Escribe un programa que genere e imprima los primeros 10 números de la secuencia de Fibonacci utilizando una lista.
 
 ## Secciones tratadas hoy
 - 1. Abriendo el apetito
