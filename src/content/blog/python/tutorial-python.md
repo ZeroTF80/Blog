@@ -429,11 +429,11 @@ Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuest
 7. Demuestra la diferencia entre imprimir una cadena con caracteres especiales usando print() y mostrarla directamente en el intérprete.
 
 ### Listas(7)
-1. Crea una lista llamada squares con los cuadrados de los primeros 5 números naturales y luego imprime el último elemento de la lista.
+1. Crea una lista llamada `squares` con los cuadrados de los primeros 5 números naturales y luego imprime el último elemento de la lista.
 
-2. Dada la lista cubes = [1, 8, 27, 65, 125], corrige el valor incorrecto (65) reemplazándolo por el cubo correcto de 4.
+2. Dada la lista `cubes = [1, 8, 27, 65, 125]`, corrige el valor incorrecto (65) reemplazándolo por el cubo correcto de 4.
 
-3. Crea una lista llamada rgb con los colores "Red", "Green", "Blue", y luego añade "Alpha" al final de la lista utilizando el método append().
+3. Crea una lista llamada `rgb` con los colores "Red", "Green", "Blue", y luego añade "Alpha" al final de la lista utilizando el método `append()`.
 
 4. Haz una copia superficial de una lista y demuestra que modificar la copia no afecta a la lista original.
 
