@@ -7,7 +7,7 @@ heroImage: '/Python.jpg'
 ---
 ## Glosario
 - [Estructuras de Control](#estructuras-de-control)
-    - [Condicionales (IF)](#condicionales)
+    - [Condicionales (IF)](#condicionales-if)
     - [Bucles (For)](#bucles-for)
     - [Range()](#range)
     - [Control de bucles](#control-de-bucles)
@@ -28,7 +28,9 @@ heroImage: '/Python.jpg'
 - [Secciones tratadas hoy](#secciones-tratadas-hoy)
 
 ## Estructuras de Control
-Las estructuras de control son elementos fundamentales en Python que dirigen el flujo de ejecución de un programa, permitiéndonos tomar decisiones y repetir acciones de manera eficiente. En esta sección, exploraremos las principales estructuras como condicionales (IF), bucles (For), la función Range(), el control de bucles con break, continue y else, la declaración pass, y la estructura match introducida en Python 3.10. Dominar estas herramientas es esencial para escribir código Python elegante y efectivo, y a través de ejemplos prácticos, aprenderemos cómo y cuándo utilizar cada una de ellas en situaciones reales de programación.
+Las estructuras de control son elementos fundamentales en Python que dirigen el flujo de ejecución de un programa, permitiéndonos tomar decisiones y repetir acciones de manera eficiente. En esta sección, exploraremos las principales estructuras como condicionales (`IF`), bucles (`For`), la función `Range()`, el control de bucles con `break`, `continue` y `else`, la declaración `pass`, y la estructura match introducida en Python 3.10. Dominar estas herramientas es esencial para escribir código Python elegante y efectivo, y a través de ejemplos prácticos, aprenderemos cómo y cuándo utilizar cada una de ellas en situaciones reales de programación.
+
+### Condicionales (IF)
 
 ## Secciones tratadas hoy
 - 4. Más herramientas para control de flujo
