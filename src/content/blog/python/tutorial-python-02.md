@@ -284,6 +284,13 @@ def saludo(nombre: str) -> str:
 print(saludo.__annotations__)  # Imprime: {'nombre': <class 'str'>, 'return': <class 'str'>}
 ```
 
+## Consignas
+Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuestra disposición. Ahora es el momento de aplicar lo aprendido y comenzar a crear. <a href="https://github.com/AngelB-Dev/El-tutorial-de-Python" target="_blank">Repositorio de GitHub</a>
+
+### Estructura de control (7)
+
+### Funciones (7)
+
 ## Secciones tratadas hoy
 - 4. Más herramientas para control de flujo
     - 4.1. La sentencia if
