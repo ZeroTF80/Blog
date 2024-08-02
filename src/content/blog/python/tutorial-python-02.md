@@ -305,37 +305,63 @@ print(saludo.__annotations__)  # Imprime: {'nombre': <class 'str'>, 'return': <c
 Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuestra disposición. Ahora es el momento de aplicar lo aprendido y comenzar a crear. <a href="https://github.com/AngelB-Dev/El-tutorial-de-Python" target="_blank">Repositorio de GitHub</a>
 
 ### Estructura de control(7)
-1. 
+1. Clasificador de números: Escribe un programa que solicite al usuario un número y determine si es positivo, negativo o cero.
+    - Usa condicionales (`if`, `elif`, `else`) para este ejercicio.
 
-2. 
+2. Tabla de multiplicar: Crea un programa que imprima la tabla de multiplicar del 1 al 10 para un número ingresado por el usuario.
+    - Utiliza un bucle for y la función `range()` para este ejercicio.
 
-3. 
+3. Adivina el número: Implementa un juego donde el programa elige un número aleatorio entre 1 y 100, y el usuario debe adivinarlo.
+    - El programa debe dar pistas de "demasiado alto" o "demasiado bajo" y usar un bucle `while` hasta que el usuario adivine el número.
+    - Utiliza `break` cuando el usuario adivine correctamente.
 
-4. 
+4.  Calculadora de factorial: Escribe una función que calcule el factorial de un número ingresado por el usuario.
+    - Si el usuario ingresa un número negativo, el programa debe manejar esta situación apropiadamente.
+    - Usa un bucle `for` y la sentencia `else` en el bucle.
 
-5. 
+5. Validador de contraseña: Crea un programa que valide una contraseña ingresada por el usuario según los siguientes criterios:
+    - Debe tener al menos 8 caracteres
+    - Debe contener al menos una letra mayúscula, una letra minúscula y un número
+    - No debe contener espacios
+    - Utiliza un bucle `while` con la sentencia break para pedir la contraseña hasta que sea válida.
 
-6. 
+6. Clasificador de triángulos: Escribe un programa que solicite al usuario las longitudes de los tres lados de un triángulo y determine si es equilátero, isósceles o escaleno.
+    - Utiliza la sentencia `match` para este ejercicio.
 
-7. 
+7. Generador de secuencia de Fibonacci: Implementa un generador de la secuencia de Fibonacci hasta un término n ingresado por el usuario.
+    - Utiliza un bucle for y la función `range()`.
+    - Si el usuario ingresa un número negativo, utiliza la sentencia `pass` para manejar este caso.
 
 ### Funciones(7)
-1. 
+1. Calculadora con argumentos por defecto: Crea una función llamada 'calculadora' que acepte dos números y una operación (suma, resta, multiplicación, división) como argumentos.
+    - La operación debe tener un valor por defecto de 'suma'.
+    - Utiliza argumentos con valores por omisión y argumentos de palabras clave.
 
-2. 
+2. Función con argumentos arbitrarios: Escribe una función llamada 'promedio' que calcule el promedio de un número arbitrario de argumentos.
+    - Utiliza `*args` para manejar los argumentos.
 
-3. 
+3. Decorador de tiempo de ejecución: Crea un decorador que mida el tiempo de ejecución de una función y lo imprima.
+    - Aplica este decorador a una función que realice una tarea que tome al menos un segundo (puedes usar `time.sleep()`).
 
-4. 
+4. Función de orden superior: Implementa una función de orden superior llamada 'aplicar_operacion' que tome una operación (función) y una lista de números como argumentos.
+    - La función debe aplicar la operación a cada número de la lista y devolver una nueva lista con los resultados.
+    - Usa esta función con al menos dos operaciones diferentes (por ejemplo, doblar un número y calcular su cuadrado).
 
-5. 
+5. Closure para contador: Crea una función externa llamada 'crear_contador' que devuelva una función interna.
+    - La función interna debe ser un contador que incremente y devuelva un valor cada vez que se llame.
+    - Demuestra el uso de este closure creando dos contadores independientes.
 
-6. 
+6. Generador de números primos: Implementa un generador que produzca números primos.
+    - El generador debe aceptar un parámetro opcional para limitar la cantidad de números primos generados.
+    - Utiliza la palabra clave 'yield' para crear el generador.
 
-7. 
+7. Función con anotaciones de tipo: Escribe una función llamada 'procesar_texto' que tome una cadena de texto y un número entero como argumentos.
+    - La función debe devolver las primeras n palabras del texto, donde n es el número entero proporcionado.
+    - Utiliza anotaciones de tipo para los argumentos y el valor de retorno.
+    - Incluye una docstring que explique el propósito de la función y sus parámetros.
 
 ## Secciones tratadas hoy
-- 4. Más herramientas para control de flujo
+- 4. <a href="https://docs.python.org/es/3.14/tutorial/controlflow.html" target="_blank">Más herramientas para control de flujo</a>
     - 4.1. La sentencia if
     - 4.2. La sentencia for
     - 4.3. La función range()
@@ -359,8 +385,9 @@ Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuest
         - 4.8.8. Anotación de funciones
     - 4.9. Intermezzo: Estilo de programación
 
-Estas características hacen que las funciones
+##### Artículos relacionados
 - << [El tutorial de Python #1: Tutorial oficial](/blog/python/tutorial-python/)
+- [El tutorial de Python #2: ...](/blog/python/tutorial-python-03/) >>
 
 ###### Podría interesarte también
 ###### • [Python: El Lenguaje Preferido para Inteligencia Artificial](/blog/python/)
