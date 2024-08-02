@@ -414,34 +414,34 @@ Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuest
 7. Determina si 64 es divisible por 8 utilizando el operador de módulo.
 
 ### Manipulación de texto(7)
-1. Crea una cadena de texto que incluya una cita dentro de ella, utilizando comillas simples para la cadena principal y comillas dobles para la cita.
+1. Crea una cadena que incluya un diálogo, utilizando comillas dobles para la cadena principal y comillas simples para las palabras del personaje.
 
-2. Define una cadena de texto que contenga múltiples líneas, incluyendo caracteres especiales como '\n' para nueva línea.
+2. Define una cadena de texto que represente un poema corto de tres líneas, usando triple comillas y caracteres de escape para el formato.
 
-3. Crea una cadena sin formato (raw string) que represente una ruta de Windows, por ejemplo, 'C:\Users\nombre\Documentos'.
+3. Crea una cadena sin formato (raw string) que represente una expresión regular simple, por ejemplo, para encontrar números de teléfono.
 
-4. Concatena tres cadenas diferentes para formar la palabra "Python".
+4. Combina tres variables de cadena diferentes para formar una dirección de correo electrónico completa.
 
-5. Crea una cadena que repita la palabra "eco" tres veces.
+5. Crea una cadena que repita un emoji (por ejemplo, 😊) cinco veces utilizando operadores de cadena.
 
-6. Define una cadena larga dividiéndola en múltiples líneas de código, pero que se muestre como una sola línea al imprimirla.
+6. Define una cadena larga que represente un párrafo de un artículo, dividiéndola en múltiples líneas de código pero que se muestre como un párrafo continuo al imprimirla.
 
-7. Demuestra la diferencia entre imprimir una cadena con caracteres especiales usando print() y mostrarla directamente en el intérprete.
+7. Demuestra la diferencia entre usar `len()` en una cadena con caracteres Unicode (como emojis) y en una cadena con solo caracteres ASCII.
 
 ### Listas(7)
-1. Crea una lista llamada `squares` con los cuadrados de los primeros 5 números naturales y luego imprime el último elemento de la lista.
+1. Crea una lista llamada `primes` con los primeros 5 números primos y luego imprime el tercer elemento de la lista.
 
-2. Dada la lista `cubes = [1, 8, 27, 65, 125]`, corrige el valor incorrecto (65) reemplazándolo por el cubo correcto de 4.
+2. Dada la lista `temperatures = [20, 25, 18, 30, 15]`, corrige el valor incorrecto (18) reemplazándolo por la temperatura correcta de 28.
 
-3. Crea una lista llamada `rgb` con los colores "Red", "Green", "Blue", y luego añade "Alpha" al final de la lista utilizando el método `append()`.
+3. Crea una lista llamada `fruits` con tres frutas, y luego añade dos frutas más al final de la lista utilizando el método `append()`.
 
-4. Haz una copia superficial de una lista y demuestra que modificar la copia no afecta a la lista original.
+4. Haz una copia superficial de una lista de animales y demuestra que agregar un elemento a la copia no afecta a la lista original.
 
-5. Crea una lista de letras de la 'a' a la 'g', luego reemplaza los elementos en las posiciones 2 a 4 (inclusive) por sus versiones en mayúsculas.
+5. Crea una lista de números del 1 al 7, luego reemplaza los elementos en las posiciones 3 a 5 (inclusive) por sus cuadrados.
 
-6. Crea una lista anidada que contenga dos sublistas: una con los números del 1 al 3 y otra con las letras 'a', 'b' y 'c'. Luego, accede e imprime el segundo elemento de la segunda sublista.
+6. Crea una lista anidada que contenga dos sublistas: una con los días de la semana laboral y otra con los días del fin de semana. Luego, accede e imprime el primer día del fin de semana.
 
-7. Escribe un programa que genere e imprima los primeros 10 números de la secuencia de Fibonacci utilizando una lista.
+7. Escribe un programa que genere e imprima una lista de los primeros 8 números triangulares (1, 3, 6, 10, 15, 21, 28, 36).
 
 ## Secciones tratadas hoy
 - 1. Abriendo el apetito
