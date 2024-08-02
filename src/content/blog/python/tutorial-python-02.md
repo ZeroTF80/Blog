@@ -54,3 +54,9 @@ Las estructuras de control son elementos fundamentales en Python que dirigen el 
         - 4.8.7. Cadenas de texto de documentación
         - 4.8.8. Anotación de funciones
     - 4.9. Intermezzo: Estilo de programación
+
+##### Artículos relacionados
+- << [El tutorial de Python #1: Tutorial oficial](/blog/python/tutorial-python/)
+
+###### Podría interesarte también
+###### • [Python: El Lenguaje Preferido para Inteligencia Artificial](/blog/python/)

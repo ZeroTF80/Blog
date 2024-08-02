@@ -459,5 +459,5 @@ Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuest
 ##### Artículos relacionados
 - [El tutorial de Python #2: Más herramientas para control de flujo](/blog/python/tutorial-python-02/) >>
 
-###### Podría interesarte también 
+###### Podría interesarte también
 ###### • [Python: El Lenguaje Preferido para Inteligencia Artificial](/blog/python/)
