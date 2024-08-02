@@ -188,7 +188,7 @@ Las funciones en Python ofrecen una gran flexibilidad en la forma de pasar argum
 
 Python también permite definir funciones con diferentes tipos de parámetros: posicionales, de palabras clave, o una combinación de ambos. Los parámetros especiales, marcados con `/` y `*`, permiten a los desarrolladores especificar cómo deben pasarse los argumentos a la función. Esto mejora la legibilidad del código y permite un control más preciso sobre cómo se pueden llamar las funciones.
 
-### Lista de argumentos arbitrarios
+#### Lista de argumentos arbitrarios
 Python permite que una función acepte un número arbitrario de argumentos utilizando la sintaxis `*args` para argumentos posicionales y `**kwargs` para argumentos de palabras clave. Esto proporciona una gran flexibilidad en la definición de funciones.
 - `*args`: Permite a una función aceptar cualquier número de argumentos posicionales. Estos argumentos se empaquetan en una tupla dentro de la función.
 
@@ -200,7 +200,7 @@ def suma(*args):
 print(suma(1, 2, 3, 4))  # Imprime: 10
 ```
 
-### Desempaquetado de argumentos
+#### Desempaquetado de argumentos
 Python también permite el desempaquetado de argumentos, que es esencialmente lo opuesto a `*args` y `**kwargs`:
 - El operador `*` puede desempaquetar una lista o tupla para pasarla como argumentos separados a una función.
 
@@ -213,7 +213,7 @@ numeros = [1, 2, 3]
 print(suma(*numeros))  # Imprime: 6
 ```
 
-## Expresiones lambda
+### Expresiones lambda
 Las expresiones lambda en Python son una forma concisa de crear pequeñas funciones anónimas. Se definen usando la palabra clave `lambda`, seguida de los argumentos, dos puntos, y una única expresión. Las lambda son útiles para crear funciones simples en línea, especialmente como argumentos para funciones de orden superior como `map()`, `filter()`, o `sort()`.
 
 **Características clave**:
@@ -229,7 +229,7 @@ cuadrado = lambda x: x**2
 print(cuadrado(5))  # Imprime: 25
 ```
 
-## Documentación de funciones
+### Documentación de funciones
 La documentación de funciones es una práctica esencial en Python para mejorar la legibilidad y mantenibilidad del código. Python proporciona varias herramientas y convenciones para documentar funciones de manera efectiva. Las dos principales son las cadenas de documentación (docstrings) y las anotaciones de funciones.
 
 **La documentación adecuada de funciones tiene varios beneficios**:
@@ -241,7 +241,7 @@ La documentación de funciones es una práctica esencial en Python para mejorar 
 
 4. Mejora la experiencia de desarrollo en entornos de desarrollo integrado (IDEs) con funciones de autocompletado y sugerencias.
 
-### Cadenas de documentación
+#### Cadenas de documentación
 Las cadenas de documentación (docstrings) son una característica importante en Python para proporcionar documentación integrada en el código. Son cadenas de texto que aparecen como primera declaración en un módulo, función, clase o método.
 
 **Características**:
@@ -266,7 +266,7 @@ def area_circulo(radio):
 print(area_circulo.__doc__)
 ```
 
-### Anotación de funciones
+#### Anotación de funciones
 Las anotaciones de funciones son una característica de Python que permite añadir metadatos a los parámetros de una función y a su valor de retorno. Aunque no afectan el comportamiento en tiempo de ejecución de la función, son útiles para documentación, verificación de tipos y herramientas de análisis estático.
 
 **Características**:
