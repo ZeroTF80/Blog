@@ -49,3 +49,6 @@ El panorama tecnológico de 2024 muestra la continua dominancia de JavaScript y 
 
 **Fuentes**:
 - <a href="https://survey.stackoverflow.co/2024/" target="_blank">Stack Overflow</a>
+
+###### Podría interesarte también
+###### • [¿Qué es programar?](/blog/programacion/)
