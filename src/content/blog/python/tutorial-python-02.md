@@ -5,7 +5,7 @@ description: 'Profundiza en las estructuras de control y funciones de Python. Ap
 pubDate: 'aug 2 2024'
 heroImage: '/Python.jpg'
 ---
-## Glosario
+## Índice
 - [Estructuras de Control](#estructuras-de-control)
     - [Condicionales (IF)](#condicionales-if)
     - [Bucle (for)](#bucle-for)

@@ -5,7 +5,7 @@ description: 'Análisis de las tendencias en lenguajes de programación y framew
 pubDate: 'Aug 02 2024'
 heroImage: '/programacion.png'
 ---
-## Glosario
+## Índice
 - [Tendencias Tecnológicas en 2024](#tendencias-tecnológicas-en-2024)
 - [Tendencias de Frameworks](#tendencias-de-frameworks)
 - [Conclusión](#conclusión)

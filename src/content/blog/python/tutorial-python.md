@@ -5,7 +5,7 @@ description: 'Descubre Python desde cero con la guía oficial. Aprende conceptos
 pubDate: 'aug 1 2024'
 heroImage: '/Python.jpg'
 ---
-## Glosario
+## Índice
 - [Introducción al Tutorial Oficial de Python](#introducción-al-tutorial-oficial-de-python)
     - [¿Por qué este tutorial?](#por-qué-este-tutorial)
 - [Explorando Python](#explorando-python)

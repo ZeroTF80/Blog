@@ -5,7 +5,7 @@ description: 'Descubre cómo la programación está presente en tu vida diaria y
 pubDate: 'Jul 18 2024'
 heroImage: '/programacion.png'
 ---
-## Glosario
+## Índice
 - [¿Qué es Programar? Más Cerca de lo que Crees](#qué-es-programar-más-cerca-de-lo-que-crees)
 - [Programación en la Vida Diaria](#programación-en-la-vida-diaria)
     - [La Lavadora: Tu Primera Experiencia de Programación](#la-lavadora-tu-primera-experiencia-de-programación)

@@ -5,7 +5,7 @@ description: 'Descubre los fundamentos del front-end y back-end en el desarrollo
 pubDate: 'Aug 3 2024'
 heroImage: '/programacion.png'
 ---
-## Glosario
+## Índice
 - [Front-end: La Cara Visible](#front-end-la-cara-visible)
 - [Back-end: El motor oculto](#back-end-el-motor-oculto)
 - [La Interacción entre Front-end y Back-end](#la-interacción-entre-front-end-y-back-end)

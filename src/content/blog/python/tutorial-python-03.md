@@ -5,6 +5,37 @@ description: 'Aprende Python desde cero con nuestra guía. Domina las listas y s
 pubDate: 'aug 3 2024'
 heroImage: '/Python.jpg'
 ---
+## Índice
+- [Introducción a las Estructuras de Datos en Python](#introducción)
+- [Listas](#listas)
+   - [Métodos Principales](#métodos-principales-de-listas)
+   - [Ejemplos Prácticos](#ejemplos-prácticos-listas)
+   - [Uso como Estructuras Especializadas](#listas-como-estructuras-especializadas)
+     - [Pilas y Colas](#listas-como-pilas-y-colas)
+- [Comprensiones de Listas](#comprensiones-de-listas)
+   - [Sintaxis y Ejemplos](#sintaxis-y-ejemplos-comprensiones)
+   - [Comprensiones Anidadas](#comprensiones-anidadas)
+   - [Consideraciones de Rendimiento](#rendimiento-comprensiones)
+- [La instrucción **del**](#instrucción-del)
+- [Tuplas](#tuplas)
+   - [Creación y Desempaquetado](#creación-y-desempaquetado-tuplas)
+- [Conjuntos](#conjuntos)
+   - [Creación y Operaciones](#creación-y-operaciones-conjuntos)
+   - [Comprensión de Conjuntos](#comprensión-de-conjuntos)
+- [Diccionarios](#diccionarios)
+   - [Creación, Uso y Construcción](#creación-uso-y-construcción-diccionarios)
+- [Técnicas de Iteración](#técnicas-de-iteración)
+   - [Sobre Diferentes Estructuras](#iteración-estructuras)
+   - [Modificación Segura durante Iteración](#modificación-segura-iteración)
+- [Condiciones en Python](#condiciones-en-python)
+   - [Operadores de Comparación y Booleanos](#operadores-comparación-booleanos)
+   - [Encadenamiento y Evaluación de Cortocircuito](#encadenamiento-y-cortocircuito)
+- [El Operador Walrus (:=)](#operador-walrus)
+- [Comparaciones de Secuencias y Otros Tipos](#comparaciones-secuencias-y-tipos)
+    - [Comparación Lexicográfica](#comparación-lexicográfica)
+    - [Entre Diferentes Tipos](#comparaciones-entre-tipos)
+- [Conclusión: Dominando las Estructuras de Datos en Python](#conclusión)
+
 Las listas en Python son una de las estructuras de datos más versátiles y ampliamente utilizadas. En este artículo, exploraremos en detalle los métodos que hacen de las listas una herramienta tan poderosa, y veremos cómo se pueden utilizar en diferentes escenarios.
 
 ## Métodos Principales de las Listas
@@ -488,7 +519,7 @@ print(1 < 1.5)   # True
 # print("2" < 1)
 ```
 
-# Conclusión: Dominando las Estructuras de Datos en Python
+## Conclusión: Dominando las Estructuras de Datos en Python
 El viaje a través de las estructuras de datos en Python que hemos emprendido en este tutorial revela la riqueza y flexibilidad que este lenguaje ofrece a los programadores. Desde las versátiles listas hasta los eficientes diccionarios, Python proporciona un conjunto de herramientas poderosas que, cuando se dominan, pueden elevar significativamente la calidad y eficiencia de nuestro código.
 
 Las listas, con su naturaleza mutable y sus múltiples métodos, se erigen como la columna vertebral de muchas operaciones en Python. Su capacidad para crecer, encogerse y transformarse las convierte en el lienzo perfecto para la manipulación de datos dinámicos. La elegancia de las comprensiones de listas nos permite condensar operaciones complejas en expresiones concisas y legibles, demostrando la filosofía de Python de favorecer la claridad y la expresividad.
