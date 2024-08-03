@@ -39,30 +39,92 @@ heroImage: '/Python.jpg'
 Las listas en Python son una de las estructuras de datos más versátiles y ampliamente utilizadas. En este artículo, exploraremos en detalle los métodos que hacen de las listas una herramienta tan poderosa, y veremos cómo se pueden utilizar en diferentes escenarios.
 
 ## Listas
+Las listas en Python son una de las estructuras de datos más versátiles y ampliamente utilizadas. Son secuencias mutables que pueden contener elementos de diferentes tipos, incluyendo otras listas. Las listas se definen utilizando corchetes [] y los elementos se separan por comas.
+```python
+mi_lista = [1, 2, 3, "python", [4, 5, 6]]
+```
 
 ### Métodos Principales de las Listas
 Las listas en Python vienen equipadas con una variedad de métodos útiles. Veamos los más importantes:
 - **append(x)**: Agrega un elemento al final de la lista.
+    ```python
+    frutas = ['manzana', 'banana']
+    frutas.append('naranja')
+    print(frutas)  # Salida: ['manzana', 'banana', 'naranja']
+    ```
 
 - **extend(iterable)**: Añade todos los elementos de un iterable al final de la lista.
+    ```python
+    numeros = [1, 2, 3]
+    numeros.extend([4, 5])
+    print(numeros)  # Salida: [1, 2, 3, 4, 5]
+    ```
 
 - **insert(i, x)**: Inserta un elemento en una posición específica.
+    ```python
+    letras = ['a', 'c', 'd']
+    letras.insert(1, 'b')
+    print(letras)  # Salida: ['a', 'b', 'c', 'd']
+    ```
 
 - **remove(x)**: Elimina el primer elemento con el valor especificado.
+    ```python
+    colores = ['rojo', 'verde', 'azul', 'verde']
+    colores.remove('verde')
+    print(colores)  # Salida: ['rojo', 'azul', 'verde']
+    ```
 
 - **pop([i])**: Elimina y retorna el elemento en la posición dada (o el último si no se especifica).
+    ```python
+    stack = [3, 4, 5]
+    elemento = stack.pop()
+    print(elemento)  # Salida: 5
+    print(stack)  # Salida: [3, 4]
+    ```
 
 - **clear()**: Elimina todos los elementos de la lista.
+    ```python
+    mi_lista = [1, 2, 3]
+    mi_lista.clear()
+    print(mi_lista)  # Salida: []
+    ```
 
 - **index(x[, start[, end]])**: Retorna el índice del primer elemento con el valor especificado.
+    ```python
+    animales = ['gato', 'perro', 'conejo', 'perro']
+    indice = animales.index('perro')
+    print(indice)  # Salida: 1
+    ```
 
 - **count(x)**: Cuenta cuántas veces aparece un elemento en la lista.
+    ```python
+    numeros = [1, 2, 2, 3, 2, 4]
+    conteo = numeros.count(2)
+    print(conteo)  # Salida: 3
+    ```
 
 - **sort()**: Ordena la lista in situ.
+    ```python
+    desordenada = [3, 1, 4, 1, 5, 9, 2]
+    desordenada.sort()
+    print(desordenada)  # Salida: [1, 1, 2, 3, 4, 5, 9]
+    ```
 
 - **reverse()**: Invierte el orden de los elementos in situ.
+    ```python
+    mi_lista = [1, 2, 3, 4]
+    mi_lista.reverse()
+    print(mi_lista)  # Salida: [4, 3, 2, 1]
+    ```
 
 - **copy()**: Crea una copia superficial de la lista.
+    ```python
+    original = [1, [2, 3], 4]
+    copia = original.copy()
+    copia[1][0] = 'a'
+    print(original)  # Salida: [1, ['a', 3], 4]
+    print(copia)     # Salida: [1, ['a', 3], 4]
+    ```
 
 ### Ejemplos Prácticos
 Veamos algunos ejemplos para ilustrar cómo se usan estos métodos:
@@ -163,9 +225,9 @@ print(coordenadas)  # Salida: [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (
 
 ### Comprensiones Anidadas
 Las comprensiones de listas pueden ser anidadas, lo que nos permite trabajar con estructuras de datos más complejas como matrices.
-
-Ejemplo: Transponer una matriz
 ```python
+# Ejemplo: Transponer una matriz
+
 matriz = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
@@ -177,6 +239,34 @@ print(transpuesta)
 # Salida: [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
 ```
 Este ejemplo crea una nueva matriz donde las filas de la matriz original se convierten en columnas.
+```python
+Matriz original:       Matriz transpuesta:
+┌─────────────┐        ┌───────────┐
+│ 1  2  3  4  │        │ 1  5  9   │
+│ 5  6  7  8  │   =>   │ 2  6  10  │
+│ 9  10 11 12 │        │ 3  7  11  │
+└─────────────┘        │ 4  8  12  │
+                       └───────────┘
+```
+```python
+Proceso de transposición:
+
+[1, 2, 3, 4]     [1]
+[5, 6, 7, 8]  => [5]  => [1, 5, 9]
+[9, 10, 11, 12]  [9]
+
+               [2]
+               [6]  => [2, 6, 10]
+               [10]
+
+               [3]
+               [7]  => [3, 7, 11]
+               [11]
+
+               [4]
+               [8]  => [4, 8, 12]
+               [12]
+```
 
 ### Consideraciones de Rendimiento
 Aunque las comprensiones de listas son elegantes y concisas, es importante usarlas con moderación. Para operaciones muy complejas o cuando se trabaja con grandes conjuntos de datos, un bucle tradicional puede ser más legible y eficiente.
@@ -192,24 +282,24 @@ Las comprensiones de listas son una herramienta poderosa en el arsenal de cualqu
 ## La instrucción `del`
 La instrucción `del` en Python es una herramienta versátil que se puede utilizar para eliminar elementos de listas o incluso variables completas. Veamos cómo funciona:
 
-Eliminar elementos de una lista
-```python
-a = [-1, 1, 66.25, 333, 333, 1234.5]
-del a[0]  # Elimina el primer elemento
-print(a)  # Salida: [1, 66.25, 333, 333, 1234.5]
+- Eliminar elementos de una lista
+    ```python
+    a = [-1, 1, 66.25, 333, 333, 1234.5]
+    del a[0]  # Elimina el primer elemento
+    print(a)  # Salida: [1, 66.25, 333, 333, 1234.5]
 
-del a[2:4]  # Elimina los elementos del índice 2 al 3
-print(a)  # Salida: [1, 66.25, 1234.5]
+    del a[2:4]  # Elimina los elementos del índice 2 al 3
+    print(a)  # Salida: [1, 66.25, 1234.5]
 
-del a[:]  # Elimina todos los elementos de la lista
-print(a)  # Salida: []
-```
-Eliminar variables
-```python
-x = 10
-del x
-# print(x)  # Esto daría un error, ya que 'x' ya no existe
-```
+    del a[:]  # Elimina todos los elementos de la lista
+    print(a)  # Salida: []
+    ```
+- Eliminar variables
+    ```python
+    x = 10
+    del x
+    # print(x)  # Esto daría un error, ya que 'x' ya no existe
+    ```
 La instrucción `del` es útil cuando queremos eliminar elementos específicos de una lista o cuando queremos liberar memoria eliminando variables que ya no necesitamos.
 
 ## Tuplas
@@ -307,7 +397,7 @@ print('guido' in tel)  # Salida: True
 print('jack' not in tel)  # Salida: False
 ```
 
-### Construcción
+- Construcción
 Existen varias formas de construir diccionarios:
 ```python
 # Usando el constructor dict()
@@ -337,8 +427,7 @@ for k, v in knights.items():
 # gallahad the pure
 # robin the brave
 ```
-
-Enumeración de secuencias
+- Enumeración de secuencias
 ```python
 for i, v in enumerate(['tic', 'tac', 'toe']):
     print(i, v)
@@ -348,8 +437,7 @@ for i, v in enumerate(['tic', 'tac', 'toe']):
 # 1 tac
 # 2 toe
 ```
-
-Iteración sobre múltiples secuencias
+- Iteración sobre múltiples secuencias
 ```python
 questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot', 'the holy grail', 'blue']
@@ -361,8 +449,7 @@ for q, a in zip(questions, answers):
 # What is your quest?  It is the holy grail.
 # What is your favorite color?  It is blue.
 ```
-
-Iteración en orden inverso
+- Iteración en orden inverso
 Python permite iterar sobre secuencias en orden inverso utilizando la función `reversed()`:
 ```python
 for i in reversed(range(1, 10, 2)):
@@ -375,8 +462,7 @@ for i in reversed(range(1, 10, 2)):
 # 3
 # 1
 ```
-
-Iteración sobre una secuencia ordenada
+- Iteración sobre una secuencia ordenada
 Para iterar sobre una secuencia en orden, podemos usar la función `sorted()`:
 ```python
 basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
@@ -422,12 +508,12 @@ print(a == b)       # Salida: True (tienen el mismo contenido)
 ```
 
 ### Encadenamiento y Evaluación de Cortocircuito
-Las comparaciones pueden encadenarse de manera intuitiva:
+- Las comparaciones pueden encadenarse de manera intuitiva:
 ```python
 a = 5
 print(1 < a < 10)  # Salida: True
 ```
-Operadores booleanos
+- Operadores booleanos
 Python utiliza las palabras clave `and`, `or`, y `not` para operaciones booleanas:
 ```python
 x = 5
@@ -438,8 +524,7 @@ print(x < y and y < z)  # Salida: True
 print(x < y or y > z)   # Salida: True
 print(not x > y)        # Salida: True
 ```
-
-Evaluación de cortocircuito
+- Evaluación de cortocircuito
 Python utiliza evaluación de cortocircuito para `and` y `or`:
 ```python
 # 'or' retorna el primer valor verdadero
