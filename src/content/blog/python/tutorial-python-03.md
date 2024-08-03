@@ -9,13 +9,13 @@ heroImage: '/Python.jpg'
 - [Introducción a las Estructuras de Datos en Python](#introducción)
 - [Listas](#listas)
    - [Métodos Principales](#métodos-principales-de-listas)
-   - [Ejemplos Prácticos](#ejemplos-prácticos-listas)
-   - [Uso como Estructuras Especializadas](#listas-como-estructuras-especializadas)
+   - [Ejemplos Prácticos](#ejemplos-prácticos)
+   - [Uso como Estructuras Especializadas](#uso-como-estructuras-especializadas)
      - [Pilas y Colas](#listas-como-pilas-y-colas)
 - [Comprensiones de Listas](#comprensiones-de-listas)
-   - [Sintaxis y Ejemplos](#sintaxis-y-ejemplos-comprensiones)
+   - [Sintaxis y Ejemplos](#sintaxis-y-ejemplos)
    - [Comprensiones Anidadas](#comprensiones-anidadas)
-   - [Consideraciones de Rendimiento](#rendimiento-comprensiones)
+   - [Consideraciones de Rendimiento](#consideraciones-de-rendimiento)
 - [La instrucción **del**](#instrucción-del)
 - [Tuplas](#tuplas)
    - [Creación y Desempaquetado](#creación-y-desempaquetado-tuplas)
@@ -38,22 +38,33 @@ heroImage: '/Python.jpg'
 
 Las listas en Python son una de las estructuras de datos más versátiles y ampliamente utilizadas. En este artículo, exploraremos en detalle los métodos que hacen de las listas una herramienta tan poderosa, y veremos cómo se pueden utilizar en diferentes escenarios.
 
-## Métodos Principales de las Listas
+## Listas
+
+### Métodos Principales de las Listas
 Las listas en Python vienen equipadas con una variedad de métodos útiles. Veamos los más importantes:
+- **append(x)**: Agrega un elemento al final de la lista.
 
-1. **append(x)**: Agrega un elemento al final de la lista.
-2. **extend(iterable)**: Añade todos los elementos de un iterable al final de la lista.
-3. **insert(i, x)**: Inserta un elemento en una posición específica.
-4. **remove(x)**: Elimina el primer elemento con el valor especificado.
-5. **pop([i])**: Elimina y retorna el elemento en la posición dada (o el último si no se especifica).
-6. **clear()**: Elimina todos los elementos de la lista.
-7. **index(x[, start[, end]])**: Retorna el índice del primer elemento con el valor especificado.
-8. **count(x)**: Cuenta cuántas veces aparece un elemento en la lista.
-9. **sort()**: Ordena la lista in situ.
-10. **reverse()**: Invierte el orden de los elementos in situ.
-11. **copy()**: Crea una copia superficial de la lista.
+- **extend(iterable)**: Añade todos los elementos de un iterable al final de la lista.
 
-## Ejemplos Prácticos
+- **insert(i, x)**: Inserta un elemento en una posición específica.
+
+- **remove(x)**: Elimina el primer elemento con el valor especificado.
+
+- **pop([i])**: Elimina y retorna el elemento en la posición dada (o el último si no se especifica).
+
+- **clear()**: Elimina todos los elementos de la lista.
+
+- **index(x[, start[, end]])**: Retorna el índice del primer elemento con el valor especificado.
+
+- **count(x)**: Cuenta cuántas veces aparece un elemento en la lista.
+
+- **sort()**: Ordena la lista in situ.
+
+- **reverse()**: Invierte el orden de los elementos in situ.
+
+- **copy()**: Crea una copia superficial de la lista.
+
+### Ejemplos Prácticos
 Veamos algunos ejemplos para ilustrar cómo se usan estos métodos:
 ```python
 # Creamos una lista de frutas
@@ -83,10 +94,10 @@ print(ultima_fruta)  # Salida: 'uva'
 print(frutas)  # La lista ya no contiene 'uva'
 ```
 
-## Listas como Estructuras de Datos Especializadas
+### Uso como Estructuras Especializadas
 Las listas en Python son tan versátiles que pueden ser utilizadas para implementar otras estructuras de datos más especializadas:
 
-### Listas como Pilas
+#### Listas como Pilas y Colas
 Una pila sigue el principio de "último en entrar, primero en salir" (LIFO). Podemos implementar una pila fácilmente con una lista:
 ```python
 pila = [3, 4, 5]
@@ -99,7 +110,6 @@ print(elemento)  # Salida: 7
 print(pila)  # Salida: [3, 4, 5, 6]
 ```
 
-### Listas como Colas
 Aunque las listas pueden usarse como colas (principio "primero en entrar, primero en salir" o FIFO), no son eficientes para este propósito. Para una implementación más eficiente de colas, se recomienda usar `collections.deque`:
 ```python
 from collections import deque
@@ -114,13 +124,10 @@ print(primer_cliente)  # Salida: 'Eric'
 print(cola)  # Salida: deque(['John', 'Michael', 'Terry', 'Graham'])
 ```
 
-## Conclusión
-Las listas en Python son increíblemente versátiles y potentes. Con sus numerosos métodos integrados, pueden adaptarse a una gran variedad de tareas de programación, desde el simple almacenamiento de datos hasta la implementación de estructuras de datos más complejas como pilas y colas. Dominar el uso de las listas y sus métodos es esencial para cualquier programador de Python, ya que proporcionan una base sólida para la manipulación eficiente de datos.
-
 ## Comprensiones de Listas
 Las comprensiones de listas son una característica poderosa y elegante de Python que nos permite crear nuevas listas de manera concisa. Son especialmente útiles cuando queremos aplicar una operación a cada elemento de una secuencia o crear una subsecuencia de elementos que cumplen ciertas condiciones.
 
-### Sintaxis Básica
+### Sintaxis y Ejemplos
 La sintaxis básica de una comprensión de lista es:
 ```python
 [expresion for elemento in iterable if condicion]
@@ -131,7 +138,6 @@ Donde:
 - `iterable` es la secuencia sobre la que estamos iterando.
 - `if condicion` es opcional y se usa para filtrar elementos.
 
-### Ejemplos de Comprensiones de Listas
 1. Crear una lista de cuadrados:
 ```python
 cuadrados = [x**2 for x in range(10)]
@@ -155,7 +161,7 @@ coordenadas = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
 print(coordenadas)  # Salida: [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
 ```
 
-### Listas por Comprensión Anidadas
+### Comprensiones Anidadas
 Las comprensiones de listas pueden ser anidadas, lo que nos permite trabajar con estructuras de datos más complejas como matrices.
 
 Ejemplo: Transponer una matriz
