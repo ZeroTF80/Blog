@@ -387,7 +387,7 @@ Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuest
 
 ##### Artículos relacionados
 - << [El tutorial de Python #1: Tutorial oficial](/blog/python/tutorial-python/)
-- [El tutorial de Python #3: ...](/blog/python/tutorial-python-03/) >>
+- [El tutorial de Python #3:  Listas y Métodos de Estructuras de Datos](/blog/python/tutorial-python-03/) >>
 
 ###### Podría interesarte también
 ###### • [Python: El Lenguaje Preferido para Inteligencia Artificial](/blog/python/)
