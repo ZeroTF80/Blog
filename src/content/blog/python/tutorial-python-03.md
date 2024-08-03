@@ -536,31 +536,43 @@ print(1 and 2 and 3)  # Salida: 3
 ```
 
 ## El Operador Walrus (:=)
-Introducido en Python 3.8, el operador walrus permite asignar valores dentro de expresiones:
-```python
-if (n := len([1, 2, 3])) > 2:
-    print(f"La lista tiene {n} elementos")
-# Salida: La lista tiene 3 elementos
-```
-Estas técnicas de iteración y manejo de condiciones son fundamentales para escribir código Python eficiente y elegante. Dominarlas te permitirá trabajar de manera más efectiva con las estructuras de datos que hemos discutido anteriormente en este artículo.
+Introducido en Python 3.8, el operador walrus (:=) es una característica poderosa que permite asignar valores dentro de expresiones. Este operador recibe su nombre debido a su parecido con los ojos y colmillos de una morsa cuando se gira 90 grados.
 
-El Operador Walrus (:=)
-En Python, a diferencia de C, las asignaciones dentro de expresiones deben realizarse explícitamente con el operador walrus `:=`. Esta característica, introducida en Python 3.8, ayuda a evitar errores comunes que se encuentran en C, como escribir accidentalmente `=` en una expresión cuando se pretendía usar `==`.
-
-## Comparaciones de Secuencias y Otros Tipos
+El operador walrus realiza una asignación y devuelve el valor asignado, lo que permite combinar la asignación y la evaluación en una sola expresión. Esto puede llevar a un código más conciso y legible en ciertas situaciones.
 
 Ejemplo de uso del operador walrus:
 ```python
 # Sin operador walrus
-n = len(a)
-if n > 10:
+n = len([1, 2, 3])
+if n > 2:
     print(f"La lista tiene {n} elementos")
 
 # Con operador walrus
-if (n := len(a)) > 10:
+if (n := len([1, 2, 3])) > 2:
     print(f"La lista tiene {n} elementos")
+# Salida: La lista tiene 3 elementos
 ```
-Las secuencias en Python pueden compararse con otros objetos del mismo tipo de secuencia. La comparación utiliza un orden lexicográfico, lo que significa:
+En este ejemplo, el operador walrus asigna el resultado de len([1, 2, 3]) a la variable n y luego compara n con 2, todo en una sola línea.
+
+Es importante notar que, a diferencia de lenguajes como C, Python requiere el uso explícito del operador walrus para asignaciones dentro de expresiones. Esto ayuda a prevenir errores comunes, como escribir accidentalmente = (asignación) cuando se pretendía usar == (comparación).
+
+Otro ejemplo útil del operador walrus es en bucles while:
+```python
+# Sin operador walrus
+while True:
+    chunk = file.read(8192)
+    if not chunk:
+        break
+    process(chunk)
+
+# Con operador walrus
+while (chunk := file.read(8192)):
+    process(chunk)
+```
+El operador walrus puede hacer que el código sea más conciso, pero es importante usarlo con moderación para mantener la legibilidad.
+
+## Comparaciones de Secuencias y Otros Tipos
+Python permite comparar secuencias y otros tipos de objetos de manera intuitiva. Cuando se comparan secuencias del mismo tipo, Python utiliza un orden lexicográfico:
 1. Se comparan los dos primeros elementos.
 
 2. Si son diferentes, esto determina el resultado de la comparación.
@@ -568,7 +580,23 @@ Las secuencias en Python pueden compararse con otros objetos del mismo tipo de s
 3. Si son iguales, se comparan los siguientes dos elementos.
 
 4. Este proceso continúa hasta llegar al final de alguna de las secuencias.
-
+```python
+print((1, 2, 3) < (1, 2, 4))           # True
+print([1, 2, 3] < [1, 2, 4])           # True
+print('ABC' < 'C' < 'Pascal' < 'Python')  # True
+print((1, 2, 3, 4) < (1, 2, 4))        # True
+print((1, 2) < (1, 2, -1))             # True
+```
+Es importante tener en cuenta que las comparaciones entre diferentes tipos de objetos son posibles siempre que los objetos tengan métodos de comparación compatibles. Por ejemplo, se pueden comparar números de diferentes tipos (enteros, flotantes) basándose en su valor numérico.
+```python
+print(0 == 0.0)  # True
+print(1 < 1.5)   # True
+```
+Sin embargo, comparar tipos incompatibles (como una cadena con un número) resultará en un TypeError:
+```python
+# Esto lanzará un TypeError
+# print("2" < 1)
+```
 ### Comparación Lexicográfica
 - Si dos elementos a comparar son ambos secuencias del mismo tipo, la comparación lexicográfica es recursiva.
 
@@ -577,8 +605,7 @@ Las secuencias en Python pueden compararse con otros objetos del mismo tipo de s
 - Si una secuencia es la parte inicial de la otra, la secuencia más corta se considera menor.
 
 Para cadenas de caracteres, el orden lexicográfico utiliza el punto de código Unicode para ordenar caracteres individuales.
-
-Ejemplos de Comparaciones
+- Ejemplos de Comparaciones
 ```python
 print((1, 2, 3)              < (1, 2, 4))           # True
 print([1, 2, 3]              < [1, 2, 4])           # True
