@@ -35,6 +35,7 @@ heroImage: '/Python.jpg'
     - [Comparación Lexicográfica](#comparación-lexicográfica)
     - [Entre Diferentes Tipos](#entre-diferentes-tipos)
 - [Conclusión: Dominando las Estructuras de Datos en Python](#conclusión-dominando-las-estructuras-de-datos-en-python)
+- [Consignas](#consignas)
 - [Secciones tratadas hoy](#secciones-tratadas-hoy)
 
 Las listas en Python son una de las estructuras de datos más versátiles y ampliamente utilizadas. En este artículo, exploraremos en detalle los métodos que hacen de las listas una herramienta tan poderosa, y veremos cómo se pueden utilizar en diferentes escenarios.
@@ -197,8 +198,11 @@ La sintaxis básica de una comprensión de lista es:
 ```
 Donde:
 - `expresion` es la operación que se aplica a cada elemento.
+
 - `elemento` es la variable que representa cada item del iterable.
+
 - `iterable` es la secuencia sobre la que estamos iterando.
+
 - `if condicion` es opcional y se usa para filtrar elementos.
 
 1. Crear una lista de cuadrados:
@@ -655,154 +659,295 @@ El dominio de las estructuras de datos en Python no es el final de tu viaje, sin
 Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuestra disposición. Ahora es el momento de aplicar lo aprendido y comenzar a crear. <a href="https://github.com/AngelB-Dev/El-tutorial-de-Python" target="_blank">Repositorio de GitHub</a>
 
 ### Listas(7)
-1. 
+1. Eliminador de duplicados: Escribe una función que elimine todos los elementos duplicados de una lista, manteniendo el orden original de los elementos.
+    - Usa un bucle for y el método append() para este ejercicio.
+    - Si la lista está vacía, utiliza la sentencia pass para manejar este caso.
 
-2. 
+2. Separador de pares e impares: Crea un programa que genere una lista de 20 números aleatorios entre 1 y 100, luego divida esta lista en dos: una con números pares y otra con impares.
+    - Utiliza la función random.randint() para generar números aleatorios.
+    - Usa comprensión de listas para separar los números pares e impares.
 
-3. 
+3. Capitalizador de palabras: Implementa una función que tome una lista de strings y devuelva una nueva lista donde cada palabra tenga la primera letra en mayúscula.
+    - Utiliza el método capitalize() y una comprensión de lista para este ejercicio.
+    - Si la lista contiene elementos que no son strings, el programa debe manejar esta situación apropiadamente.
 
-4. 
+4. Producto de todos excepto self: Crea una función que tome una lista de números y devuelva una nueva lista donde cada elemento es el producto de todos los números en la lista original excepto el número en esa posición.
+    - Usa dos bucles for anidados para este ejercicio.
+    - Maneja el caso de una lista con ceros apropiadamente.
 
-5. 
+5. Repartidor de cartas: Implementa una función que simule un juego de cartas: dada una lista de "cartas" (pueden ser números o strings), "reparte" una mano de n cartas (es decir, elimina n elementos aleatorios de la lista y los devuelve).
+    - Utiliza el módulo random y el método pop() para este ejercicio.
+    - Si n es mayor que el número de cartas disponibles, usa una sentencia raise para lanzar una excepción.
 
-6. 
+6. Buscador de puntos cercanos: Dada una lista de coordenadas (x, y) representadas como tuplas, encuentra los dos puntos más cercanos entre sí.
+    - Usa bucles anidados y la fórmula de distancia euclidiana para este ejercicio.
+    - Utiliza la función enumerate() para iterar sobre la lista de coordenadas.
 
-7. 
+7. Aplanador de listas: Crea una función recursiva que "aplane" una lista anidada. Por ejemplo, convertir [1, [2, 3, [4, 5]], 6] en [1, 2, 3, 4, 5, 6].
+    - Utiliza recursión y el operador de concatenación de listas (+) para este ejercicio.
+    - Usa `isinstance()` para verificar si un elemento es una lista.
 
 ### Comprensiones de Listas(7)
-1. 
+1. Generador de cuadrados perfectos: Crea una comprensión de lista que genere los primeros 20 cuadrados perfectos.
+    - Utiliza la función range() y el operador de exponenciación (**) para este ejercicio.
+    - Asegúrate de que la lista resultante contenga exactamente 20 elementos.
 
-2. 
+2. Filtro de palabras por longitud: Dada una lista de palabras, crea una comprensión de lista que filtre solo las palabras que tengan más de 5 letras.
+    - Usa la función len() para determinar la longitud de cada palabra.
+    - Si la lista original está vacía, la comprensión debe devolver una lista vacía.
 
-3. 
+3. Transformador de temperaturas: Crea una comprensión de lista que convierta una lista de temperaturas en Celsius a Fahrenheit.
+    - Utiliza la fórmula (C * 9/5) + 32 para la conversión.
+    - Redondea los resultados a dos decimales usando la función round().
 
-4. 
+4. Extractor de dígitos: Dada una lista de números enteros, crea una comprensión de lista que extraiga todos los dígitos únicos utilizados en estos números.
+    - Utiliza la función str() para convertir los números a strings.
+    - Usa un set() dentro de la comprensión para eliminar duplicados.
 
-5. 
+5. Generador de coordenadas: Crea una comprensión de lista que genere todas las coordenadas (x, y) en una cuadrícula de 5x5.
+    - Utiliza comprensiones de lista anidadas para este ejercicio.
+    - El resultado debe ser una lista de tuplas (x, y).
 
-6. 
+6. Filtro de diccionarios: Dada una lista de diccionarios que representan personas con 'nombre' y 'edad', crea una comprensión de lista que filtre solo las personas mayores de 18 años.
+    - Usa la clave 'edad' para filtrar los diccionarios.
+    - El resultado debe ser una lista de diccionarios.
 
-7. 
+7. Generador de matriz identidad: Crea una comprensión de lista que genere una matriz identidad de tamaño n x n.
+    - Utiliza comprensiones de lista anidadas y el operador ternario para este ejercicio.
+    - El parámetro n debe ser proporcionado por el usuario.
 
 ### Del(7)
-1. 
+1. Eliminador de elementos pares: Escribe una función que elimine todos los elementos en posiciones pares de una lista (índices 0, 2, 4, etc.).
+    - Utiliza un bucle for en reversa y la instrucción del.
+    - Asegúrate de manejar correctamente el caso de una lista vacía.
 
-2. 
+2. Limpiador de diccionario: Crea una función que elimine todas las claves de un diccionario cuyos valores sean None.
+    - Usa un bucle for para iterar sobre una copia de las claves del diccionario.
+    - Utiliza la instrucción del para eliminar las claves con valores None.
 
-3. 
+3. Reductor de lista: Implementa una función que reduzca una lista a sus n primeros elementos, eliminando el resto.
+    - Utiliza slicing y la instrucción del para este ejercicio.
+    - Si n es mayor que la longitud de la lista, la función no debe modificar la lista.
 
-4. 
+4. Eliminador de variables: Escribe un programa que cree varias variables y luego las elimine una por una, imprimiendo el espacio de nombres local después de cada eliminación.
+    - Usa la función locals() para imprimir el espacio de nombres.
+    - Maneja las excepciones que puedan surgir al intentar acceder a variables eliminadas.
 
-5. 
+5. Limpiador de atributos: Crea una clase con varios atributos y un método que elimine todos los atributos de la instancia excepto uno especificado.
+    - Utiliza vars() para obtener un diccionario de los atributos de la instancia.
+    - Usa un bucle for y la instrucción del para eliminar los atributos.
 
-6. 
+6. Eliminador de subcadenas: Implementa una función que elimine todas las ocurrencias de una subcadena dada en una cadena principal.
+    - Convierte la cadena en una lista de caracteres.
+    - Utiliza slicing y la instrucción del para eliminar las subcadenas encontradas.
 
-7. 
+7. Gestor de memoria: Crea un programa que simule la gestión de memoria, donde puedas "asignar" y "liberar" bloques de memoria.
+    - Usa un diccionario para representar la memoria, donde las claves son direcciones y los valores son datos.
+    - Implementa funciones para "asignar" (añadir al diccionario) y "liberar" (usar del para eliminar del diccionario) bloques de memoria.
 
 ### Tuplas(7)
-1. 
+1. Intercambiador de valores: Escribe una función que tome dos variables y intercambie sus valores utilizando una tupla.
+    - Usa la asignación múltiple con una tupla para realizar el intercambio.
+    - Asegúrate de que la función funcione con diferentes tipos de datos.
 
-2. 
+2. Desempaquetador de tuplas: Crea una función que tome una lista de tuplas (nombre, edad, profesión) y devuelva tres listas separadas con los nombres, edades y profesiones.
+    - Utiliza desempaquetado de tuplas y comprensión de listas.
+    - Maneja el caso en que alguna tupla no tenga exactamente tres elementos.
 
-3. 
+3. Ordenador de tuplas: Implementa una función que ordene una lista de tuplas basándose en el segundo elemento de cada tupla.
+    - Usa la función sorted() con un argumento key personalizado.
+    - Si el segundo elemento es el mismo, ordena por el primer elemento.
 
-4. 
+4. Contador de ocurrencias: Escribe una función que cuente las ocurrencias de cada elemento en una tupla y devuelva un diccionario con los resultados.
+    - Utiliza un diccionario para almacenar los conteos.
+    - Maneja el caso de tuplas que contengan elementos no hashables.
 
-5. 
+5. Generador de n-gramas: Crea una función que genere todos los n-gramas posibles de una secuencia dada (puede ser una lista, tupla o cadena).
+    - Usa zip() y slicing para generar los n-gramas.
+    - Permite que la función acepte un parámetro para especificar el tamaño de los n-gramas.
 
-6. 
+6. Filtro de tuplas: Implementa una función que filtre una lista de tuplas basándose en una condición dada (por ejemplo, tuplas donde el primer elemento es par).
+    - Utiliza filter() o una comprensión de lista para realizar el filtrado.
+    - Permite que la función acepte la condición de filtrado como un argumento.
 
-7. 
+7. Fusionador de tuplas: Escribe una función que tome dos tuplas y devuelva una nueva tupla que sea la fusión de ambas, eliminando duplicados y manteniendo el orden.
+    - Usa set() para eliminar duplicados y luego convierte de vuelta a tupla.
+    - Asegúrate de que el orden de los elementos en la tupla resultante sea el mismo que en las tuplas originales.
 
 ### Conjuntos(7)
-1. 
+1. Eliminador de duplicados: Escribe una función que tome una lista como entrada y devuelva una nueva lista sin elementos duplicados, manteniendo el orden original de aparición.
+    - Utiliza un conjunto (set) para eliminar duplicados eficientemente.
+    - Convierte el resultado de vuelta a una lista para mantener el orden original.
 
-2. 
+2. Calculadora de intersección: Crea una función que tome dos listas como entrada y devuelva una nueva lista con los elementos comunes a ambas, sin duplicados.
+    - Convierte las listas de entrada en conjuntos.
+    - Utiliza el método intersection() para encontrar los elementos comunes.
 
-3. 
+3. Verificador de subconjuntos: Implementa una función que determine si todos los elementos de una lista están presentes en otra lista, independientemente del orden o la cantidad de repeticiones.
+    - Convierte ambas listas en conjuntos.
+    - Utiliza el método issubset() para verificar si un conjunto es subconjunto del otro.
 
-4. 
+4. Generador de potencia conjunto: Escribe una función que genere todos los subconjuntos posibles de un conjunto dado.
+    - Utiliza la biblioteca itertools para generar todas las combinaciones posibles.
+    - Devuelve el resultado como una lista de conjuntos.
 
-5. 
+5. Calculadora de diferencia simétrica: Crea una función que tome dos conjuntos como entrada y devuelva un nuevo conjunto con elementos que están en cualquiera de los conjuntos, pero no en ambos.
+    - Utiliza el operador ^ (XOR) para conjuntos o el método symmetric_difference().
+    - Asegúrate de que la función maneje correctamente conjuntos vacíos.
 
-6. 
+6. Verificador de disyunción: Implementa una función que determine si dos listas no tienen elementos en común.
+    - Convierte las listas en conjuntos.
+    - Utiliza el método isdisjoint() para verificar si los conjuntos son disjuntos.
 
-7. 
+7. Optimizador de búsqueda: Crea una función que tome una lista grande y una lista pequeña, y determine eficientemente si todos los elementos de la lista pequeña están en la lista grande.
+    - Convierte la lista grande en un conjunto para búsquedas O(1).
+    - Itera sobre la lista pequeña, verificando la pertenencia en el conjunto.
 
 ### Diccionarios(7)
-1. 
+1. Contador de palabras: Escribe una función que tome una cadena de texto y devuelva un diccionario donde las claves sean las palabras únicas y los valores sean el número de veces que aparece cada palabra.
+    - Usa el método split() para dividir el texto en palabras.
+    - Utiliza un diccionario para contar las ocurrencias de cada palabra.
 
-2. 
+2. Fusionador de diccionarios: Crea una función que tome dos diccionarios y los combine en uno solo. Si hay claves duplicadas, el valor del segundo diccionario debe prevalecer.
+    - Usa el método update() o una comprensión de diccionarios para combinar los diccionarios.
+    - Asegúrate de no modificar los diccionarios originales.
 
-3. 
+3. Inversor de diccionario: Implementa una función que tome un diccionario y devuelva un nuevo diccionario donde las claves y valores estén intercambiados.
+    - Maneja el caso en que múltiples claves tengan el mismo valor.
+    - Usa una comprensión de diccionarios para crear el nuevo diccionario.
 
-4. 
+4. Buscador de valores máximos: Escribe una función que encuentre la(s) clave(s) con el valor más alto en un diccionario.
+    - Utiliza la función max() con un argumento key personalizado.
+    - Devuelve una lista de claves en caso de que haya múltiples valores máximos.
 
-5. 
+5. Aplanador de diccionarios anidados: Crea una función recursiva que "aplane" un diccionario anidado, donde las claves del nuevo diccionario sean las rutas a los valores en el diccionario original.
+    - Usa recursión para manejar diccionarios anidados a cualquier profundidad.
+    - Las claves del diccionario aplanado deben ser strings que representen la ruta (por ejemplo, "a.b.c").
 
-6. 
+6. Filtrador de diccionario: Implementa una función que filtre un diccionario basándose en una función de predicado que se aplique a los valores.
+    - La función debe aceptar el diccionario y una función de predicado como argumentos.
+    - Usa una comprensión de diccionarios para crear el nuevo diccionario filtrado.
 
-7. 
+7. Ordenador de diccionario por valores: Escribe una función que ordene un diccionario basándose en sus valores y devuelva una lista de tuplas (clave, valor) ordenadas.
+    - Utiliza la función sorted() con un argumento key personalizado.
+    - Permite que la función acepte un argumento para especificar orden ascendente o descendente.
 
 ### Técnicas de Iteración(7)
-1. 
+1. Iterador de diccionario: Escribe una función que tome un diccionario y imprima sus claves y valores en formato "clave: valor" utilizando un bucle for y el método items().
+    - Usa desempaquetado de tuplas en el bucle for.
+    - Maneja el caso de un diccionario vacío.
 
-2. 
+2. Enumerador de lista: Crea una función que tome una lista y imprima cada elemento junto con su índice utilizando la función enumerate().
+    - El formato de impresión debe ser "Índice: X, Valor: Y".
+    - Permite que la función acepte un parámetro opcional para especificar el índice de inicio.
 
-3. 
+3. Iterador de múltiples listas: Implementa una función que tome dos o más listas de igual longitud y las itere en paralelo utilizando zip(), imprimiendo los elementos correspondientes.
+    - Usa *args para permitir un número variable de listas como entrada.
+    - Maneja el caso en que las listas tengan longitudes diferentes.
 
-4. 
+4. Iterador inverso: Escribe una función que itere sobre una secuencia en orden inverso utilizando reversed() y imprima cada elemento.
+    - La función debe funcionar con listas, tuplas y cadenas.
+    - Incluye un parámetro opcional para especificar cuántos elementos invertir.
 
-5. 
+5. Iterador de matriz: Crea una función que itere sobre una matriz (lista de listas) e imprima cada elemento junto con sus índices de fila y columna.
+    - Utiliza bucles for anidados y enumerate() para este ejercicio.
+    - Formatea la salida como "Elemento en (fila, columna): valor".
 
-6. 
+6. Iterador de archivo: Implementa una función que lea un archivo línea por línea e imprima cada línea precedida por su número de línea.
+    - Utiliza enumerate() para obtener el número de línea.
+    - Maneja apropiadamente la apertura y cierre del archivo.
 
-7. 
+7. Iterador personalizado: Crea una clase que implemente un iterador personalizado que genere los primeros n números de la secuencia de Fibonacci.
+    - Implementa los métodos iter() y next().
+    - Lanza StopIteration cuando se alcance el límite n.
 
 ### Condiciones(7)
-1. 
+1. Verificador de rango: Escribe una función que tome un número y verifique si está dentro de un rango específico (por ejemplo, entre 0 y 100, inclusive).
+    - Utiliza operadores de comparación encadenados.
+    - Devuelve True si está en el rango, False en caso contrario.
 
-2. 
+2. Clasificador de triángulos: Crea una función que tome las longitudes de tres lados y determine si forman un triángulo equilátero, isósceles o escaleno.
+    - Usa múltiples condiciones if-elif-else.
+    - Verifica primero si los lados pueden formar un triángulo válido.
 
-3. 
+3. Evaluador de expresiones lógicas: Implementa una función que tome tres valores booleanos y evalúe una expresión lógica compleja.
+    - Usa operadores and, or, y not.
+    - Incluye paréntesis para controlar el orden de evaluación.
 
-4. 
+4. Comparador de secuencias: Escribe una función que compare dos secuencias (listas, tuplas o cadenas) y determine su relación (igual, subconjunto, superconjunto, o ninguna relación).
+    - Utiliza operadores de comparación para secuencias.
+    - Maneja el caso de tipos de secuencias diferentes.
 
-5. 
+5. Verificador de año bisiesto: Crea una función que determine si un año dado es bisiesto.
+    - Un año es bisiesto si es divisible por 4, excepto aquellos divisibles por 100 que no son divisibles por 400.
+    - Usa operadores de comparación y operadores lógicos para construir la condición.
 
-6. 
+6. Evaluador de contraseñas: Implementa una función que evalúe la fortaleza de una contraseña basándose en múltiples criterios (longitud, presencia de mayúsculas, minúsculas, números y caracteres especiales).
+    - Utiliza múltiples condiciones y el operador in para verificar la presencia de tipos de caracteres.
+    - Devuelve una calificación (por ejemplo, "débil", "media", "fuerte") basada en cuántos criterios cumple.
 
-7. 
+7. Calculadora de descuentos: Escribe una función que calcule el descuento aplicable a una compra basándose en múltiples condiciones (monto de la compra, día de la semana, si el cliente es miembro, etc.).
+    - Usa una combinación de condiciones anidadas y operadores lógicos.
+    - Implementa al menos tres niveles de descuento basados en diferentes combinaciones de condiciones.
 
 ### Operador Walrus(7)
-1. 
+1. Buscador de elementos: Escribe una función que busque un elemento en una lista y, si lo encuentra, imprima su posición. Usa el operador walrus en un bucle while.
+    - Utiliza el método index() dentro de la condición del while con el operador walrus.
+    - Si el elemento no se encuentra, imprime un mensaje apropiado.
 
-2. 
+2. Validador de entrada: Crea un programa que solicite al usuario que ingrese un número entre 1 y 10, usando el operador walrus en un bucle while para validar la entrada.
+    - Usa input() con el operador walrus en la condición del while.
+    - Convierte la entrada a int y verifica si está en el rango correcto.
 
-3. 
+3. Procesador de cadenas: Implementa una función que procese una cadena mientras su longitud sea mayor que cero, utilizando el operador walrus para asignar y verificar la longitud en cada iteración.
+    - Usa len() con el operador walrus en la condición del while.
+    - En cada iteración, elimina el primer carácter de la cadena y procésalo de alguna manera.
 
-4. 
+4. Calculadora de estadísticas: Escribe un programa que calcule la media de una serie de números ingresados por el usuario, usando el operador walrus para asignar y verificar cada entrada.
+    - Utiliza input() con el operador walrus para obtener números hasta que el usuario ingrese una cadena vacía.
+    - Calcula y muestra la media de los números ingresados.
 
-5. 
+5. Generador de secuencias: Crea una función generadora que produzca una secuencia de números, usando el operador walrus para actualizar y verificar el estado del generador.
+    - Usa el operador walrus en la condición de un bucle while dentro del generador.
+    - La secuencia debe terminar cuando se alcance cierto valor o condición.
 
-6. 
+6. Analizador de listas: Implementa una función que analice una lista de elementos, usando el operador walrus para asignar y verificar propiedades de cada elemento en un bucle for.
+    - Utiliza el operador walrus para asignar el resultado de una función de comprobación a una variable.
+    - Realiza diferentes acciones basadas en el resultado de la comprobación.
 
-7. 
+7. Lector de archivo eficiente: Escribe una función que lea un archivo línea por línea, procesando solo las líneas que cumplan cierta condición, usando el operador walrus para asignar y verificar cada línea leída.
+    - Usa el método readline() con el operador walrus en un bucle while.
+    - Procesa las líneas que cumplan con la condición especificada.
 
 ### Comparaciones de Secuencias y Otros Tipos(7)
-1. 
+1. Comparador de listas: Escribe una función que compare dos listas y determine si son iguales, independientemente del orden de los elementos.
+    - Utiliza la conversión a conjuntos para comparar el contenido.
+    - La función debe devolver True si las listas tienen los mismos elementos, False en caso contrario.
 
-2. 
+2. Ordenador lexicográfico: Implementa una función que ordene una lista de cadenas en orden lexicográfico.
+    - Usa la función sorted() con un key personalizado si es necesario.
+    - Asegúrate de que la función maneje correctamente mayúsculas y minúsculas.
 
-3. 
+3. Comparador de tuplas: Crea una función que compare dos tuplas y determine cuál es "mayor" según el orden lexicográfico.
+    - La función debe devolver -1 si la primera tupla es menor, 0 si son iguales, y 1 si la primera es mayor.
+    - Maneja el caso de tuplas de diferentes longitudes.
 
-4. 
+4. Buscador de subcadenas: Escribe una función que determine si una cadena es una subcadena de otra, utilizando solo operadores de comparación.
+    - No uses métodos de cadenas como find() o in.
+    - La función debe devolver el índice donde comienza la subcadena, o -1 si no se encuentra.
 
-5. 
+5. Comparador de versiones: Implementa una función que compare dos números de versión (por ejemplo, "1.2.3" y "1.2.4") y determine cuál es mayor.
+    - Divide las cadenas en componentes y compáralos uno por uno.
+    - Maneja correctamente versiones con diferente número de componentes.
 
-6. 
+6. Ordenador personalizado: Crea una función que ordene una lista de objetos personalizados basándose en múltiples criterios.
+    - Define una clase con al menos tres atributos.
+    - Implementa un método lt() en la clase para permitir la comparación.
+    - Usa sorted() con un key que utilice tuplas para comparación multi-criterio.
 
-7. 
+7. Comparador de estructuras anidadas: Escribe una función que compare dos estructuras de datos anidadas (que pueden contener listas, tuplas y diccionarios) y determine si son iguales.
+    - La función debe ser recursiva para manejar estructuras de cualquier profundidad.
+    - Asegúrate de que la función maneje correctamente diferentes tipos de colecciones.
 
 ## Secciones tratadas hoy
 - 5. <a href="https://docs.python.org/es/3.14/tutorial/datastructures.html" target="_blank">Estructuras de datos</a>
