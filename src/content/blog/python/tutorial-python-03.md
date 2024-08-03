@@ -16,9 +16,9 @@ heroImage: '/Python.jpg'
    - [Sintaxis y Ejemplos](#sintaxis-y-ejemplos)
    - [Comprensiones Anidadas](#comprensiones-anidadas)
    - [Consideraciones de Rendimiento](#consideraciones-de-rendimiento)
-- [La instrucción **del**](#instrucción-del)
+- [La instrucción **del**](#la-instrucción-del)
 - [Tuplas](#tuplas)
-   - [Creación y Desempaquetado](#creación-y-desempaquetado-tuplas)
+   - [Creación y Desempaquetado](#creación-y-desempaquetado)
 - [Conjuntos](#conjuntos)
    - [Creación y Operaciones](#creación-y-operaciones-conjuntos)
    - [Comprensión de Conjuntos](#comprensión-de-conjuntos)
@@ -192,7 +192,7 @@ Las comprensiones de listas son una herramienta poderosa en el arsenal de cualqu
 ## La instrucción `del`
 La instrucción `del` en Python es una herramienta versátil que se puede utilizar para eliminar elementos de listas o incluso variables completas. Veamos cómo funciona:
 
-### Eliminar elementos de una lista
+Eliminar elementos de una lista
 ```python
 a = [-1, 1, 66.25, 333, 333, 1234.5]
 del a[0]  # Elimina el primer elemento
@@ -204,8 +204,7 @@ print(a)  # Salida: [1, 66.25, 1234.5]
 del a[:]  # Elimina todos los elementos de la lista
 print(a)  # Salida: []
 ```
-
-### Eliminar variables
+Eliminar variables
 ```python
 x = 10
 del x
@@ -216,7 +215,7 @@ La instrucción `del` es útil cuando queremos eliminar elementos específicos d
 ## Tuplas
 Las tuplas son otro tipo de secuencia en Python, similar a las listas, pero con una diferencia crucial: son inmutables. Esto significa que una vez creada una tupla, no podemos cambiar sus elementos.
 
-### Creación de tuplas
+### Creación y desempaquetado
 ```python
 t = 12345, 54321, 'hello!'
 print(t)  # Salida: (12345, 54321, 'hello!')
@@ -229,8 +228,7 @@ print(u)  # Salida: ((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))
 singleton = 'hello',
 print(singleton)  # Salida: ('hello',)
 ```
-
-### Desempaquetado de tuplas
+Desempaquetado de tuplas
 Una característica útil de las tuplas es que pueden ser desempaquetadas en variables individuales:
 ```python
 x, y, z = t
@@ -243,7 +241,7 @@ Las tuplas son útiles cuando queremos asegurarnos de que una colección de elem
 ## Conjuntos
 Los conjuntos en Python son colecciones no ordenadas de elementos únicos. Son útiles para eliminar duplicados y realizar operaciones matemáticas de conjuntos.
 
-### Creación de conjuntos
+### Creación y Operaciones
 ```python
 # Usando llaves
 frutas = {'manzana', 'naranja', 'manzana', 'pera', 'naranja', 'banana'}
@@ -253,8 +251,7 @@ print(frutas)  # Salida: {'naranja', 'manzana', 'pera', 'banana'}
 a = set('abracadabra')
 print(a)  # Salida: {'a', 'r', 'b', 'c', 'd'}
 ```
-
-### Operaciones con conjuntos
+Operaciones con conjuntos
 ```python
 a = set('abracadabra')
 b = set('alacazam')
@@ -278,7 +275,7 @@ Estas estructuras de datos (listas, tuplas y conjuntos) son fundamentales en Pyt
 ## Diccionarios
 Los diccionarios son una estructura de datos extremadamente útil en Python. A diferencia de las secuencias, que se indexan por un rango numérico, los diccionarios se indexan con claves, que pueden ser cualquier tipo inmutable.
 
-### Creación y uso de diccionarios
+### Creación, Uso y Construcción
 ```python
 # Creación de un diccionario
 tel = {'jack': 4098, 'sape': 4139}
@@ -310,7 +307,7 @@ print('guido' in tel)  # Salida: True
 print('jack' not in tel)  # Salida: False
 ```
 
-### Construcción de diccionarios
+### Construcción
 Existen varias formas de construir diccionarios:
 ```python
 # Usando el constructor dict()
@@ -330,7 +327,7 @@ print(dict3)  # Salida: {'sape': 4139, 'guido': 4127, 'jack': 4098}
 ## Técnicas de Iteración
 Python ofrece varias técnicas poderosas para iterar sobre estructuras de datos.
 
-### Iteración sobre diccionarios
+### Sobre Diferentes Estructuras
 ```python
 knights = {'gallahad': 'the pure', 'robin': 'the brave'}
 for k, v in knights.items():
@@ -341,7 +338,7 @@ for k, v in knights.items():
 # robin the brave
 ```
 
-### Enumeración de secuencias
+Enumeración de secuencias
 ```python
 for i, v in enumerate(['tic', 'tac', 'toe']):
     print(i, v)
@@ -352,7 +349,7 @@ for i, v in enumerate(['tic', 'tac', 'toe']):
 # 2 toe
 ```
 
-### Iteración sobre múltiples secuencias
+Iteración sobre múltiples secuencias
 ```python
 questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot', 'the holy grail', 'blue']
@@ -365,7 +362,7 @@ for q, a in zip(questions, answers):
 # What is your favorite color?  It is blue.
 ```
 
-### Iteración en orden inverso
+Iteración en orden inverso
 Python permite iterar sobre secuencias en orden inverso utilizando la función `reversed()`:
 ```python
 for i in reversed(range(1, 10, 2)):
@@ -379,7 +376,7 @@ for i in reversed(range(1, 10, 2)):
 # 1
 ```
 
-### Iteración sobre una secuencia ordenada
+Iteración sobre una secuencia ordenada
 Para iterar sobre una secuencia en orden, podemos usar la función `sorted()`:
 ```python
 basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
@@ -394,7 +391,7 @@ for fruit in sorted(set(basket)):
 ```
 Nótese el uso de `set()` para eliminar duplicados antes de ordenar.
 
-### Modificación segura de una lista durante la iteración
+### Modificación Segura durante Iteración
 A veces necesitamos modificar una lista mientras la estamos recorriendo. Una forma segura de hacerlo es crear una nueva lista:
 ```python
 import math
@@ -406,9 +403,9 @@ print(filtered_data)  # Salida: [56.2, 51.7, 55.3, 52.5, 47.8]
 ```
 
 ## Condiciones en Python
-Las condiciones en Python son muy flexibles y pueden incluir varios tipos de operadores y expresiones.
+Las condiciones en Python son  muy flexibles y pueden incluir varios tipos de operadores y expresiones.
 
-### Operadores de comparación
+### Operadores de Comparación y Booleanos
 Además de los operadores de comparación estándar (`<`, `>`, `==`, `!=`, `<=`, `>=`), Python ofrece:
 
 - `in` y `not in`: para verificar pertenencia
@@ -424,17 +421,14 @@ print(a is b)       # Salida: False (son objetos diferentes)
 print(a == b)       # Salida: True (tienen el mismo contenido)
 ```
 
-### Encadenamiento de comparaciones
+### Encadenamiento y Evaluación de Cortocircuito
 Las comparaciones pueden encadenarse de manera intuitiva:
-
 ```python
 a = 5
 print(1 < a < 10)  # Salida: True
 ```
-
-### Operadores booleanos
+Operadores booleanos
 Python utiliza las palabras clave `and`, `or`, y `not` para operaciones booleanas:
-
 ```python
 x = 5
 y = 10
@@ -445,7 +439,7 @@ print(x < y or y > z)   # Salida: True
 print(not x > y)        # Salida: True
 ```
 
-### Evaluación de cortocircuito
+Evaluación de cortocircuito
 Python utiliza evaluación de cortocircuito para `and` y `or`:
 ```python
 # 'or' retorna el primer valor verdadero
@@ -456,7 +450,7 @@ print(0 and 1)  # Salida: 0
 print(1 and 2 and 3)  # Salida: 3
 ```
 
-### El operador walrus (:=)
+## El Operador Walrus (:=)
 Introducido en Python 3.8, el operador walrus permite asignar valores dentro de expresiones:
 ```python
 if (n := len([1, 2, 3])) > 2:
@@ -465,10 +459,10 @@ if (n := len([1, 2, 3])) > 2:
 ```
 Estas técnicas de iteración y manejo de condiciones son fundamentales para escribir código Python eficiente y elegante. Dominarlas te permitirá trabajar de manera más efectiva con las estructuras de datos que hemos discutido anteriormente en este artículo.
 
-# Comparaciones de Secuencias y Otros Tipos en Python
-
-## El Operador Walrus (:=)
+El Operador Walrus (:=)
 En Python, a diferencia de C, las asignaciones dentro de expresiones deben realizarse explícitamente con el operador walrus `:=`. Esta característica, introducida en Python 3.8, ayuda a evitar errores comunes que se encuentran en C, como escribir accidentalmente `=` en una expresión cuando se pretendía usar `==`.
+
+## Comparaciones de Secuencias y Otros Tipos
 
 Ejemplo de uso del operador walrus:
 ```python
@@ -481,8 +475,6 @@ if n > 10:
 if (n := len(a)) > 10:
     print(f"La lista tiene {n} elementos")
 ```
-
-## Comparación de Secuencias y Otros Tipos
 Las secuencias en Python pueden compararse con otros objetos del mismo tipo de secuencia. La comparación utiliza un orden lexicográfico, lo que significa:
 1. Se comparan los dos primeros elementos.
 
@@ -501,7 +493,7 @@ Las secuencias en Python pueden compararse con otros objetos del mismo tipo de s
 
 Para cadenas de caracteres, el orden lexicográfico utiliza el punto de código Unicode para ordenar caracteres individuales.
 
-### Ejemplos de Comparaciones
+Ejemplos de Comparaciones
 ```python
 print((1, 2, 3)              < (1, 2, 4))           # True
 print([1, 2, 3]              < [1, 2, 4])           # True
@@ -512,7 +504,7 @@ print((1, 2, 3)             == (1.0, 2.0, 3.0))     # True
 print((1, 2, ('aa', 'ab'))   < (1, 2, ('abc', 'a'), 4))  # True
 ```
 
-### Comparaciones entre Diferentes Tipos
+### Entre Diferentes Tipos
 Es legal comparar objetos de diferentes tipos con `<` o `>` siempre y cuando los objetos tengan los métodos de comparación apropiados. Por ejemplo:
 - Los tipos de números mezclados se comparan de acuerdo a su valor numérico (0 es igual a 0.0).
 
