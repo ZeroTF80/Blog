@@ -35,6 +35,7 @@ heroImage: '/Python.jpg'
     - [Comparación Lexicográfica](#comparación-lexicográfica)
     - [Entre Diferentes Tipos](#entre-diferentes-tipos)
 - [Conclusión: Dominando las Estructuras de Datos en Python](#conclusión-dominando-las-estructuras-de-datos-en-python)
+- [Secciones tratadas hoy](#secciones-tratadas-hoy)
 
 Las listas en Python son una de las estructuras de datos más versátiles y ampliamente utilizadas. En este artículo, exploraremos en detalle los métodos que hacen de las listas una herramienta tan poderosa, y veremos cómo se pueden utilizar en diferentes escenarios.
 
@@ -649,3 +650,178 @@ Con el conocimiento que has adquirido en este tutorial, estás bien equipado par
 A medida que avanzas en tu aprendizaje, mantén siempre presente el Zen de Python: la simplicidad es mejor que la complejidad, pero la complejidad explícita es mejor que la complejidad implícita. Las estructuras de datos que has aprendido te ayudarán a navegar este equilibrio, permitiéndote escribir código que es tanto poderoso como comprensible.
 
 El dominio de las estructuras de datos en Python no es el final de tu viaje, sino el comienzo de infinitas posibilidades. Con estas herramientas a tu disposición, estás listo para crear, innovar y dejar tu huella en el mundo de la programación. ¡Adelante, y que tus códigos sean siempre claros, eficientes y pythónicos!
+
+## Consignas
+Hemos adquirido conocimientos valiosos y tenemos los recursos necesarios a nuestra disposición. Ahora es el momento de aplicar lo aprendido y comenzar a crear. <a href="https://github.com/AngelB-Dev/El-tutorial-de-Python" target="_blank">Repositorio de GitHub</a>
+
+### Listas(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Comprensiones de Listas(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Del(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Tuplas(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Conjuntos(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Diccionarios(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Técnicas de Iteración(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Condiciones(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Operador Walrus(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+### Comparaciones de Secuencias y Otros Tipos(7)
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+## Secciones tratadas hoy
+- 5. <a href="https://docs.python.org/es/3.14/tutorial/datastructures.html" target="_blank">Estructuras de datos</a>
+    - 5.1. Más sobre listas
+        - 5.1.1. Usar listas como pilas
+        - 5.1.2. Usar listas como colas
+        - 5.1.3. Comprensión de listas
+        - 5.1.4. Listas por comprensión anidadas
+    - 5.2. La instrucción del
+    - 5.3. Tuplas y secuencias
+    - 5.4. Conjuntos
+    - 5.5. Diccionarios
+    - 5.6. Técnicas de iteración
+    - 5.7. Más acerca de condiciones
+    - 5.8. Comparando secuencias y otros tipos
+
+##### Artículos relacionados
+- [El tutorial de Python #3: La clave para organizar y reutilizar tu código](/blog/python/tutorial-python-04/) >>
+- << [El tutorial de Python #2: Control de Flujo Avanzado y Funciones](/blog/python/tutorial-python-02/)
+
+###### Podría interesarte también
+###### • [Python: El Lenguaje Preferido para Inteligencia Artificial](/blog/python/)
