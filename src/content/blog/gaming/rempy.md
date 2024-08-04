@@ -409,7 +409,7 @@ Recuerda que la clave para dominar Ren'Py es la práctica constante y la experim
 ¿Estás listo para comenzar tu viaje en el desarrollo de juegos con Ren'Py? ¡Descarga el motor, abre tu editor de texto favorito y comienza a crear tu obra maestra hoy mismo!
 
 ##### Artículos relacionados
-- [El tutorial de Python #1: Tutorial oficial](/blog/python/tutorial-python/) >>
+- [El tutorial de Python #1: Tutorial oficial](/blog/python/tutorial-python/)
 
 ###### Podría interesarte también
 ###### • [Python: El Lenguaje Preferido para Inteligencia Artificial](/blog/python/)
