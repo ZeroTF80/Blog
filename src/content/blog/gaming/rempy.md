@@ -2,7 +2,7 @@
 title: 'Guía Rápida de RenPy: Motor de Visual Novels con Python'
 technology: 'Gaming'
 description: 'Introducción a RenPy, el motor de visual novels basado en Python. Aprende instalación, scripting y diseño de historias interactivas.'
-pubDate: 'Jul 26 2024'
+pubDate: 'Aug 4 2024'
 heroImage: '/gaming.png'
 ---
 ## Índice
