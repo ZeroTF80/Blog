@@ -12,7 +12,7 @@ heroImage: '/JavaScript.jpg'
 1. [Introducción a las funciones flecha](#introducción-a-las-funciones-flecha)
 2. [Sintaxis básica](#sintaxis-básica)
 3. [Ventajas de las funciones flecha](#ventajas-de-las-funciones-flecha)
-4. [Comportamiento del `this` en funciones flecha](#comportamiento-del-this-en-funciones-flecha)
+4. [Comportamiento del **this** en funciones flecha](#comportamiento-del-this-en-funciones-flecha)
 5. [Casos de uso comunes](#casos-de-uso-comunes)
 6. [Limitaciones de las funciones flecha](#limitaciones-de-las-funciones-flecha)
 7. [Mejores prácticas](#mejores-prácticas)
