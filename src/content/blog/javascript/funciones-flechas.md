@@ -6,22 +6,20 @@ pubDate: 'Aug 05 2024'
 heroImage: '/JavaScript.jpg'
 ---
 ## Índice
-1. [Introducción a las funciones flecha](#introducción-a-las-funciones-flecha)
-2. [Sintaxis básica](#sintaxis-básica)
-3. [Ventajas de las funciones flecha](#ventajas-de-las-funciones-flecha)
-4. [Comportamiento del **this** en funciones flecha](#comportamiento-del-this-en-funciones-flecha)
-5. [Casos de uso comunes](#casos-de-uso-comunes)
-6. [Limitaciones de las funciones flecha](#limitaciones-de-las-funciones-flecha)
-7. [Mejores prácticas](#mejores-prácticas)
-8. [Ejercicios prácticos](#ejercicios-prácticos)
-9. [Conclusión](#conclusión)
+- [Introducción a las funciones flecha](#introducción-a-las-funciones-flecha)
+- [Sintaxis básica](#sintaxis-básica)
+- [Ventajas de las funciones flecha](#ventajas-de-las-funciones-flecha)
+- [Comportamiento del **this** en funciones flecha](#comportamiento-del-this-en-funciones-flecha)
+- [Casos de uso comunes](#casos-de-uso-comunes)
+- [Limitaciones de las funciones flecha](#limitaciones-de-las-funciones-flecha)
+- [Mejores prácticas](#mejores-prácticas)
+- [Ejercicios prácticos](#ejercicios-prácticos)
+- [Conclusión](#conclusión)
 
 ## Introducción a las funciones flecha
-
 Las funciones flecha, introducidas en ECMAScript 6 (ES6), representan una revolución en la forma de escribir funciones en JavaScript. Ofrecen una sintaxis más concisa y un comportamiento más intuitivo en ciertos escenarios, especialmente en lo que respecta al manejo del `this`.
 
 ## Sintaxis básica
-
 La sintaxis básica de una función flecha es la siguiente:
 
 ```javascript
@@ -56,14 +54,15 @@ Existen varias formas de escribir funciones flecha:
    ```
 
 ## Ventajas de las funciones flecha
-
 1. **Sintaxis concisa**: Reducen la verbosidad del código, especialmente en funciones simples.
+
 2. **`this` léxico**: Heredan el `this` del contexto circundante, evitando problemas comunes con el enlace del `this`.
+
 3. **Implícitamente devuelven**: Para funciones de una sola expresión, el `return` es implícito.
+
 4. **Ideal para funciones anónimas**: Especialmente útiles en callbacks y métodos de array funcionales.
 
 ## Comportamiento del `this` en funciones flecha
-
 Una de las características más importantes de las funciones flecha es cómo manejan el `this`:
 
 ```javascript
@@ -87,7 +86,6 @@ const objeto = {
 En este ejemplo, la función flecha en `procesarFlecha` mantiene el `this` del contexto exterior, permitiendo acceder a `this.datos` correctamente.
 
 ## Casos de uso comunes
-
 1. **Métodos de array funcionales**:
    ```javascript
    const numeros = [1, 2, 3, 4, 5];
@@ -112,21 +110,24 @@ En este ejemplo, la función flecha en `procesarFlecha` mantiene el `this` del c
    ```
 
 ## Limitaciones de las funciones flecha
-
 1. No pueden ser usadas como constructores.
+
 2. No tienen su propio objeto `arguments`.
+
 3. No pueden ser utilizadas para definir métodos de objeto que requieran su propio `this`.
+
 4. No se pueden usar como generadores (con `function*`).
 
 ## Mejores prácticas
-
 1. Usa funciones flecha para callbacks cortos y funciones anónimas.
+
 2. Prefiere funciones tradicionales para métodos de objeto y cuando necesites un `this` dinámico.
+
 3. Aprovecha la sintaxis concisa para mejorar la legibilidad del código.
+
 4. Ten cuidado con el `this` en diferentes contextos y elige el tipo de función adecuado.
 
 ## Ejercicios prácticos
-
 1. **Transformación de array**: Crea una función flecha que tome un array de números y devuelva un nuevo array con cada número multiplicado por 2.
 
 2. **Filtrado de objetos**: Dada una lista de objetos con propiedades `nombre` y `edad`, crea una función flecha que filtre los objetos para obtener solo aquellos con edad mayor a 18.
@@ -142,7 +143,6 @@ En este ejemplo, la función flecha en `procesarFlecha` mantiene el `this` del c
 7. **Promesas encadenadas**: Crea una serie de promesas utilizando funciones flecha que simulen una secuencia de operaciones asíncronas (por ejemplo, cargar datos, procesarlos y mostrar resultados).
 
 ## Conclusión
-
 Las funciones flecha son una poderosa adición a JavaScript que pueden mejorar significativamente la legibilidad y mantenibilidad de tu código. Al dominar su sintaxis y entender sus particularidades, especialmente en lo que respecta al manejo del `this`, podrás escribir código más limpio y eficiente. Sin embargo, es importante recordar que no son un reemplazo universal para las funciones tradicionales, y cada tipo tiene su lugar en el desarrollo moderno de JavaScript.
 
 Practicar con los ejercicios proporcionados te ayudará a familiarizarte más con las funciones flecha y a desarrollar la intuición sobre cuándo y cómo usarlas de manera efectiva en tus proyectos.
