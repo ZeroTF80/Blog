@@ -5,9 +5,7 @@ description: 'Descubre en JavaScript por qué son tan importante las funciones f
 pubDate: 'Aug 05 2024'
 heroImage: '/JavaScript.jpg'
 ---
-# Guía completa de funciones flecha en JavaScript
-
-## Índice de contenido
+## Índice
 
 1. [Introducción a las funciones flecha](#introducción-a-las-funciones-flecha)
 2. [Sintaxis básica](#sintaxis-básica)
