@@ -21,13 +21,11 @@ Las funciones flecha, introducidas en ECMAScript 6 (ES6), representan una revolu
 
 ## Sintaxis básica
 La sintaxis básica de una función flecha es la siguiente:
-
 ```javascript
 // Función tradicional
 function suma(a, b) {
   return a + b;
 }
-
 // Función flecha equivalente
 const suma = (a, b) => a + b;
 ```
@@ -64,7 +62,6 @@ Existen varias formas de escribir funciones flecha:
 
 ## Comportamiento del `this` en funciones flecha
 Una de las características más importantes de las funciones flecha es cómo manejan el `this`:
-
 ```javascript
 const objeto = {
   datos: [1, 2, 3],
@@ -93,7 +90,6 @@ En este ejemplo, la función flecha en `procesarFlecha` mantiene el `this` del c
    const pares = numeros.filter(x => x % 2 === 0);
    const suma = numeros.reduce((acc, x) => acc + x, 0);
    ```
-
 2. **Promesas y código asíncrono**:
    ```javascript
    fetch('https://api.ejemplo.com/datos')
@@ -101,7 +97,6 @@ En este ejemplo, la función flecha en `procesarFlecha` mantiene el `this` del c
      .then(data => console.log(data))
      .catch(error => console.error('Error:', error));
    ```
-
 3. **Event listeners**:
    ```javascript
    document.getElementById('miBoton').addEventListener('click', () => {
