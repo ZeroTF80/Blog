@@ -24,7 +24,3 @@ Además, nuestro contenido es cuidadosamente investigado y escrito por expertos 
 Nos encantaría escuchar tus comentarios, sugerencias y preguntas. Puedes ponerte en contacto con nosotros a través de los siguientes medios:
 - Correo Electrónico: angelbeneman801@gmail.com
 - LinkedIn: Leo Beneman
-
-## Credito
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
