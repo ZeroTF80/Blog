@@ -3,7 +3,7 @@ title: 'El Revolucionario Mundo de las Single Page Applications'
 technology: 'Programacion'
 description: 'Explora el fascinante universo de las Single Page Applications (SPAs), su impacto en el desarrollo web moderno, y cómo están redefiniendo la experiencia del usuario en la web. Desde sus orígenes hasta las tendencias futuras, descubre por qué las SPAs son fundamentales en el panorama digital actual.'
 pubDate: 'Aug 06 2024'
-heroImage: '/spa-development.png'
+heroImage: '/programacion.png'
 ---
 ## Índice
 1. [Introducción a las Single Page Applications](#introducción-a-las-single-page-applications)
