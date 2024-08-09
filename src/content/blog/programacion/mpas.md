@@ -1,7 +1,7 @@
 ---
 title: 'El Mundo Versátil de las Multi-Page Applications'
 technology: 'Programación'
-description: 'lorem'
+description: 'Descubre las claves de las Multi-Page Applications (MPAs) y su relevancia en el desarrollo web moderno.'
 pubDate: 'Aug 07 2024'
 heroImage: '/programacion.png'
 ---
