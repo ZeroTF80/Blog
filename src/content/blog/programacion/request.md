@@ -1,5 +1,5 @@
 ---
-title: 'Request'
+title: 'Request: Peticiones del servidor'
 technology: 'Programación'
 description: 'Request'
 pubDate: 'Aug 08 2024'
