@@ -1,7 +1,7 @@
 ---
 title: 'Lazy Loading: Optimizando el Rendimiento Web'
 technology: 'Programación'
-description: 'Descubre los fundamentos del front-end y back-end en el desarrollo web y cómo interactúan para crear aplicaciones web'
+description: 'Explora cómo Lazy Loading mejora el rendimiento web al cargar contenido solo cuando es necesario, optimizando la velocidad y eficiencia de tu sitio.'
 pubDate: 'Aug 11 2024'
 heroImage: '/programacion.png'
 ---
