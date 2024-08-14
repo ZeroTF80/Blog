@@ -5,7 +5,6 @@ description: 'Un vistazo a la evolución de la Inteligencia Artificial General'
 pubDate: 'Jul 23 2024'
 heroImage: '/AI.jpg'
 ---
-
 La Inteligencia Artificial General (AGI) es un campo en rápida evolución que promete transformar nuestra interacción con la tecnología. OpenAI, una de las organizaciones líderes en investigación de IA, ha propuesto un marco de cinco niveles para clasificar el progreso hacia la AGI. Estos niveles nos ayudan a comprender el estado actual de la tecnología y vislumbrar su futuro potencial.
 
 ## 1. Chatbots: El Primer Escalón
