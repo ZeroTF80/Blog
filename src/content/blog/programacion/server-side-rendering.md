@@ -2,7 +2,7 @@
 title: 'Server Side Rendering'
 technology: 'Programación'
 description: 'Server Side Rendering (SSR) es una técnica de renderizado web donde el proceso se realiza en el servidor, lo que mejora el rendimiento y la SEO, pero también conlleva una mayor carga en el servidor y menos interactividad del lado del cliente.'
-pubDate: 'Aug 02 2024'
+pubDate: 'Aug 21 2024'
 heroImage: '/programacion.png'
 ---
 ## Índice
