@@ -1,7 +1,7 @@
 ---
 title: 'Client-Side Rendering (CSR): Una Guía Completa'
 technology: 'Programación'
-description: 'Conoce cómo el Client-Side Rendering (CSR) transforma la interactividad web al renderizar interfaces en el navegador, mejorando la experiencia del usuario.
+description: 'Conoce cómo el Client-Side Rendering (CSR) transforma la interactividad web al renderizar interfaces en el navegador, mejorando la experiencia del usuario.'
 pubDate: 'Aug 22 2024'
 heroImage: '/programacion.png'
 ---
