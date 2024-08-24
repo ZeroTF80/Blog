@@ -1,7 +1,7 @@
 ---
 title: 'Polimorfismo en JavaScript: Una Breve Introducción'
 technology: 'JavaScript'
-description: 'Una exploración detallada de la recursividad en JavaScript, incluyendo su definición, ejemplos prácticos y consideraciones de uso
+description: 'Una exploración detallada de la recursividad en JavaScript, incluyendo su definición, ejemplos prácticos y consideraciones de uso'
 pubDate: 'Aug 24 2024'
 heroImage: '/JavaScript.jpg'
 ---

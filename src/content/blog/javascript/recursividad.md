@@ -1,7 +1,7 @@
 ---
 title: 'Recursividad en JavaScript: Explorando el Arte de la Auto-referencia'
 technology: 'JavaScript'
-description: 'Una exploración detallada de la recursividad en JavaScript, incluyendo su definición, ejemplos prácticos y consideraciones de uso
+description: 'El polimorfismo en JavaScript permite que objetos de diferentes tipos respondan al mismo método, facilitando código flexible y reutilizable al compartir interfaces comunes con comportamientos específicos.'
 pubDate: 'Aug 23 2024'
 heroImage: '/JavaScript.jpg'
 ---
